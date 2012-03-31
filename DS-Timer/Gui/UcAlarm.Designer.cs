@@ -30,18 +30,18 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UcAlarm));
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.gbEditAlarm = new System.Windows.Forms.GroupBox();
-			this.btnTestSound = new System.Windows.Forms.Button();
-			this.cbPopup = new System.Windows.Forms.CheckBox();
-			this.cbAlarmSound = new System.Windows.Forms.CheckBox();
-			this.cbBaloon = new System.Windows.Forms.CheckBox();
-			this.cbAlarmEnabled = new System.Windows.Forms.CheckBox();
-			this.btnSaveAlarm = new System.Windows.Forms.Button();
-			this.label2 = new System.Windows.Forms.Label();
-			this.label1 = new System.Windows.Forms.Label();
 			this.dtpAlarmTime = new System.Windows.Forms.DateTimePicker();
 			this.txtAlarmMessage = new System.Windows.Forms.TextBox();
+			this.btnSaveAlarm = new System.Windows.Forms.Button();
+			this.cbAlarmEnabled = new System.Windows.Forms.CheckBox();
+			this.cbBaloon = new System.Windows.Forms.CheckBox();
+			this.cbAlarmSound = new System.Windows.Forms.CheckBox();
+			this.btnTestSound = new System.Windows.Forms.Button();
+			this.cbPopup = new System.Windows.Forms.CheckBox();
+			this.label2 = new System.Windows.Forms.Label();
+			this.label1 = new System.Windows.Forms.Label();
 			this.dgvAlarms = new System.Windows.Forms.DataGridView();
 			this.timeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.messageDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -82,7 +82,6 @@
 			// 
 			// gbEditAlarm
 			// 
-			resources.ApplyResources(this.gbEditAlarm, "gbEditAlarm");
 			this.gbEditAlarm.Controls.Add(this.dtpAlarmTime);
 			this.gbEditAlarm.Controls.Add(this.txtAlarmMessage);
 			this.gbEditAlarm.Controls.Add(this.btnSaveAlarm);
@@ -93,14 +92,61 @@
 			this.gbEditAlarm.Controls.Add(this.cbPopup);
 			this.gbEditAlarm.Controls.Add(this.label2);
 			this.gbEditAlarm.Controls.Add(this.label1);
+			resources.ApplyResources(this.gbEditAlarm, "gbEditAlarm");
 			this.gbEditAlarm.Name = "gbEditAlarm";
 			this.gbEditAlarm.TabStop = false;
-			this.toolTip.SetToolTip(this.gbEditAlarm, resources.GetString("gbEditAlarm.ToolTip"));
+			// 
+			// dtpAlarmTime
+			// 
+			resources.ApplyResources(this.dtpAlarmTime, "dtpAlarmTime");
+			this.dtpAlarmTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+			this.dtpAlarmTime.Name = "dtpAlarmTime";
+			this.dtpAlarmTime.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dtpAlarmTime_KeyDown);
+			// 
+			// txtAlarmMessage
+			// 
+			resources.ApplyResources(this.txtAlarmMessage, "txtAlarmMessage");
+			this.txtAlarmMessage.Name = "txtAlarmMessage";
+			// 
+			// btnSaveAlarm
+			// 
+			this.btnSaveAlarm.Image = global::DS_Timer.Properties.Resources.clock_add;
+			resources.ApplyResources(this.btnSaveAlarm, "btnSaveAlarm");
+			this.btnSaveAlarm.Name = "btnSaveAlarm";
+			this.btnSaveAlarm.UseVisualStyleBackColor = true;
+			this.btnSaveAlarm.Click += new System.EventHandler(this.btnSaveAlarm_Click);
+			// 
+			// cbAlarmEnabled
+			// 
+			resources.ApplyResources(this.cbAlarmEnabled, "cbAlarmEnabled");
+			this.cbAlarmEnabled.Checked = true;
+			this.cbAlarmEnabled.CheckState = System.Windows.Forms.CheckState.Checked;
+			this.cbAlarmEnabled.Name = "cbAlarmEnabled";
+			this.toolTip.SetToolTip(this.cbAlarmEnabled, resources.GetString("cbAlarmEnabled.ToolTip"));
+			this.cbAlarmEnabled.UseVisualStyleBackColor = true;
+			// 
+			// cbBaloon
+			// 
+			resources.ApplyResources(this.cbBaloon, "cbBaloon");
+			this.cbBaloon.Checked = true;
+			this.cbBaloon.CheckState = System.Windows.Forms.CheckState.Checked;
+			this.cbBaloon.Name = "cbBaloon";
+			this.toolTip.SetToolTip(this.cbBaloon, resources.GetString("cbBaloon.ToolTip"));
+			this.cbBaloon.UseVisualStyleBackColor = true;
+			// 
+			// cbAlarmSound
+			// 
+			resources.ApplyResources(this.cbAlarmSound, "cbAlarmSound");
+			this.cbAlarmSound.Checked = true;
+			this.cbAlarmSound.CheckState = System.Windows.Forms.CheckState.Checked;
+			this.cbAlarmSound.Name = "cbAlarmSound";
+			this.toolTip.SetToolTip(this.cbAlarmSound, resources.GetString("cbAlarmSound.ToolTip"));
+			this.cbAlarmSound.UseVisualStyleBackColor = true;
 			// 
 			// btnTestSound
 			// 
-			resources.ApplyResources(this.btnTestSound, "btnTestSound");
 			this.btnTestSound.Image = global::DS_Timer.Properties.Resources.sound;
+			resources.ApplyResources(this.btnTestSound, "btnTestSound");
 			this.btnTestSound.Name = "btnTestSound";
 			this.toolTip.SetToolTip(this.btnTestSound, resources.GetString("btnTestSound.ToolTip"));
 			this.btnTestSound.UseVisualStyleBackColor = true;
@@ -115,84 +161,15 @@
 			this.toolTip.SetToolTip(this.cbPopup, resources.GetString("cbPopup.ToolTip"));
 			this.cbPopup.UseVisualStyleBackColor = true;
 			// 
-			// cbAlarmSound
-			// 
-			resources.ApplyResources(this.cbAlarmSound, "cbAlarmSound");
-			this.cbAlarmSound.Checked = true;
-			this.cbAlarmSound.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.cbAlarmSound.Name = "cbAlarmSound";
-			this.toolTip.SetToolTip(this.cbAlarmSound, resources.GetString("cbAlarmSound.ToolTip"));
-			this.cbAlarmSound.UseVisualStyleBackColor = true;
-			// 
-			// cbBaloon
-			// 
-			resources.ApplyResources(this.cbBaloon, "cbBaloon");
-			this.cbBaloon.Checked = true;
-			this.cbBaloon.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.cbBaloon.Name = "cbBaloon";
-			this.toolTip.SetToolTip(this.cbBaloon, resources.GetString("cbBaloon.ToolTip"));
-			this.cbBaloon.UseVisualStyleBackColor = true;
-			// 
-			// cbAlarmEnabled
-			// 
-			resources.ApplyResources(this.cbAlarmEnabled, "cbAlarmEnabled");
-			this.cbAlarmEnabled.Checked = true;
-			this.cbAlarmEnabled.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.cbAlarmEnabled.Name = "cbAlarmEnabled";
-			this.toolTip.SetToolTip(this.cbAlarmEnabled, resources.GetString("cbAlarmEnabled.ToolTip"));
-			this.cbAlarmEnabled.UseVisualStyleBackColor = true;
-			// 
-			// btnSaveAlarm
-			// 
-			resources.ApplyResources(this.btnSaveAlarm, "btnSaveAlarm");
-			this.btnSaveAlarm.Image = global::DS_Timer.Properties.Resources.clock_add;
-			this.btnSaveAlarm.Name = "btnSaveAlarm";
-			this.toolTip.SetToolTip(this.btnSaveAlarm, resources.GetString("btnSaveAlarm.ToolTip"));
-			this.btnSaveAlarm.UseVisualStyleBackColor = true;
-			this.btnSaveAlarm.Click += new System.EventHandler(this.btnSaveAlarm_Click);
-			// 
 			// label2
 			// 
 			resources.ApplyResources(this.label2, "label2");
 			this.label2.Name = "label2";
-			this.toolTip.SetToolTip(this.label2, resources.GetString("label2.ToolTip"));
 			// 
 			// label1
 			// 
 			resources.ApplyResources(this.label1, "label1");
 			this.label1.Name = "label1";
-			this.toolTip.SetToolTip(this.label1, resources.GetString("label1.ToolTip"));
-			// 
-			// dtpAlarmTime
-			// 
-			resources.ApplyResources(this.dtpAlarmTime, "dtpAlarmTime");
-			this.dtpAlarmTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-			this.dtpAlarmTime.Name = "dtpAlarmTime";
-			this.toolTip.SetToolTip(this.dtpAlarmTime, resources.GetString("dtpAlarmTime.ToolTip"));
-			this.dtpAlarmTime.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dtpAlarmTime_KeyDown);
-			// 
-			// txtAlarmMessage
-			// 
-			resources.ApplyResources(this.txtAlarmMessage, "txtAlarmMessage");
-			this.txtAlarmMessage.Name = "txtAlarmMessage";
-			this.toolTip.SetToolTip(this.txtAlarmMessage, resources.GetString("txtAlarmMessage.ToolTip"));
-			// 
-			// dgvAlarms
-			// 
-			resources.ApplyResources(this.dgvAlarms, "dgvAlarms");
-			this.dgvAlarms.AutoGenerateColumns = false;
-			this.dgvAlarms.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-			this.dgvAlarms.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.timeDataGridViewTextBoxColumn1,
-            this.messageDataGridViewTextBoxColumn2,
-            this.activeDataGridViewCheckBoxColumn2,
-            this.balloonTipDataGridViewCheckBoxColumn2,
-            this.soundDataGridViewCheckBoxColumn2,
-            this.popupDataGridViewCheckBoxColumn2});
-			this.tableLayoutPanel1.SetColumnSpan(this.dgvAlarms, 2);
-			this.dgvAlarms.DataSource = this.alarmTimeBindingSource;
-			this.dgvAlarms.Name = "dgvAlarms";
-			this.toolTip.SetToolTip(this.dgvAlarms, resources.GetString("dgvAlarms.ToolTip"));
 			// 
 			// timeDataGridViewTextBoxColumn1
 			// 
@@ -250,9 +227,9 @@
 			// time
 			// 
 			this.time.DataPropertyName = "Time";
-			dataGridViewCellStyle1.Format = "dd.MM.yyyy HH:mm:ss";
-			dataGridViewCellStyle1.NullValue = null;
-			this.time.DefaultCellStyle = dataGridViewCellStyle1;
+			dataGridViewCellStyle11.Format = "dd.MM.yyyy HH:mm:ss";
+			dataGridViewCellStyle11.NullValue = null;
+			this.time.DefaultCellStyle = dataGridViewCellStyle11;
 			resources.ApplyResources(this.time, "time");
 			this.time.Name = "time";
 			// 
@@ -291,23 +268,20 @@
 			this.tableLayoutPanel1.Controls.Add(this.dgvAlarms, 0, 1);
 			this.tableLayoutPanel1.Controls.Add(this.groupBox1, 1, 0);
 			this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-			this.toolTip.SetToolTip(this.tableLayoutPanel1, resources.GetString("tableLayoutPanel1.ToolTip"));
 			// 
 			// panel1
 			// 
-			resources.ApplyResources(this.panel1, "panel1");
 			this.tableLayoutPanel1.SetColumnSpan(this.panel1, 2);
 			this.panel1.Controls.Add(this.btnRemoveOldAlarms);
 			this.panel1.Controls.Add(this.btnSaveAlarms);
+			resources.ApplyResources(this.panel1, "panel1");
 			this.panel1.Name = "panel1";
-			this.toolTip.SetToolTip(this.panel1, resources.GetString("panel1.ToolTip"));
 			// 
 			// btnRemoveOldAlarms
 			// 
 			resources.ApplyResources(this.btnRemoveOldAlarms, "btnRemoveOldAlarms");
 			this.btnRemoveOldAlarms.Image = global::DS_Timer.Properties.Resources.clock_delete;
 			this.btnRemoveOldAlarms.Name = "btnRemoveOldAlarms";
-			this.toolTip.SetToolTip(this.btnRemoveOldAlarms, resources.GetString("btnRemoveOldAlarms.ToolTip"));
 			this.btnRemoveOldAlarms.UseVisualStyleBackColor = true;
 			this.btnRemoveOldAlarms.Click += new System.EventHandler(this.btnRemoveOldAlarms_Click);
 			// 
@@ -316,26 +290,23 @@
 			resources.ApplyResources(this.btnSaveAlarms, "btnSaveAlarms");
 			this.btnSaveAlarms.Image = global::DS_Timer.Properties.Resources.disk;
 			this.btnSaveAlarms.Name = "btnSaveAlarms";
-			this.toolTip.SetToolTip(this.btnSaveAlarms, resources.GetString("btnSaveAlarms.ToolTip"));
 			this.btnSaveAlarms.UseVisualStyleBackColor = true;
 			this.btnSaveAlarms.Click += new System.EventHandler(this.btnSaveAlarms_Click);
 			// 
 			// groupBox1
 			// 
-			resources.ApplyResources(this.groupBox1, "groupBox1");
 			this.groupBox1.Controls.Add(this.label4);
 			this.groupBox1.Controls.Add(this.txtNextAlarm);
 			this.groupBox1.Controls.Add(this.label3);
 			this.groupBox1.Controls.Add(this.txtTimeLeft);
+			resources.ApplyResources(this.groupBox1, "groupBox1");
 			this.groupBox1.Name = "groupBox1";
 			this.groupBox1.TabStop = false;
-			this.toolTip.SetToolTip(this.groupBox1, resources.GetString("groupBox1.ToolTip"));
 			// 
 			// label4
 			// 
 			resources.ApplyResources(this.label4, "label4");
 			this.label4.Name = "label4";
-			this.toolTip.SetToolTip(this.label4, resources.GetString("label4.ToolTip"));
 			// 
 			// txtNextAlarm
 			// 
@@ -343,13 +314,11 @@
 			this.txtNextAlarm.Name = "txtNextAlarm";
 			this.txtNextAlarm.ReadOnly = true;
 			this.txtNextAlarm.TabStop = false;
-			this.toolTip.SetToolTip(this.txtNextAlarm, resources.GetString("txtNextAlarm.ToolTip"));
 			// 
 			// label3
 			// 
 			resources.ApplyResources(this.label3, "label3");
 			this.label3.Name = "label3";
-			this.toolTip.SetToolTip(this.label3, resources.GetString("label3.ToolTip"));
 			// 
 			// txtTimeLeft
 			// 
@@ -357,7 +326,6 @@
 			this.txtTimeLeft.Name = "txtTimeLeft";
 			this.txtTimeLeft.ReadOnly = true;
 			this.txtTimeLeft.TabStop = false;
-			this.toolTip.SetToolTip(this.txtTimeLeft, resources.GetString("txtTimeLeft.ToolTip"));
 			// 
 			// timeDataGridViewTextBoxColumn
 			// 
@@ -407,10 +375,8 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.Controls.Add(this.tableLayoutPanel1);
 			this.Name = "UcAlarm";
-			this.toolTip.SetToolTip(this, resources.GetString("$this.ToolTip"));
 			this.gbEditAlarm.ResumeLayout(false);
 			this.gbEditAlarm.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dgvAlarms)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.alarmTimeBindingSource)).EndInit();
 			this.tableLayoutPanel1.ResumeLayout(false);
 			this.panel1.ResumeLayout(false);
