@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EA0CF37B-1854-4135-9340-878EBF3AD167}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DS_Timer</RootNamespace>
+    <AssemblyName>DS-Timer</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>clock.ico</ApplicationIcon>
+    <ApplicationManifest>Properties\DataSources\app.manifest</ApplicationManifest>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\releases\last\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.AudioVideoPlayback, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="updateSystemDotNet.Controller, Version=1.5.1.306, Culture=neutral, PublicKeyToken=4b29b2d1691903dc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\updateSystemDotNet.Controller.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alarm\AlarmHandler.cs" />
+    <Compile Include="Alarm\AlarmTime.cs" />
+    <Compile Include="Alarm\MessageNotifyIcon.cs" />
+    <Compile Include="AttackPlaner\AttackImportHelper.cs" />
+    <Compile Include="AttackPlaner\AttackOrder.cs" />
+    <Compile Include="AttackPlaner\AttackPlan.cs" />
+    <Compile Include="AttackPlaner\AttackPlanHandler.cs" />
+    <Compile Include="AttackPlaner\Import\DSRealDateTime.cs" />
+    <Compile Include="AttackPlaner\LocationSelector.cs" />
+    <Compile Include="AttackPlaner\NullAttackOrder.cs" />
+    <Compile Include="AttackPlaner\Location.cs" />
+    <Compile Include="AttackPlaner\Unit.cs" />
+    <Compile Include="AttackPlaner\UnitInfo.cs" />
+    <Compile Include="AttackPlaner\VillageList.cs" />
+    <Compile Include="DSTimerConfig.cs" />
+    <Compile Include="Gui\DialogAddServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\DialogAddServer.Designer.cs">
+      <DependentUpon>DialogAddServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\DialogAttackExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\DialogAttackExport.Designer.cs">
+      <DependentUpon>DialogAttackExport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\DialogAttackImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\DialogAttackImport.Designer.cs">
+      <DependentUpon>DialogAttackImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\DialogFirstStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\DialogFirstStart.Designer.cs">
+      <DependentUpon>DialogFirstStart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\FormUnitCalc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\FormUnitCalc.Designer.cs">
+      <DependentUpon>FormUnitCalc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\UcVillageSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\UcVillageSelector.Designer.cs">
+      <DependentUpon>UcVillageSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\Translator.cs" />
+    <Compile Include="TimeSync\DSClock.cs" />
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\DonateButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Gui\FormAlarm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\FormAlarm.Designer.cs">
+      <DependentUpon>FormAlarm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\FormAlarmPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\FormAlarmPopup.Designer.cs">
+      <DependentUpon>FormAlarmPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\FormAttackPlaner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\FormAttackPlaner.Designer.cs">
+      <DependentUpon>FormAttackPlaner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\FormClockOnTop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\FormClockOnTop.Designer.cs">
+      <DependentUpon>FormClockOnTop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\FormHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\FormHelp.Designer.cs">
+      <DependentUpon>FormHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\FormReactionTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\FormReactionTest.Designer.cs">
+      <DependentUpon>FormReactionTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\FormSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\FormSettings.Designer.cs">
+      <DependentUpon>FormSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\UcAlarm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\UcAlarm.Designer.cs">
+      <DependentUpon>UcAlarm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\UcAttackPlaner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\UcAttackPlaner.Designer.cs">
+      <DependentUpon>UcAttackPlaner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormMain.de.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.en.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\DialogAddServer.resx">
+      <DependentUpon>DialogAddServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\DialogAttackExport.en.resx">
+      <DependentUpon>DialogAttackExport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\DialogAttackExport.resx">
+      <DependentUpon>DialogAttackExport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\DialogAttackImport.en.resx">
+      <DependentUpon>DialogAttackImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\DialogAttackImport.resx">
+      <DependentUpon>DialogAttackImport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\DialogFirstStart.en.resx">
+      <DependentUpon>DialogFirstStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\DialogFirstStart.resx">
+      <DependentUpon>DialogFirstStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FormAlarm.resx">
+      <DependentUpon>FormAlarm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FormAlarmPopup.en.resx">
+      <DependentUpon>FormAlarmPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FormAlarmPopup.resx">
+      <DependentUpon>FormAlarmPopup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FormAttackPlaner.en.resx">
+      <DependentUpon>FormAttackPlaner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FormAttackPlaner.resx">
+      <DependentUpon>FormAttackPlaner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FormClockOnTop.en.resx">
+      <DependentUpon>FormClockOnTop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FormClockOnTop.resx">
+      <DependentUpon>FormClockOnTop.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FormHelp.en.resx">
+      <DependentUpon>FormHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FormHelp.resx">
+      <DependentUpon>FormHelp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FormReactionTest.en.resx">
+      <DependentUpon>FormReactionTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FormReactionTest.resx">
+      <DependentUpon>FormReactionTest.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FormSettings.de.resx">
+      <DependentUpon>FormSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FormSettings.en.resx">
+      <DependentUpon>FormSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FormSettings.resx">
+      <DependentUpon>FormSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FormUnitCalc.en.resx">
+      <DependentUpon>FormUnitCalc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FormUnitCalc.resx">
+      <DependentUpon>FormUnitCalc.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\UcAlarm.en.resx">
+      <DependentUpon>UcAlarm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\UcAlarm.resx">
+      <DependentUpon>UcAlarm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\UcAttackPlaner.en.resx">
+      <DependentUpon>UcAttackPlaner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\UcAttackPlaner.resx">
+      <DependentUpon>UcAttackPlaner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\UcVillageSelector.resx">
+      <DependentUpon>UcVillageSelector.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RemoteControl\MouseControl.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="SoundManager.cs" />
+    <Compile Include="TimeSync\AutoSync.cs" />
+    <Compile Include="TimeSync\NTPClient.cs" />
+    <Compile Include="TimeSync\TimeSyncHandler.cs" />
+    <Compile Include="UnitCalc\BaseBuilding.cs" />
+    <Compile Include="UnitCalc\BaseUnit.cs" />
+    <Compile Include="UnitCalc\Buildings\Barracks.cs" />
+    <Compile Include="UnitCalc\UnitCalculator.cs" />
+    <Compile Include="UnitCalc\Units\Archer.cs" />
+    <Compile Include="UnitCalc\Units\Axe.cs" />
+    <Compile Include="UnitCalc\Units\Catapult.cs" />
+    <Compile Include="UnitCalc\Units\Heavy.cs" />
+    <Compile Include="UnitCalc\Units\Knight.cs" />
+    <Compile Include="UnitCalc\Units\Light.cs" />
+    <Compile Include="UnitCalc\Units\MArcher.cs" />
+    <Compile Include="UnitCalc\Units\Ram.cs" />
+    <Compile Include="UnitCalc\Units\Snob.cs" />
+    <Compile Include="UnitCalc\Units\Spear.cs" />
+    <Compile Include="UnitCalc\Units\Spy.cs" />
+    <Compile Include="UnitCalc\Units\Sword.cs" />
+    <Compile Include="Updater.cs" />
+    <Compile Include="Util\FormStarter.cs" />
+    <Compile Include="Util\SortableBindingList.cs" />
+    <Compile Include="Util\TimeSpanFormatter.cs" />
+    <Compile Include="World\DownloadItem.cs" />
+    <Compile Include="World\Parser\PlayerFileParser.cs" />
+    <Compile Include="World\PlayerFile.cs" />
+    <Compile Include="World\PlayerInfo.cs" />
+    <Compile Include="World\Server.cs" />
+    <Compile Include="World\ServersFile.cs" />
+    <Compile Include="World\VillageFile.cs" />
+    <Compile Include="World\VillageInfo.cs" />
+    <Compile Include="World\WorldConfigFile.cs" />
+    <Compile Include="World\WorldDownloader.cs" />
+    <Compile Include="World\WorldFile.cs" />
+    <Compile Include="World\WorldHandler.cs" />
+    <Compile Include="World\WorldInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="clock.ico" />
+    <None Include="Resources\clock_delete.png" />
+    <None Include="Resources\new.png" />
+    <None Include="Resources\accept.png" />
+    <None Include="Resources\arrow_left.png" />
+    <None Include="Resources\arrow_right.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Properties\DataSources\DS_Timer.AttackPlaner.LocationSelector1.datasource" />
+    <None Include="Resources\table.png" />
+    <None Include="images\workshop.png" />
+    <None Include="images\stable.png" />
+    <None Include="images\barracks.png" />
+    <None Include="images\res.png" />
+    <None Include="images\resources.png" />
+    <None Include="images\archer_def.png" />
+    <None Include="images\cav_def.png" />
+    <None Include="images\general_def.png" />
+    <None Include="images\attack.png" />
+    <None Include="images\villager.png" />
+    <None Include="images\iron.png" />
+    <None Include="images\clay.png" />
+    <None Include="images\wood.png" />
+    <None Include="Properties\DataSources\DS_Timer.UnitCalc.UnitCalculator.datasource" />
+    <None Include="Resources\basket_put.png" />
+    <None Include="Resources\basket_remove.png" />
+    <None Include="Resources\world_go.png" />
+    <None Include="Resources\report_disk.png" />
+    <None Include="Resources\clock_go.png" />
+    <None Include="Properties\DataSources\DS_Timer.World.WorldConfigFile.datasource" />
+    <None Include="Properties\DataSources\DS_Timer.World.WorldHandler.datasource" />
+    <None Include="Resources\clock_link.png" />
+    <None Include="Resources\tab_go.png" />
+    <None Include="images\unit_sword.png" />
+    <None Include="images\unit_spy.png" />
+    <None Include="images\unit_spear.png" />
+    <None Include="images\unit_snob.png" />
+    <None Include="images\unit_ram.png" />
+    <None Include="images\unit_marcher.png" />
+    <None Include="images\unit_light.png" />
+    <None Include="images\unit_knight.png" />
+    <None Include="images\unit_heavy.png" />
+    <None Include="images\unit_catapult.png" />
+    <None Include="images\unit_axe.png" />
+    <None Include="images\unit_archer.png" />
+    <None Include="Properties\DataSources\DS_Timer.AttackPlaner.AttackPlanHandler.datasource" />
+    <None Include="Properties\DataSources\DS_Timer.TimeSync.DSClock.datasource" />
+    <None Include="Properties\DataSources\DS_Timer.World.WorldDownloader.datasource" />
+    <None Include="Properties\DataSources\DS_Timer.World.WorldInfo.datasource" />
+    <None Include="Resources\add.png" />
+    <None Include="Properties\DataSources\DS_Timer.AttackPlaner.Unit.datasource" />
+    <None Include="Resources\folder_go.png" />
+    <None Include="Properties\DataSources\app.manifest" />
+    <None Include="Properties\DataSources\DS_Timer.Alarm.AlarmTime.datasource" />
+    <None Include="Resources\clock.png" />
+    <None Include="Resources\cog.png" />
+    <None Include="Resources\help.png" />
+    <None Include="Resources\bomb.png" />
+    <None Include="Resources\clock_red.png" />
+    <None Include="Resources\sound.png" />
+    <None Include="Resources\folder_explore.png" />
+    <None Include="Resources\clock_add.png" />
+    <None Include="Resources\disk.png" />
+    <None Include="Resources\database_refresh.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
