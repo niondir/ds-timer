@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CreationDate>2011-02-01T23:48:39.83625+01:00</CreationDate>
+  <publickey>&lt;RSAKeyValue&gt;&lt;Modulus&gt;ojyXDJQrTKYMyeKbm64VXJTkaHdgfpMXQYfbMy0euSsM1W8wk01R64WLmLSGvY2SE0yKhupK9qZS47He9GjW6s59jSFN0xQvBKI2WNGUB6AnjW2pkriEKRazcm+/S4fLVCfvSrhl4OZ0u/lGfFEIrc2Q7oJkeudI2sqHeD5ct9E=&lt;/Modulus&gt;&lt;Exponent&gt;AQAB&lt;/Exponent&gt;&lt;/RSAKeyValue&gt;</publickey>
+  <privatekey>&lt;RSAKeyValue&gt;&lt;Modulus&gt;ojyXDJQrTKYMyeKbm64VXJTkaHdgfpMXQYfbMy0euSsM1W8wk01R64WLmLSGvY2SE0yKhupK9qZS47He9GjW6s59jSFN0xQvBKI2WNGUB6AnjW2pkriEKRazcm+/S4fLVCfvSrhl4OZ0u/lGfFEIrc2Q7oJkeudI2sqHeD5ct9E=&lt;/Modulus&gt;&lt;Exponent&gt;AQAB&lt;/Exponent&gt;&lt;P&gt;1RN7mI4pH5bb7Sq9StE3PVHgPChu0D9DDan2YgZWuJN/LEz1SGlXOZ1khNxaEEUdXCwJsDRfOtN8IOqeVyuyWw==&lt;/P&gt;&lt;Q&gt;wutGSYMDQQL8jkgGDJVr0r5kZuK0HHlWQM34KNzoz3MR6wNQA/HCtS/BytaepumDJ1xE+ARToT8KI2qLgSE+Qw==&lt;/Q&gt;&lt;DP&gt;H7ZonMn7wOHZFbFYvvvods3qy8lQxNnFhxEWxHwhCBObx+IkV4SmIMMWJNgO54EB36gGQR1qVv0G6ndA3cR5JQ==&lt;/DP&gt;&lt;DQ&gt;rt69FD6BsNWpF0zugGOddFhzYwqIY/NHuqQOuzpVc6fcr2ctZhyDfmH2DrA1bbGZhLp29buL++G+ir+PoK3eWQ==&lt;/DQ&gt;&lt;InverseQ&gt;Vr0f4ZWeFMnL1IEW9SybLFBzN7fIn0n8763SBrewO2Y1zbm6h2/I3HSL4ljbq0Y5ReAxY1bG2e0BQ18OsocGnw==&lt;/InverseQ&gt;&lt;D&gt;LNBdzQy0tTR8/dtJroQ0xGEggrbPAcexudlENGu3O+DnZ6GSIm5OPaei+uiK+5s6iXgwH7piQKWK6fh9JLg8/Sifd5cdMtMSVqLSjdy04z1mISZPA4Sg0zO1NOan3eyltlhGBOJmS7WnJhE0fTqnX9pebYF/bH+kX06+YKeSni0=&lt;/D&gt;&lt;/RSAKeyValue&gt;</privatekey>
+  <ftp_Server>ftp.kaupat-hh.de</ftp_Server>
+  <ftp_Port>21</ftp_Port>
+  <ftp_Directory>/htdocs/updates</ftp_Directory>
+  <ftp_User>kaupat-hh-de</ftp_User>
+  <ftp_Password>121-229-81-121-250-6-197-205-57-126-141-47-87-176-94-61</ftp_Password>
+  <ftp_transmissionType>Normal</ftp_transmissionType>
+  <protokollVersion>3</protokollVersion>
+</Project>
