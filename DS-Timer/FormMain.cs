@@ -29,7 +29,7 @@ namespace DS_Timer
 		private FormStarter m_FormHelp = new FormStarter(() => { return new FormHelp(); });
 		private FormStarter m_ReactionTest = new FormStarter(() => { return new FormReactionTest(); });
 		private FormStarter m_FormAlarm;
-        private FormStarter m_FormSettings;
+		private FormStarter m_FormSettings;
 		private FormStarter m_FormAttackPlaner;
 		private FormStarter m_FormUnitCalc = new FormStarter(() => { return new FormUnitCalc(); });
 
@@ -37,7 +37,7 @@ namespace DS_Timer
 		private DSClock m_clock;
 		private AlarmHandler m_AlarmHandler;
 		private AttackPlanHandler m_AttackPlanHandler;
-        private WorldHandler m_WorldHandler;
+		private WorldHandler m_WorldHandler;
 		private AutoSync m_AutoSync;
 
 
@@ -45,27 +45,27 @@ namespace DS_Timer
 
 		private bool m_clicked = true;
 		private DateTime m_clickTime = DateTime.MinValue;
-		
+
 
 		public FormMain()
 		{
 			InitializeComponent();
 
-            m_WorldHandler = new WorldHandler(); // Must be the first
+			m_WorldHandler = new WorldHandler(); // Must be the first
 			m_clock = new DSClock();
 			m_AutoSync = new AutoSync();
-            
+
 
 			// Alarm
 			m_AlarmHandler = new AlarmHandler(this);
 			m_AlarmHandler.LoadAlarms();
-			
+
 
 			// Attack Planer
 			m_AttackPlanHandler = new AttackPlanHandler();
 			m_AttackPlanHandler.LoadAttackOrders();
 
-            m_FormClockOnTop = new FormStarter(() => { return new FormClockOnTop(m_clock, m_AttackPlanHandler); });
+			m_FormClockOnTop = new FormStarter(() => { return new FormClockOnTop(m_clock, m_AttackPlanHandler); });
 			m_FormAlarm = new FormStarter(() => { return new FormAlarm(m_AlarmHandler); });
 			m_FormAttackPlaner = new FormStarter(() => { return new FormAttackPlaner(m_AttackPlanHandler, m_AlarmHandler, m_WorldHandler); });
 			m_FormSettings = new FormStarter(() => { return new FormSettings(m_WorldHandler); });
@@ -82,7 +82,9 @@ namespace DS_Timer
 			{
 				btnSystemTimeSync.PerformClick();
 			}
-			
+
+			//TimeSyncHandler.SyncDone += (s, ea) => btnCheckSystemTime_Click(null, EventArgs.Empty);
+
 		}
 
 		private void FormMain_Shown(object sender, EventArgs e)
@@ -100,11 +102,11 @@ namespace DS_Timer
 			}
 		}
 
-	
+
 		void timer_Tick(object sender, EventArgs e)
 		{
 			DateTime now = m_clock.GetTime();
-			
+
 			if (!m_clicked && now > m_clickTime)
 			{
 				Console.WriteLine("Clicked: " + now.Millisecond + " should: " + m_clickTime.Millisecond);
@@ -136,8 +138,14 @@ namespace DS_Timer
 
 		private void btnCheckSystemTime_Click(object sender, EventArgs e)
 		{
+			if (this.InvokeRequired)
+			{
+				this.Invoke(new MethodInvoker(() => btnCheckSystemTime_Click(sender, e)));
+				return;
+			}
+
 			TimeSpan delay = TimeSyncHandler.CheckTimeDelay();
-			
+
 			txtSystemTimeDelay.Text = String.Format("{0}", delay);
 
 			double absMs = Math.Abs(delay.TotalMilliseconds);
@@ -153,7 +161,7 @@ namespace DS_Timer
 			{
 				txtSystemTimeDelay.BackColor = Color.Red;
 			}
-			
+
 
 		}
 
@@ -161,7 +169,6 @@ namespace DS_Timer
 		private void btnSystemTimeSync_Click(object sender, EventArgs e)
 		{
 			TimeSyncHandler.SyncTime();
-			btnCheckSystemTime_Click(null, EventArgs.Empty);
 		}
 
 		private void btnPingDS_Click(object sender, EventArgs e)
@@ -169,9 +176,9 @@ namespace DS_Timer
 			Ping ping = new Ping();
 			try
 			{
-                string url = Settings.Default.DSServer;
-                url = url.Replace("http://", "");
-                url = url.Replace("https://", "");
+				string url = Settings.Default.DSServer;
+				url = url.Replace("http://", "");
+				url = url.Replace("https://", "");
 				PingReply result = ping.Send(url);
 				txtRTT.Text = result.RoundtripTime.ToString("#ms");
 
@@ -258,7 +265,7 @@ namespace DS_Timer
 
 		private void txtSystemTimeDelay_TextChanged(object sender, EventArgs e)
 		{
-			
+
 		}
 
 		private void tsbUnitCalc_Click(object sender, EventArgs e)
@@ -266,9 +273,9 @@ namespace DS_Timer
 			m_FormUnitCalc.ShowForm();
 		}
 
-		
 
-		
+
+
 
 
 	}

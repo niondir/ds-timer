@@ -488,14 +488,16 @@ namespace TimeSync
 				Initialize();
 				int send = timeSocket.Send(NTPData, NTPData.Length);
 
-				timeSocket.BeginReceive(TimeSocketCallback, new object[] { timeSocket, updateSystemTime });
-				/*NTPData = timeSocket.Receive(ref EPhost); // Fixed: Do it async now
+				// Async do not work
+				//timeSocket.BeginReceive(TimeSocketCallback, new object[] { timeSocket, updateSystemTime });
+				
+				NTPData = timeSocket.Receive(ref EPhost); // Fixed: Do it async now
 				if (!IsResponseValid())
 				{
 					throw new Exception("Invalid response from " + TimeServer);
 				}
 				ReceptionTimestamp = DateTime.Now;
-				 * */
+				 
 
 			}
 			catch (SocketException e)
@@ -504,10 +506,10 @@ namespace TimeSync
 			}
 
 			// Update system time Fixed: Do in callback
-			/*if (updateSystemTime)
+			if (updateSystemTime)
 			{
 				SetTime();
-			}*/
+			}
 		}
 
 		private void TimeSocketCallback(IAsyncResult ar)

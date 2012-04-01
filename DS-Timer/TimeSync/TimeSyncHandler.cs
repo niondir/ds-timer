@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using TimeSync;
 using DS_Timer.Properties;
+using System.Threading;
 
 namespace DS_Timer.TimeSync
 {
@@ -36,13 +37,24 @@ namespace DS_Timer.TimeSync
 			}
 		}
 		
+		public static event EventHandler SyncDone;
 
-		public static void SyncTime() {
+		public static void SyncTime()
+		{
+			ThreadPool.QueueUserWorkItem(SyncTimeThread);
+		}
+
+		private static void SyncTimeThread(object state)
+		{
 			NTPClient ntpClient = new NTPClient(Settings.Default.TimeServer);
 
 			ntpClient.Connect(true); // When set to false systemtime will remains as it was. DS-Timer still works correct!
 			m_Offset = DateTime.Now - ntpClient.TransmitTimestamp;
 
+			if (SyncDone != null)
+			{
+				SyncDone.Invoke(null, EventArgs.Empty);
+			}
 			// TickCount Method
 			//m_LastSync = ntpClient.TransmitTimestamp;
 			//m_BaseTickCount = SystemTickCount;

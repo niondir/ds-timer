@@ -55,8 +55,8 @@
 			// 
 			// txtTime
 			// 
-			resources.ApplyResources(this.txtTime, "txtTime");
 			this.txtTime.BackColor = System.Drawing.SystemColors.ControlLightLight;
+			resources.ApplyResources(this.txtTime, "txtTime");
 			this.txtTime.Name = "txtTime";
 			this.txtTime.ReadOnly = true;
 			// 
@@ -113,7 +113,6 @@
 			// 
 			// groupBox2
 			// 
-			resources.ApplyResources(this.groupBox2, "groupBox2");
 			this.groupBox2.Controls.Add(this.donateButton1);
 			this.groupBox2.Controls.Add(this.btnDetectReactionTime);
 			this.groupBox2.Controls.Add(this.label3);
@@ -123,6 +122,7 @@
 			this.groupBox2.Controls.Add(this.btnPingDS);
 			this.groupBox2.Controls.Add(this.btnCheckSystemTime);
 			this.groupBox2.Controls.Add(this.txtSystemTimeDelay);
+			resources.ApplyResources(this.groupBox2, "groupBox2");
 			this.groupBox2.Name = "groupBox2";
 			this.groupBox2.TabStop = false;
 			// 
@@ -146,7 +146,6 @@
 			// 
 			// toolStrip
 			// 
-			resources.ApplyResources(this.toolStrip, "toolStrip");
 			this.toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsbMiniClock,
             this.tsbAlarm,
@@ -154,51 +153,52 @@
             this.tsbHelp,
             this.tsbUnitCalc,
             this.tsbSettings});
+			resources.ApplyResources(this.toolStrip, "toolStrip");
 			this.toolStrip.Name = "toolStrip";
 			// 
 			// tsbMiniClock
 			// 
-			resources.ApplyResources(this.tsbMiniClock, "tsbMiniClock");
 			this.tsbMiniClock.Image = global::DS_Timer.Properties.Resources.clock;
+			resources.ApplyResources(this.tsbMiniClock, "tsbMiniClock");
 			this.tsbMiniClock.Name = "tsbMiniClock";
 			this.tsbMiniClock.Click += new System.EventHandler(this.tsbMiniClock_Click);
 			// 
 			// tsbAlarm
 			// 
-			resources.ApplyResources(this.tsbAlarm, "tsbAlarm");
 			this.tsbAlarm.Image = global::DS_Timer.Properties.Resources.clock_red;
+			resources.ApplyResources(this.tsbAlarm, "tsbAlarm");
 			this.tsbAlarm.Name = "tsbAlarm";
 			this.tsbAlarm.Click += new System.EventHandler(this.tsbAlarm_Click);
 			// 
 			// tsbAttackPlaner
 			// 
-			resources.ApplyResources(this.tsbAttackPlaner, "tsbAttackPlaner");
 			this.tsbAttackPlaner.Image = global::DS_Timer.Properties.Resources.bomb;
+			resources.ApplyResources(this.tsbAttackPlaner, "tsbAttackPlaner");
 			this.tsbAttackPlaner.Name = "tsbAttackPlaner";
 			this.tsbAttackPlaner.Click += new System.EventHandler(this.tsbAttackPlaner_Click);
 			// 
 			// tsbHelp
 			// 
-			resources.ApplyResources(this.tsbHelp, "tsbHelp");
 			this.tsbHelp.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
 			this.tsbHelp.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
 			this.tsbHelp.Image = global::DS_Timer.Properties.Resources.help;
+			resources.ApplyResources(this.tsbHelp, "tsbHelp");
 			this.tsbHelp.Name = "tsbHelp";
 			this.tsbHelp.Click += new System.EventHandler(this.tsbHelp_Click);
 			// 
 			// tsbUnitCalc
 			// 
-			resources.ApplyResources(this.tsbUnitCalc, "tsbUnitCalc");
 			this.tsbUnitCalc.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
 			this.tsbUnitCalc.Image = global::DS_Timer.Properties.Resources.unit_light;
+			resources.ApplyResources(this.tsbUnitCalc, "tsbUnitCalc");
 			this.tsbUnitCalc.Name = "tsbUnitCalc";
 			this.tsbUnitCalc.Click += new System.EventHandler(this.tsbUnitCalc_Click);
 			// 
 			// tsbSettings
 			// 
-			resources.ApplyResources(this.tsbSettings, "tsbSettings");
 			this.tsbSettings.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
 			this.tsbSettings.Image = global::DS_Timer.Properties.Resources.cog;
+			resources.ApplyResources(this.tsbSettings, "tsbSettings");
 			this.tsbSettings.Name = "tsbSettings";
 			this.tsbSettings.Click += new System.EventHandler(this.tsbSettings_Click);
 			// 
