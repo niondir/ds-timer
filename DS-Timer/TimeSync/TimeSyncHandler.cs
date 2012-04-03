@@ -30,8 +30,7 @@ namespace DS_Timer.TimeSync
 		{
 			get 
 			{
-				return DateTime.Now - m_Offset;
-
+				return DateTime.Now - m_Offset + TimeSpan.FromHours((double)Settings.Default.TimeZoneOffset);
 				// TickCount Method
 				//return m_LastSync + TimeSpan.FromMilliseconds(SystemTickCount - m_BaseTickCount);
 			}

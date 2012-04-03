@@ -120,9 +120,6 @@
   <data name="btnResetSettings.Text" xml:space="preserve">
     <value>Discard</value>
   </data>
-  <data name="btnResetSettings.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 13</value>
@@ -130,26 +127,14 @@
   <data name="label5.Text" xml:space="preserve">
     <value>Timeserver:</value>
   </data>
-  <data name="label5.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>56, 13</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>DS World:</value>
   </data>
-  <data name="label4.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="btnSave.Text" xml:space="preserve">
     <value>Save</value>
-  </data>
-  <data name="btnSave.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label1.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="btnOpenAlarmFile.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -186,9 +171,6 @@
   <data name="btnAccept.Text" xml:space="preserve">
     <value>Apply</value>
   </data>
-  <data name="btnAccept.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="btnCheckUpdate.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -214,26 +196,17 @@
   <data name="btnCheckUpdate.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="btnCheckUpdate.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="btnConfigDir.Text" xml:space="preserve">
     <value>App Data</value>
   </data>
-  <data name="btnConfigDir.ToolTip" xml:space="preserve">
-    <value />
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>World</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
     <value>49, 13</value>
   </data>
   <data name="label13.Text" xml:space="preserve">
     <value>&lt; 1 Days</value>
-  </data>
-  <data name="label13.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="lblUnitSpeed.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
     <value>152, 216</value>
@@ -244,20 +217,11 @@
   <data name="label12.Text" xml:space="preserve">
     <value>&lt; 1 Hr</value>
   </data>
-  <data name="label12.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="lblWorldSpeed.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>49, 13</value>
   </data>
   <data name="label11.Text" xml:space="preserve">
     <value>&lt; 7 Days</value>
-  </data>
-  <data name="label11.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="lblLastWorldUpdate.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 13</value>
@@ -265,17 +229,11 @@
   <data name="lblLastWorldUpdate.Text" xml:space="preserve">
     <value>never</value>
   </data>
-  <data name="lblLastWorldUpdate.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
     <value>49, 13</value>
   </data>
   <data name="label10.Text" xml:space="preserve">
     <value>&gt; 7 Days</value>
-  </data>
-  <data name="label10.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 13</value>
@@ -283,17 +241,8 @@
   <data name="label7.Text" xml:space="preserve">
     <value>Last Update:</value>
   </data>
-  <data name="label7.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="btnLoadWorldData.Text" xml:space="preserve">
     <value>Load World Data</value>
-  </data>
-  <data name="txtServer.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label6.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 13</value>
@@ -301,29 +250,17 @@
   <data name="label3.Text" xml:space="preserve">
     <value>Unit Speed:</value>
   </data>
-  <data name="label3.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 13</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>World Speed:</value>
   </data>
-  <data name="label2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>World</value>
-  </data>
-  <data name="groupBox1.ToolTip" xml:space="preserve">
-    <value />
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Misc Settings</value>
   </data>
   <data name="label15.Text" xml:space="preserve">
     <value>Time Shift:</value>
-  </data>
-  <data name="label15.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
     <value>19, 13</value>
@@ -331,17 +268,11 @@
   <data name="label16.Text" xml:space="preserve">
     <value>hr.</value>
   </data>
-  <data name="label16.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="numTimeShift.ToolTip" xml:space="preserve">
-    <value />
+    <value>All clock inside of DS-Timer are adjusted by the given amount of hours</value>
   </data>
   <data name="BtnSetLanguage.Text" xml:space="preserve">
     <value>Change Language (Restart)</value>
-  </data>
-  <data name="BtnSetLanguage.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 13</value>
@@ -349,20 +280,11 @@
   <data name="label14.Text" xml:space="preserve">
     <value>Language:</value>
   </data>
-  <data name="label14.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="cbLanguage.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="cbAutoBlink.Size" type="System.Drawing.Size, System.Drawing">
     <value>196, 17</value>
   </data>
   <data name="cbAutoBlink.Text" xml:space="preserve">
     <value>Start Blink one Minute before attack</value>
-  </data>
-  <data name="cbAutoBlink.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
@@ -374,14 +296,8 @@
   <data name="label8.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopRight</value>
   </data>
-  <data name="label8.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label9.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="numClockAdjustment.ToolTip" xml:space="preserve">
-    <value />
+    <value>This offset only appears in the mini timer. You might see the offset between the mini timer and the clock on the main program panel.</value>
   </data>
   <data name="cbAutoSync.Size" type="System.Drawing.Size, System.Drawing">
     <value>136, 17</value>
@@ -392,12 +308,6 @@
   <data name="cbAutoSync.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="comboBox1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtAlarmSound.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="cbDownloadBetaUpdates.Size" type="System.Drawing.Size, System.Drawing">
     <value>142, 17</value>
   </data>
@@ -405,18 +315,6 @@
     <value>Download Beta Versions</value>
   </data>
   <data name="cbDownloadBetaUpdates.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>Misc Settings</value>
-  </data>
-  <data name="groupBox2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="pbDownloadPercentage.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="lblDownloadstatus.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -3705,8 +3603,5 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Settings</value>
-  </data>
-  <data name="$this.ToolTip" xml:space="preserve">
-    <value />
   </data>
 </root>
