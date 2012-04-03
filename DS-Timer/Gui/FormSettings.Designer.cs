@@ -58,6 +58,9 @@
 			this.cbDSWorld = new System.Windows.Forms.ComboBox();
 			this.worldInfoBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
+			this.label15 = new System.Windows.Forms.Label();
+			this.label16 = new System.Windows.Forms.Label();
+			this.numTimeShift = new System.Windows.Forms.NumericUpDown();
 			this.BtnSetLanguage = new System.Windows.Forms.Button();
 			this.label14 = new System.Windows.Forms.Label();
 			this.cbLanguage = new System.Windows.Forms.ComboBox();
@@ -77,6 +80,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.worldConfigFileBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.worldInfoBindingSource)).BeginInit();
 			this.groupBox2.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.numTimeShift)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.numClockAdjustment)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.worldDownloaderBindingSource)).BeginInit();
 			this.SuspendLayout();
@@ -295,6 +299,9 @@
 			// groupBox2
 			// 
 			resources.ApplyResources(this.groupBox2, "groupBox2");
+			this.groupBox2.Controls.Add(this.label15);
+			this.groupBox2.Controls.Add(this.label16);
+			this.groupBox2.Controls.Add(this.numTimeShift);
 			this.groupBox2.Controls.Add(this.BtnSetLanguage);
 			this.groupBox2.Controls.Add(this.label14);
 			this.groupBox2.Controls.Add(this.cbLanguage);
@@ -315,6 +322,36 @@
 			this.groupBox2.Name = "groupBox2";
 			this.groupBox2.TabStop = false;
 			this.toolTip.SetToolTip(this.groupBox2, resources.GetString("groupBox2.ToolTip"));
+			// 
+			// label15
+			// 
+			resources.ApplyResources(this.label15, "label15");
+			this.label15.Name = "label15";
+			this.toolTip.SetToolTip(this.label15, resources.GetString("label15.ToolTip"));
+			// 
+			// label16
+			// 
+			resources.ApplyResources(this.label16, "label16");
+			this.label16.Name = "label16";
+			this.toolTip.SetToolTip(this.label16, resources.GetString("label16.ToolTip"));
+			// 
+			// numTimeShift
+			// 
+			resources.ApplyResources(this.numTimeShift, "numTimeShift");
+			this.numTimeShift.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::DS_Timer.Properties.Settings.Default, "TimeZoneOffset", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+			this.numTimeShift.Maximum = new decimal(new int[] {
+            24,
+            0,
+            0,
+            0});
+			this.numTimeShift.Minimum = new decimal(new int[] {
+            24,
+            0,
+            0,
+            -2147483648});
+			this.numTimeShift.Name = "numTimeShift";
+			this.toolTip.SetToolTip(this.numTimeShift, resources.GetString("numTimeShift.ToolTip"));
+			this.numTimeShift.Value = global::DS_Timer.Properties.Settings.Default.TimeZoneOffset;
 			// 
 			// BtnSetLanguage
 			// 
@@ -459,6 +496,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.worldInfoBindingSource)).EndInit();
 			this.groupBox2.ResumeLayout(false);
 			this.groupBox2.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.numTimeShift)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.numClockAdjustment)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.worldDownloaderBindingSource)).EndInit();
 			this.ResumeLayout(false);
@@ -510,5 +548,8 @@
 		private System.Windows.Forms.Label label14;
 		private System.Windows.Forms.ComboBox cbLanguage;
 		private System.Windows.Forms.Button BtnSetLanguage;
+		private System.Windows.Forms.Label label15;
+		private System.Windows.Forms.Label label16;
+		private System.Windows.Forms.NumericUpDown numTimeShift;
 	}
 }

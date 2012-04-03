@@ -59,5 +59,8 @@
     <Setting Name="Language" Type="System.String" Scope="User">
       <Value Profile="(Default)">Deutsch</Value>
     </Setting>
+    <Setting Name="TimeZoneOffset" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
