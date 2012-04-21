@@ -237,6 +237,9 @@
       <DependentUpon>FormReactionTest.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FormSettings.af.resx">
+      <DependentUpon>FormSettings.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Gui\FormSettings.de.resx">
       <DependentUpon>FormSettings.cs</DependentUpon>
     </EmbeddedResource>
