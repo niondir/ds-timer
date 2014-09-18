@@ -18,6 +18,7 @@ namespace DS_Timer.World
 
 		public string Url { get; set; }
 
+
 		public ServersFile(string file, string url)
 			: base(file)
 		{

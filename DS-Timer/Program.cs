@@ -93,9 +93,11 @@ namespace DS_Timer
 		public static bool CheckForAlpha = false;
 
 		public static LanguageType Language;
+		public static DSTimerConfig Config;
 
 		private static string UpdaterPublicKey = @"<RSAKeyValue><Modulus>ojyXDJQrTKYMyeKbm64VXJTkaHdgfpMXQYfbMy0euSsM1W8wk01R64WLmLSGvY2SE0yKhupK9qZS47He9GjW6s59jSFN0xQvBKI2WNGUB6AnjW2pkriEKRazcm+/S4fLVCfvSrhl4OZ0u/lGfFEIrc2Q7oJkeudI2sqHeD5ct9E=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>";
 		private static string ProjectId = "d510b8c0-4086-4e09-a275-1d6b5f7c891a";
+
 
 		static public string GetUserDataPath()
 		{
@@ -116,8 +118,8 @@ namespace DS_Timer
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
 
-			DSTimerConfig config = DSTimerConfig.LoadConfig(DSTimerConfig.DefaultPath);
-			config.SaveConfig(DSTimerConfig.DefaultPath);
+			Config = DSTimerConfig.LoadConfig(DSTimerConfig.DefaultPath);
+			Config.SaveConfig(DSTimerConfig.DefaultPath);
 
 			switch (Settings.Default.Language.ToLower())
 			{

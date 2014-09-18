@@ -20,21 +20,34 @@ namespace DS_Timer.Gui
 {
 	public partial class FormSettings : Form
 	{
-        private WorldHandler m_WorldHandler;
+		private WorldHandler m_WorldHandler;
+		private bool m_Initializing;
 
 		public FormSettings(WorldHandler worldHandler)
 		{
-            m_WorldHandler = worldHandler;
+			m_Initializing = true;
+			m_WorldHandler = worldHandler;
 			InitializeComponent();
 			Settings.Default.PropertyChanged += new PropertyChangedEventHandler(Default_PropertyChanged);
 			Settings.Default.SettingsSaving += new System.Configuration.SettingsSavingEventHandler(Default_SettingsSaving);
-            worldInfoBindingSource.DataSource = worldHandler.Wolrds;
-            worldConfigFileBindingSource.DataSource = WorldHandler.ConfigFile;
-            UpdateLastWorldUpdateLabel();
+			worldInfoBindingSource.DataSource = worldHandler.Wolrds;
+			worldConfigFileBindingSource.DataSource = WorldHandler.ConfigFile;
+			serversBindingSource.DataSource = worldHandler.Servers;
+			UpdateLastWorldUpdateLabel();
 
-            // Maybe a bad idea when server not avalible. Async testing?
-            TestServer();
-        }
+			// Maybe a bad idea when server not avalible. Async testing?
+			TestServer();
+			m_Initializing = false;
+		}
+
+		private void FormSettings_Load(object sender, EventArgs e)
+		{
+
+		}
+		private void FormSettings_Shown(object sender, EventArgs e)
+		{
+			DownloadServerInfo();
+		}
 
 		void Default_SettingsSaving(object sender, CancelEventArgs e)
 		{
@@ -51,7 +64,6 @@ namespace DS_Timer.Gui
 		private void btnAccept_Click(object sender, EventArgs e)
 		{
 			Settings.Default.Save();
-			
 		}
 
 		private void btnSave_Click(object sender, EventArgs e)
@@ -117,42 +129,42 @@ namespace DS_Timer.Gui
 
 		private void btnConfigDir_Click(object sender, EventArgs e)
 		{
-            // Path.GetDirectoryName(AppDomain.CurrentDomain.SetupInformation.ConfigurationFile)
+			// Path.GetDirectoryName(AppDomain.CurrentDomain.SetupInformation.ConfigurationFile)
 			Process.Start(Program.GetUserDataPath());
 		}
 
-        private void worldInfoBindingSource_CurrentItemChanged(object sender, EventArgs e)
-        {
-            if (worldInfoBindingSource.Current == null) return;
-            //WorldInfo info = (WorldInfo)worldInfoBindingSource.Current;
-            //numWorldSpeed.Value = info.WorldSpeed;
-            //numUnitSpeed.Value = info.UnitSpeed;
-        }
+		private void worldInfoBindingSource_CurrentItemChanged(object sender, EventArgs e)
+		{
+			if (worldInfoBindingSource.Current == null) return;
+			//WorldInfo info = (WorldInfo)worldInfoBindingSource.Current;
+			//numWorldSpeed.Value = info.WorldSpeed;
+			//numUnitSpeed.Value = info.UnitSpeed;
+		}
 
-        private void btnLoadWorldData_Click(object sender, EventArgs e)
-        {
-            m_WorldHandler.SetServer(txtServer.Text);
-            WorldDownloader downloader = m_WorldHandler.DownloadWorldData();
-            worldDownloaderBindingSource.DataSource = downloader;
-            downloader.DownloadsComplete += new EventHandler(downloader_DownloadsComplete);
-        }
+		private void btnLoadWorldData_Click(object sender, EventArgs e)
+		{
+			m_WorldHandler.SetServer(txtServer.Text);
+			WorldDownloader downloader = m_WorldHandler.DownloadWorldData();
+			worldDownloaderBindingSource.DataSource = downloader;
+			downloader.DownloadsComplete += new EventHandler(downloader_DownloadsComplete);
+		}
 
-        void downloader_DownloadsComplete(object sender, EventArgs e)
-        {
-            UpdateLastWorldUpdateLabel();
-        }
+		void downloader_DownloadsComplete(object sender, EventArgs e)
+		{
+			UpdateLastWorldUpdateLabel();
+		}
 
-        private void UpdateLastWorldUpdateLabel()
-        {
+		private void UpdateLastWorldUpdateLabel()
+		{
 			DateTime lastUpdate = m_WorldHandler.LastWorldDownload;
-            if (lastUpdate == DateTime.MinValue)
-            {
-                lblLastWorldUpdate.Text = "Noch nie";
-            }
-            else
-            {
-                lblLastWorldUpdate.Text = m_WorldHandler.LastWorldDownload.ToString("dd.MM.yyyy HH:mm:ss");
-            }
+			if (lastUpdate == DateTime.MinValue)
+			{
+				lblLastWorldUpdate.Text = "Noch nie";
+			}
+			else
+			{
+				lblLastWorldUpdate.Text = m_WorldHandler.LastWorldDownload.ToString("dd.MM.yyyy HH:mm:ss");
+			}
 
 			if (lastUpdate.AddDays(7) < TimeSyncHandler.Now)
 			{
@@ -170,33 +182,33 @@ namespace DS_Timer.Gui
 			{
 				lblLastWorldUpdate.BackColor = Color.LimeGreen;
 			}
-        }
+		}
 
-        private void txtServer_Validated(object sender, EventArgs e)
-        {
-            m_WorldHandler.SetServer(txtServer.Text);
-            TestServer();
-        }
+		private void txtServer_Validated(object sender, EventArgs e)
+		{
+			m_WorldHandler.SetServer(txtServer.Text);
+			TestServer();
+		}
 
-        private void TestServer()
-        {
-            txtServer.BackColor = Color.DarkOrange;
-            if (PingServer(txtServer.Text))
-            {
-                txtServer.BackColor = Color.LightGreen;
-            }
-            else
-            {
-                txtServer.BackColor = Color.Red;
-            }
-        }
+		private void TestServer()
+		{
+			txtServer.BackColor = Color.DarkOrange;
+			if (PingServer(txtServer.Text))
+			{
+				txtServer.BackColor = Color.LightGreen;
+			}
+			else
+			{
+				txtServer.BackColor = Color.Red;
+			}
+		}
 
-        
+
 
 		private bool PingServer(string url)
 		{
-            url = url.Replace("http://", "");
-            url = url.Replace("https://", "");
+			url = url.Replace("http://", "");
+			url = url.Replace("https://", "");
 			Ping ping = new Ping();
 			try
 			{
@@ -209,17 +221,17 @@ namespace DS_Timer.Gui
 			}
 		}
 
-        private void cbDSWorld_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //m_WorldHandler.SetServer((string)cbDSWorld.SelectedValue);
-            //TestServer();
-        }
+		private void cbDSWorld_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			//m_WorldHandler.SetServer((string)cbDSWorld.SelectedValue);
+			//TestServer();
+		}
 
-        private void cbDSWorld_SelectionChangeCommitted(object sender, EventArgs e)
-        {
-            m_WorldHandler.SetServer((string)cbDSWorld.SelectedValue);
-            TestServer();
-        }
+		private void cbDSWorld_SelectionChangeCommitted(object sender, EventArgs e)
+		{
+			m_WorldHandler.SetServer((string)cbDSWorld.SelectedValue);
+			TestServer();
+		}
 
 		private void pbDownloadPercentage_Click(object sender, EventArgs e)
 		{
@@ -242,10 +254,51 @@ namespace DS_Timer.Gui
 				Application.Restart();
 				//Environment.Exit(0);
 			}
-			
+
 
 		}
 
-		
+		private void btnAddWebsite_Click(object sender, EventArgs e)
+		{
+			DialogAddServer dialog = new DialogAddServer(serversBindingSource);
+
+			dialog.FormClosed += (o, args) =>
+			{
+				Program.Config.SaveConfig();
+			};
+
+			dialog.ShowDialog(this);
+		}
+
+		private void worldDownloaderBindingSource_CurrentChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void btnDeleteWebsite_Click(object sender, EventArgs e)
+		{
+			serversBindingSource.RemoveCurrent();
+			Program.Config.SaveConfig();
+		}
+
+		private void serversBindingSource_CurrentChanged(object sender, EventArgs e)
+		{
+			if (m_Initializing)
+			{
+				return;
+			}
+			DownloadServerInfo();
+		}
+
+		private void DownloadServerInfo()
+		{
+			m_WorldHandler.Wolrds.Clear();
+			Server current = (Server)serversBindingSource.Current;
+			if (current != null)
+			{
+				var downloader = m_WorldHandler.DownloadServerInfo(current);
+				worldDownloaderBindingSource.DataSource = downloader;
+			}
+		}
 	}
 }

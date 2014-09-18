@@ -5,6 +5,7 @@ using System.Text;
 using System.Xml;
 using System.Xml.Serialization;
 using System.IO;
+using DS_Timer.World;
 
 namespace DS_Timer
 {
@@ -15,6 +16,9 @@ namespace DS_Timer
 		{
 			get { return Path.Combine(Program.GetUserDataPath(), "DSTimerConfig.xml"); }
 		}
+
+		private string m_currentPath;
+		public List<Server> Servers { get; set; }
 
 		private double m_SpearSpeed = 18;
 		private double m_SwordSpeed = 22;
@@ -107,15 +111,23 @@ namespace DS_Timer
 		{
 			if (!File.Exists(file))
 			{
-				return new DSTimerConfig();
+				var config = new DSTimerConfig();
+				config.m_currentPath = file;
+				return config;
 			}
 			XmlSerializer serializer = new XmlSerializer(typeof(DSTimerConfig));
 			using (Stream stream = new FileStream(file, FileMode.Open))
 			{
-				return (DSTimerConfig)serializer.Deserialize(stream);
+				var config = (DSTimerConfig) serializer.Deserialize(stream);
+				config.m_currentPath = file;
+				return config;
 			}
 		}
 
+		public void SaveConfig()
+		{
+			SaveConfig(m_currentPath);
+		}
 
 		public void SaveConfig(string file)
 		{
@@ -126,6 +138,6 @@ namespace DS_Timer
 			}
 		}
 
-		
+
 	}
 }
