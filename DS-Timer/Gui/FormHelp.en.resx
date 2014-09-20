@@ -118,6 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Bugtracker</value>
+  </data>
+  <data name="linkNiondirProfile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 13</value>
+  </data>
+  <data name="linkNiondirProfile.Text" xml:space="preserve">
+    <value>Go to Bugtracker</value>
+  </data>
   <data name="donateButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         R0lGODlhYgAaAIYAAI6VjK+IQjBUc86/llBqe3BpTf/0456jl/7LdP+3RX+Lif7Ha+7WpP7ShnCBh2B2

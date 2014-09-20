@@ -99,6 +99,14 @@ namespace DS_Timer.World
 				Servers.Add(new Server("de", "http://www.die-staemme.de"));
 				Servers.Add(new Server("ch", "http://www.staemme.ch"));
 				Servers.Add(new Server("en", "http://www.tribalwars.net"));
+				Servers.Add(new Server("nl", "http://www.tribalwars.nl/"));
+				Servers.Add(new Server("pl", "http://www.plemiona.pl/"));
+				Servers.Add(new Server("se", "http://www.tribalwars.se/"));
+				Servers.Add(new Server("br", "http://www.tribalwars.com.br/"));
+				Servers.Add(new Server("pt", "http://www.tribalwars.com.pt/"));
+				Servers.Add(new Server("cz", "http://www.divokekmeny.cz/"));
+				Servers.Add(new Server("jap", "http://www.bujokjeonjaeng.org/"));
+				Servers.Add(new Server("ro", "http://www.triburile.ro/"));
 				Program.Config.SaveConfig();
 			}
 
@@ -223,10 +231,5 @@ $player_id, Geburtstag, Geschlecht, Wohnort, Profiltext (als XHTML), Profilbild-
 			}
 
 		}
-
-
-
-
-
 	}
 }

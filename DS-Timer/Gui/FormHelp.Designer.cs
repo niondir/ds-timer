@@ -32,7 +32,7 @@
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
-			this.linkNiondirProfile = new System.Windows.Forms.LinkLabel();
+			this.linkBugtracker = new System.Windows.Forms.LinkLabel();
 			this.linkWebsite = new System.Windows.Forms.LinkLabel();
 			this.lblProgrammerName = new System.Windows.Forms.Label();
 			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -58,12 +58,12 @@
 			resources.ApplyResources(this.label3, "label3");
 			this.label3.Name = "label3";
 			// 
-			// linkNiondirProfile
+			// linkBugtracker
 			// 
-			resources.ApplyResources(this.linkNiondirProfile, "linkNiondirProfile");
-			this.linkNiondirProfile.Name = "linkNiondirProfile";
-			this.linkNiondirProfile.TabStop = true;
-			this.linkNiondirProfile.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkNiondirProfile_LinkClicked);
+			resources.ApplyResources(this.linkBugtracker, "linkBugtracker");
+			this.linkBugtracker.Name = "linkBugtracker";
+			this.linkBugtracker.TabStop = true;
+			this.linkBugtracker.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkBugtracker_LinkClicked);
 			// 
 			// linkWebsite
 			// 
@@ -83,15 +83,16 @@
 			this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
 			this.tableLayoutPanel1.Controls.Add(this.linkWebsite, 1, 2);
 			this.tableLayoutPanel1.Controls.Add(this.lblProgrammerName, 1, 0);
-			this.tableLayoutPanel1.Controls.Add(this.linkNiondirProfile, 1, 1);
+			this.tableLayoutPanel1.Controls.Add(this.linkBugtracker, 1, 1);
 			this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
 			this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
 			this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+			this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
 			// 
 			// gbAbout
 			// 
-			resources.ApplyResources(this.gbAbout, "gbAbout");
 			this.gbAbout.Controls.Add(this.tableLayoutPanel1);
+			resources.ApplyResources(this.gbAbout, "gbAbout");
 			this.gbAbout.Name = "gbAbout";
 			this.gbAbout.TabStop = false;
 			// 
@@ -103,8 +104,8 @@
 			// 
 			// textBox1
 			// 
-			resources.ApplyResources(this.textBox1, "textBox1");
 			this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			resources.ApplyResources(this.textBox1, "textBox1");
 			this.textBox1.Name = "textBox1";
 			this.textBox1.ReadOnly = true;
 			// 
@@ -131,7 +132,7 @@
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.LinkLabel linkNiondirProfile;
+		private System.Windows.Forms.LinkLabel linkBugtracker;
 		private System.Windows.Forms.LinkLabel linkWebsite;
 		private System.Windows.Forms.Label lblProgrammerName;
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;

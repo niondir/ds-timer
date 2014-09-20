@@ -7,7 +7,7 @@ namespace DS_Timer.Localization
 {
 	public class Translator
 	{
-		private static Dictionary<String, String> m_TranslationsEn = new Dictionary<string,string>();
+		private static Dictionary<String, String> m_TranslationsEn = new Dictionary<string, string>();
 
 		public static String Translate(string msg)
 		{
@@ -23,7 +23,7 @@ namespace DS_Timer.Localization
 					return m_TranslationsEn[msg];
 				}
 			}
-			
+
 			return msg;
 		}
 
@@ -35,9 +35,8 @@ namespace DS_Timer.Localization
 			m_TranslationsEn.Add("Neue Liste", "New List");
 			m_TranslationsEn.Add("Fehler beim Importieren. Ein oderm ehrere Zeilen wurden nicht importiert.", "Error while importing.");
 
-
-				m_TranslationsEn.Add("Bitte in den Einstellugnen die richtige Welt wählen und die Weltdaten laden.\nEinstellungen öffnen?", "Please set your world in the setting.\nOpen settings now?");
-				m_TranslationsEn.Add("DS-Timer Erster Start", "DS-Timer first Start");
+			m_TranslationsEn.Add("Bitte in den Einstellugnen die richtige Welt wählen und die Weltdaten laden.\nEinstellungen öffnen?", "Please set your world in the setting.\nOpen settings now?");
+			m_TranslationsEn.Add("DS-Timer Erster Start", "DS-Timer first Start");
 
 		}
 	}

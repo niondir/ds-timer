@@ -57,13 +57,19 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="Language" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Deutsch</Value>
+      <Value Profile="(Default)">English</Value>
     </Setting>
     <Setting Name="TimeZoneOffset" Type="System.Decimal" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="Setting" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="SelectedServerName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">de</Value>
+    </Setting>
+    <Setting Name="SelectedWorldName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
     </Setting>
   </Settings>
 </SettingsFile>

@@ -17,14 +17,19 @@ namespace DS_Timer.Gui
 			InitializeComponent();
 		}
 
-		private void linkNiondirProfile_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+		private void linkBugtracker_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
 		{
-			Process.Start("http://de68.die-staemme.de/page.php?page=inbound&screen=info_player&id=8972307");
+			Process.Start("https://bitbucket.org/Niondir/ds-timer/issues?status=new&status=open");
 		}
 
 		private void linkWebsite_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
 		{
 			Process.Start("http://www.niondir.de");
+		}
+
+		private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+		{
+
 		}
 	}
 }

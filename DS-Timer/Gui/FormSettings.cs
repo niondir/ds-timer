@@ -32,7 +32,15 @@ namespace DS_Timer.Gui
 			Settings.Default.SettingsSaving += new System.Configuration.SettingsSavingEventHandler(Default_SettingsSaving);
 			worldInfoBindingSource.DataSource = worldHandler.Wolrds;
 			worldConfigFileBindingSource.DataSource = WorldHandler.ConfigFile;
+			// TODO: try to load/select saved Server and World
+
 			serversBindingSource.DataSource = worldHandler.Servers;
+
+			Server selectedServer = worldHandler.Servers.FirstOrDefault(s => s.Name == Settings.Default.SelectedServerName);
+			if (selectedServer != null)
+			{
+				serversBindingSource.Position = worldHandler.Servers.IndexOf(selectedServer);
+			}
 			UpdateLastWorldUpdateLabel();
 
 			// Maybe a bad idea when server not avalible. Async testing?
@@ -63,12 +71,24 @@ namespace DS_Timer.Gui
 
 		private void btnAccept_Click(object sender, EventArgs e)
 		{
+			Save();
+		}
+
+		private void Save()
+		{
+			Server currentServer = (Server)serversBindingSource.Current;
+			Settings.Default.SelectedServerName = currentServer == null ? "" : currentServer.Name;
+
+			WorldInfo currentWorld = (WorldInfo)worldInfoBindingSource.Current;
+			Settings.Default.SelectedWorldName = currentWorld == null ? "" : currentWorld.Name;
+
+
 			Settings.Default.Save();
 		}
 
 		private void btnSave_Click(object sender, EventArgs e)
 		{
-			Settings.Default.Save();
+			Save();
 			this.Close();
 		}
 
@@ -229,8 +249,8 @@ namespace DS_Timer.Gui
 
 		private void cbDSWorld_SelectionChangeCommitted(object sender, EventArgs e)
 		{
-			m_WorldHandler.SetServer((string)cbDSWorld.SelectedValue);
-			TestServer();
+			//m_WorldHandler.SetServer((string)cbDSWorld.SelectedValue);
+			//TestServer();
 		}
 
 		private void pbDownloadPercentage_Click(object sender, EventArgs e)
@@ -240,8 +260,8 @@ namespace DS_Timer.Gui
 
 		private void cbDSWorld_Validated(object sender, EventArgs e)
 		{
-			m_WorldHandler.SetServer((string)cbDSWorld.SelectedValue);
-			TestServer();
+			//m_WorldHandler.SetServer((string)cbDSWorld.SelectedValue);
+			//TestServer();
 		}
 
 		private void BtnSetLanguage_Click(object sender, EventArgs e)
@@ -277,8 +297,11 @@ namespace DS_Timer.Gui
 
 		private void btnDeleteWebsite_Click(object sender, EventArgs e)
 		{
-			serversBindingSource.RemoveCurrent();
-			Program.Config.SaveConfig();
+			if (serversBindingSource.Current != null)
+			{
+				serversBindingSource.RemoveCurrent();
+				Program.Config.SaveConfig();
+			}
 		}
 
 		private void serversBindingSource_CurrentChanged(object sender, EventArgs e)
@@ -298,7 +321,37 @@ namespace DS_Timer.Gui
 			{
 				var downloader = m_WorldHandler.DownloadServerInfo(current);
 				worldDownloaderBindingSource.DataSource = downloader;
+				downloader.DownloadsComplete += (sender, args) =>
+					{
+						WorldInfo selectedWorld = m_WorldHandler.Wolrds.FirstOrDefault(s => s.Name == Settings.Default.SelectedWorldName);
+						if (selectedWorld != null)
+						{
+							worldInfoBindingSource.Position = m_WorldHandler.Wolrds.IndexOf(selectedWorld);
+						}
+					};
 			}
 		}
+
+		private void cbServer_SelectionChangeCommitted(object sender, EventArgs e)
+		{
+
+		}
+
+		private void worldInfoBindingSource_CurrentChanged(object sender, EventArgs e)
+		{
+			if (m_Initializing)
+			{
+				return;
+			}
+			WorldInfo current = (WorldInfo)worldInfoBindingSource.Current;
+			if (current != null && !String.IsNullOrEmpty(current.Server))
+			{
+				m_WorldHandler.SetServer(current.Server);
+				TestServer();
+			}
+
+		}
+
+
 	}
 }

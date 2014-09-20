@@ -102,6 +102,12 @@
     <Compile Include="Gui\DialogAttackImport.Designer.cs">
       <DependentUpon>DialogAttackImport.cs</DependentUpon>
     </Compile>
+    <Compile Include="Gui\DialogFirstStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\DialogFirstStart.Designer.cs">
+      <DependentUpon>DialogFirstStart.cs</DependentUpon>
+    </Compile>
     <Compile Include="Gui\FormUnitCalc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,6 +213,12 @@
     <EmbeddedResource Include="Gui\DialogAttackImport.resx">
       <DependentUpon>DialogAttackImport.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\DialogFirstStart.en.resx">
+      <DependentUpon>DialogFirstStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\DialogFirstStart.resx">
+      <DependentUpon>DialogFirstStart.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gui\FormAlarm.resx">
       <DependentUpon>FormAlarm.cs</DependentUpon>

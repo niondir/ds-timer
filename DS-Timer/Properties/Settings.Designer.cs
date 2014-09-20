@@ -240,7 +240,7 @@ namespace DS_Timer.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Deutsch")]
+        [global::System.Configuration.DefaultSettingValueAttribute("English")]
         public string Language {
             get {
                 return ((string)(this["Language"]));
@@ -271,6 +271,30 @@ namespace DS_Timer.Properties {
             }
             set {
                 this["Setting"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("de")]
+        public string SelectedServerName {
+            get {
+                return ((string)(this["SelectedServerName"]));
+            }
+            set {
+                this["SelectedServerName"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string SelectedWorldName {
+            get {
+                return ((string)(this["SelectedWorldName"]));
+            }
+            set {
+                this["SelectedWorldName"] = value;
             }
         }
     }

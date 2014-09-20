@@ -93,8 +93,10 @@ namespace DS_Timer
 			{
 				Settings.Default.FirstStart = false;
 				Settings.Default.Save();
-				string text = Translator.Translate("Bitte in den Einstellugnen die richtige Welt wählen und die Weltdaten laden.\nEinstellungen öffnen?");
-				if (MessageBox.Show(text, Translator.Translate("DS-Timer Erster Start"), MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+
+				DialogFirstStart dialog = new DialogFirstStart();
+
+				if (dialog.ShowDialog(this) == DialogResult.OK)
 				{
 					m_FormSettings.ShowForm();
 					m_FormSettings.Form.TopMost = true;
