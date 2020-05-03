@@ -414,7 +414,7 @@
     <value>137, 13</value>
   </data>
   <data name="label7.Text" xml:space="preserve">
-    <value>Minutes before Attack Time</value>
+    <value>Minutes until Attack Time</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 13</value>

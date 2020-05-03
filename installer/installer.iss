@@ -2,11 +2,11 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "DS-Timer"
-#define MyAppVersion "1.0.0.0"
-#define MyAppPublisher "Niondir"
-#define MyAppURL "http://www.niondir.de"
+#define MyAppVersion "1.8.0.0"
+#define MyAppPublisher "DaWolf85"
+#define MyAppURL "https://github.com/Niondir/ds-timer"
 #define MyAppExeName "DS-Timer.exe"
-#define MySourceDir "setup_1_7_0_0"
+#define MySourceDir "1_8_0_0"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
@@ -22,7 +22,7 @@ AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
 DefaultDirName={pf}\{#MyAppName}
 DefaultGroupName={#MyAppName}
-OutputDir=D:\Projekte\Die Stämme\DS-Timer\releases
+OutputDir="D:\Google Drive\TribalWars\DS-Timer Releases"
 OutputBaseFilename=ds-timer_setup
 ;Password=nightmare
 ;Encryption=yes
@@ -38,10 +38,10 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked; OnlyBelowVersion: 0,6.1
 
 [Files]
-Source: "D:\Projekte\Die Stämme\DS-Timer\releases\{#MySourceDir}\DS-Timer.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "D:\Projekte\Die Stämme\DS-Timer\releases\{#MySourceDir}\DS-Timer.exe.en.config"; DestDir: {app}; Flags: ignoreversion; Languages: english; DestName: DS-Timer.exe.config; 
-Source: "D:\Projekte\Die Stämme\DS-Timer\releases\{#MySourceDir}\DS-Timer.exe.de.config"; DestDir: {app}; Flags: ignoreversion; Languages: german; DestName: DS-Timer.exe.config; 
-Source: "D:\Projekte\Die Stämme\DS-Timer\releases\{#MySourceDir}\*"; DestDir: {app}; Flags: ignoreversion recursesubdirs createallsubdirs; Excludes: DS-Timer.exe.*.config; 
+Source: "D:\Google Drive\TribalWars\DS-Timer Releases\sources\{#MySourceDir}\DS-Timer.exe"; DestDir: "{app}"; Flags: ignoreversion
+;Source: "D:\Google Drive\TribalWars\DS-Timer Releases\sources\{#MySourceDir}\DS-Timer.exe.en.config"; DestDir: {app}; Flags: ignoreversion; Languages: english; DestName: DS-Timer.exe.config; 
+;Source: "D:\Google Drive\TribalWars\DS-Timer Releases\sources\{#MySourceDir}\DS-Timer.exe.de.config"; DestDir: {app}; Flags: ignoreversion; Languages: german; DestName: DS-Timer.exe.config; 
+Source: "D:\Google Drive\TribalWars\DS-Timer Releases\sources\{#MySourceDir}\*"; DestDir: {app}; Flags: ignoreversion recursesubdirs createallsubdirs; Excludes: DS-Timer.exe.*.config; 
 
 
 

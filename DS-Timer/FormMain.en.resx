@@ -165,13 +165,13 @@
     <value>94, 22</value>
   </data>
   <data name="tsbAttackPlaner.Text" xml:space="preserve">
-    <value>Attackplaner</value>
+    <value>Attack Planner</value>
   </data>
   <data name="tsbHelp.Text" xml:space="preserve">
     <value>Help</value>
   </data>
   <data name="tsbUnitCalc.Text" xml:space="preserve">
-    <value>Unit Caluclator</value>
+    <value>Unit Calculator</value>
   </data>
   <data name="tsbSettings.Text" xml:space="preserve">
     <value>Settings</value>
@@ -3459,5 +3459,8 @@
         AAAAAAAAAAAAAAD+f6xB/D+sQfgfrEHwD6xB4AesQcADrEGAAaxBAACsQQAArEGAAaxBwAOsQcADrEHg
         B6xB4AesQfAPrEH8P6xB
 </value>
+  </data>
+  <data name="btnPingDS.Text" xml:space="preserve">
+    <value>Ping TW Server</value>
   </data>
 </root>

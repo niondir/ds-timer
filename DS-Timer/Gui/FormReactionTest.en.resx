@@ -122,17 +122,17 @@
 
 Instructions
 ======
-Pressures whenever the background color changes from gray to red the "OK" button. It is important not to press for each color change.
+Whenever the background color changes from gray to red, click the "OK" button. It is important not to press for each color change.
 After 10 clicks your mean reaction time is calculated.
 
-You can also press &lt;enter&gt; insted of pressing the "OK" button.</value>
+You can also press &lt;enter&gt; instead of clicking the "OK" button.</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Clicks till Result:</value>
+    <value>Clicks Until Result:</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">

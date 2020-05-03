@@ -63,7 +63,7 @@ namespace DS_Timer.World
 			if (m_DownloadQueue.Count == 0)
 			{
 				m_IsDownloading = false; // Just to be sure
-				InfoString = "Alle Downloads beendet";
+				InfoString = "All downloads finished";
 				if (DownloadsComplete != null)
 				{
 					DownloadsComplete.Invoke(this, EventArgs.Empty);
@@ -74,14 +74,14 @@ namespace DS_Timer.World
 			DownloadItem item = m_DownloadQueue.Dequeue();
 			try
 			{
+				InfoString = "Starting download of " + item.FileName;
 				m_Web.DownloadFileAsync(new Uri(item.Address), item.File, item);
-				InfoString = "Starte Download von " + item.FileName;
 				ProcessPercentage = 0;
 			}
 			catch (Exception)
 			{
 				m_IsDownloading = false;
-				InfoString = "Fehler beim Download von " + item.FileName;
+				InfoString = "Download of " + item.FileName + " failed!";
 			}
 		}
 
