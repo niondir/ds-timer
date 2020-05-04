@@ -63,7 +63,7 @@ namespace DS_Timer.TimeSync
 		{
 			NTPClient ntpClient = new NTPClient(Settings.Default.TimeServer);
 			ntpClient.Connect(false);
-			TimeSpan delay = TimeSyncHandler.Now - ntpClient.TransmitTimestamp;
+			TimeSpan delay = TimeSyncHandler.Now - TimeSpan.FromHours((double)Settings.Default.TimeZoneOffset) - ntpClient.TransmitTimestamp;
 			return delay;
 		}
 	}
