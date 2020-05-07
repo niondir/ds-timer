@@ -15,6 +15,7 @@ using System.Net.NetworkInformation;
 using System.Net.Sockets;
 using DS_Timer.TimeSync;
 using System.Threading;
+using System.Net;
 
 namespace DS_Timer.Gui
 {
@@ -50,7 +51,7 @@ namespace DS_Timer.Gui
 
 		private void FormSettings_Load(object sender, EventArgs e)
 		{
-
+			System.Net.ServicePointManager.SecurityProtocol |= SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12; //enable TLS 1.1 and 1.2
 		}
 		private void FormSettings_Shown(object sender, EventArgs e)
 		{
