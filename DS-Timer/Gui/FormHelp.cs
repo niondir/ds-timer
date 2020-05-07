@@ -19,12 +19,12 @@ namespace DS_Timer.Gui
 
 		private void linkBugtracker_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
 		{
-			Process.Start("https://bitbucket.org/Niondir/ds-timer/issues?status=new&status=open");
+			Process.Start("https://github.com/Niondir/ds-timer/issues");
 		}
 
 		private void linkWebsite_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
 		{
-			Process.Start("http://www.niondir.de");
+			Process.Start("https://github.com/Niondir/ds-timer");
 		}
 
 		private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)

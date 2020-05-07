@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("DS-Timer")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Niondir")]
+[assembly: AssemblyCompany("Niondir/DaWolf85")]
 [assembly: AssemblyProduct("DS-Timer")]
 [assembly: AssemblyCopyright("Copyright © Niondir 2011")]
 [assembly: AssemblyTrademark("")]
@@ -34,4 +34,4 @@ using System.Runtime.InteropServices;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.4.4.0")] // Beim ändern geht Config verloren - soll 1.4.4.0
-[assembly: AssemblyFileVersion("1.8.0.0")] // Dateiversion
+[assembly: AssemblyFileVersion("1.8.1.0")] // Dateiversion

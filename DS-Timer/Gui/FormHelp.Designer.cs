@@ -34,11 +34,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.linkBugtracker = new System.Windows.Forms.LinkLabel();
             this.linkWebsite = new System.Windows.Forms.LinkLabel();
-            this.lblProgrammerName = new System.Windows.Forms.Label();
+            this.lblEditorName = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.gbAbout = new System.Windows.Forms.GroupBox();
             this.donateButton1 = new DS_Timer.Gui.DonateButton();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblProgrammerName = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.gbAbout.SuspendLayout();
             this.SuspendLayout();
@@ -72,20 +74,22 @@
             this.linkWebsite.TabStop = true;
             this.linkWebsite.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkWebsite_LinkClicked);
             // 
-            // lblProgrammerName
+            // lblEditorName
             // 
-            resources.ApplyResources(this.lblProgrammerName, "lblProgrammerName");
-            this.lblProgrammerName.Name = "lblProgrammerName";
+            resources.ApplyResources(this.lblEditorName, "lblEditorName");
+            this.lblEditorName.Name = "lblEditorName";
             // 
             // tableLayoutPanel1
             // 
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.linkWebsite, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.label3, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.label4, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.linkWebsite, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.linkBugtracker, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.lblEditorName, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.lblProgrammerName, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.linkBugtracker, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
@@ -108,6 +112,16 @@
             resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            // 
+            // lblProgrammerName
+            // 
+            resources.ApplyResources(this.lblProgrammerName, "lblProgrammerName");
+            this.lblProgrammerName.Name = "lblProgrammerName";
             // 
             // FormHelp
             // 
@@ -134,10 +148,12 @@
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.LinkLabel linkBugtracker;
 		private System.Windows.Forms.LinkLabel linkWebsite;
-		private System.Windows.Forms.Label lblProgrammerName;
+		private System.Windows.Forms.Label lblEditorName;
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
 		private System.Windows.Forms.GroupBox gbAbout;
 		private DonateButton donateButton1;
 		private System.Windows.Forms.TextBox textBox1;
-	}
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblProgrammerName;
+    }
 }
