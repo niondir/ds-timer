@@ -11,7 +11,7 @@ namespace DS_Timer.World
 	{
 		private WebClient m_Web;
 		private Queue<DownloadItem> m_DownloadQueue = new Queue<DownloadItem>();
-		private bool m_IsDownloading = false; // Use m_Web.IsBusy instead?
+		//private bool m_IsDownloading = false; // Use m_Web.IsBusy instead?
 
 		private string m_InfoString = String.Empty;
 		private int m_ProcessPercentage = 0;
@@ -54,7 +54,7 @@ namespace DS_Timer.World
 
 		public void StartDownloads()
 		{
-			if (m_IsDownloading) return;
+			if (m_Web.IsBusy) return;
 			NextDownload();
 		}
 
@@ -62,7 +62,7 @@ namespace DS_Timer.World
 		{
 			if (m_DownloadQueue.Count == 0)
 			{
-				m_IsDownloading = false; // Just to be sure
+				//m_IsDownloading = false; // Just to be sure
 				InfoString = "All downloads finished";
 				if (DownloadsComplete != null)
 				{
@@ -70,7 +70,7 @@ namespace DS_Timer.World
 				}
 				return;
 			}
-			m_IsDownloading = true;
+			//m_IsDownloading = true;
 			DownloadItem item = m_DownloadQueue.Dequeue();
 			try
 			{
@@ -80,7 +80,7 @@ namespace DS_Timer.World
 			}
 			catch (Exception)
 			{
-				m_IsDownloading = false;
+				//m_IsDownloading = false;
 				InfoString = "Download of " + item.FileName + " failed!";
 			}
 		}
@@ -100,7 +100,7 @@ namespace DS_Timer.World
 			DownloadItem item = (DownloadItem)e.UserState;
 			InfoString = "Download beendet: " + item.FileName;
 
-			m_IsDownloading = false;
+			//m_IsDownloading = false;
 			ProcessPercentage = 100;
 			NextDownload();
 		}
