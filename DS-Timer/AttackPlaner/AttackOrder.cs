@@ -114,7 +114,7 @@ namespace DS_Timer.AttackPlaner
         {
             get
             {
-				TimeSpan remaining = SendTime - TimeSyncHandler.Now;
+				TimeSpan remaining = SendTime - TimeSyncHandler.Now - TimeSpan.FromMilliseconds((int)Settings.Default.ClockAdjustment);
                 if (remaining < TimeSpan.Zero)
                     remaining = TimeSpan.Zero;
                 return remaining;
