@@ -20,6 +20,7 @@ using DS_Timer.AttackPlaner;
 using DS_Timer.World;
 using DS_Timer.TimeSync;
 using DS_Timer.Localization;
+using System.Net;
 
 namespace DS_Timer
 {
@@ -140,6 +141,7 @@ namespace DS_Timer
 
 		private void btnCheckSystemTime_Click(object sender, EventArgs e)
 		{
+			ServicePointManager.SecurityProtocol &= SecurityProtocolType.Tls11 & SecurityProtocolType.Tls12;
 			if (this.InvokeRequired)
 			{
 				this.Invoke(new MethodInvoker(() => btnCheckSystemTime_Click(sender, e)));

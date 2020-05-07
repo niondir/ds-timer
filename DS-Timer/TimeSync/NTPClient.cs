@@ -303,7 +303,7 @@ namespace TimeSync
 												 NTPData[offReferenceID + 3].ToString();
 								try
 								{
-									IPHostEntry Host = Dns.GetHostByAddress(Address);
+									IPHostEntry Host = Dns.GetHostEntry(Address);
 									val = Host.HostName + " (" + Address + ")";
 								}
 								catch (Exception)
@@ -476,7 +476,7 @@ namespace TimeSync
 			try
 			{
 				// Resolve server address
-				IPHostEntry hostadd = Dns.Resolve(TimeServer);
+				IPHostEntry hostadd = Dns.GetHostEntry(TimeServer);
 				IPEndPoint EPhost = new IPEndPoint(hostadd.AddressList[0], 123);
 
 				//Connect the time server
@@ -523,7 +523,7 @@ namespace TimeSync
 
 				if (timeSocket != null)
 				{
-					IPHostEntry hostadd = Dns.Resolve(TimeServer);
+					IPHostEntry hostadd = Dns.GetHostEntry(TimeServer);
 					IPEndPoint EPhost = new IPEndPoint(hostadd.AddressList[0], 123);
 
 					NTPData = timeSocket.EndReceive(ar, ref EPhost);

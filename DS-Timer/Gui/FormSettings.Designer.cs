@@ -485,7 +485,8 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             resources.GetString("comboBox1.Items"),
-            resources.GetString("comboBox1.Items1")});
+            resources.GetString("comboBox1.Items1"),
+            resources.GetString("comboBox1.Items2")});
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Text = global::DS_Timer.Properties.Settings.Default.TimeServer;
             this.toolTip.SetToolTip(this.comboBox1, resources.GetString("comboBox1.ToolTip"));
