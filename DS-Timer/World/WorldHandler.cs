@@ -96,17 +96,17 @@ namespace DS_Timer.World
 
 			if (!Servers.Any())
 			{
-				Servers.Add(new Server("de", "http://www.die-staemme.de"));
-				Servers.Add(new Server("ch", "http://www.staemme.ch"));
-				Servers.Add(new Server("en", "http://www.tribalwars.net"));
-				Servers.Add(new Server("nl", "http://www.tribalwars.nl/"));
-				Servers.Add(new Server("pl", "http://www.plemiona.pl/"));
-				Servers.Add(new Server("se", "http://www.tribalwars.se/"));
-				Servers.Add(new Server("br", "http://www.tribalwars.com.br/"));
-				Servers.Add(new Server("pt", "http://www.tribalwars.com.pt/"));
-				Servers.Add(new Server("cz", "http://www.divokekmeny.cz/"));
-				Servers.Add(new Server("jap", "http://www.bujokjeonjaeng.org/"));
-				Servers.Add(new Server("ro", "http://www.triburile.ro/"));
+				Servers.Add(new Server("de", "https://www.die-staemme.de"));
+				Servers.Add(new Server("ch", "https://www.staemme.ch"));
+				Servers.Add(new Server("en", "https://www.tribalwars.net"));
+				Servers.Add(new Server("nl", "https://www.tribalwars.nl/"));
+				Servers.Add(new Server("pl", "https://www.plemiona.pl/"));
+				Servers.Add(new Server("se", "https://www.tribalwars.se/"));
+				Servers.Add(new Server("br", "https://www.tribalwars.com.br/"));
+				Servers.Add(new Server("pt", "https://www.tribalwars.com.pt/"));
+				Servers.Add(new Server("cz", "https://www.divokekmeny.cz/"));
+				Servers.Add(new Server("jap", "https://www.bujokjeonjaeng.org/"));
+				Servers.Add(new Server("ro", "https://www.triburile.ro/"));
 				Program.Config.SaveConfig();
 			}
 

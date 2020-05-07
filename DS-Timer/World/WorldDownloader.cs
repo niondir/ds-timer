@@ -46,6 +46,7 @@ namespace DS_Timer.World
 		public WorldDownloader()
 		{
 			m_Web = new WebClient();
+			System.Net.ServicePointManager.SecurityProtocol |= SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12; //enable TLS 1.1 and 1.2
 			m_Web.DownloadProgressChanged += m_Web_DownloadProgressChanged;
 			m_Web.DownloadFileCompleted += m_Web_DownloadFileCompleted;
 		}
