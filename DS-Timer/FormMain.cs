@@ -78,6 +78,7 @@ namespace DS_Timer
 
 		private void Form1_Load(object sender, EventArgs e)
 		{
+			System.Net.ServicePointManager.SecurityProtocol |= SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12; //enable TLS 1.1 and 1.2
 			this.Text = "DS-Timer :: v. " + Application.ProductVersion;
 			if (Settings.Default.AutoSync)
 			{
@@ -141,7 +142,6 @@ namespace DS_Timer
 
 		private void btnCheckSystemTime_Click(object sender, EventArgs e)
 		{
-			ServicePointManager.SecurityProtocol &= SecurityProtocolType.Tls11 & SecurityProtocolType.Tls12;
 			if (this.InvokeRequired)
 			{
 				this.Invoke(new MethodInvoker(() => btnCheckSystemTime_Click(sender, e)));
