@@ -35,7 +35,12 @@ namespace DS_Timer.TimeSync
 				//return m_LastSync + TimeSpan.FromMilliseconds(SystemTickCount - m_BaseTickCount);
 			}
 		}
-		
+
+		public static DateTime Raw
+		{
+			get { return DateTime.Now - m_Offset; }
+		}
+
 		public static event EventHandler SyncDone;
 
 		public static void SyncTime()
@@ -63,7 +68,7 @@ namespace DS_Timer.TimeSync
 		{
 			NTPClient ntpClient = new NTPClient(Settings.Default.TimeServer);
 			ntpClient.Connect(false);
-			TimeSpan delay = TimeSyncHandler.Now - TimeSpan.FromHours((double)Settings.Default.TimeZoneOffset) - ntpClient.TransmitTimestamp;
+			TimeSpan delay = TimeSyncHandler.Raw - ntpClient.TransmitTimestamp;
 			return delay;
 		}
 	}
