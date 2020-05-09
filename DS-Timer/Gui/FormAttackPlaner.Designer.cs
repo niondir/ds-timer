@@ -28,23 +28,23 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAttackPlaner));
-			this.ucAttackPlaner = new DS_Timer.Gui.UcAttackPlaner();
-			this.SuspendLayout();
-			// 
-			// ucAttackPlaner
-			// 
-			resources.ApplyResources(this.ucAttackPlaner, "ucAttackPlaner");
-			this.ucAttackPlaner.AttackHandler = null;
-			this.ucAttackPlaner.Name = "ucAttackPlaner";
-			// 
-			// FormAttackPlaner
-			// 
-			resources.ApplyResources(this, "$this");
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Controls.Add(this.ucAttackPlaner);
-			this.Name = "FormAttackPlaner";
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAttackPlaner));
+            this.ucAttackPlaner = new DS_Timer.Gui.UcAttackPlaner();
+            this.SuspendLayout();
+            // 
+            // ucAttackPlaner
+            // 
+            resources.ApplyResources(this.ucAttackPlaner, "ucAttackPlaner");
+            this.ucAttackPlaner.AttackHandler = null;
+            this.ucAttackPlaner.Name = "ucAttackPlaner";
+            // 
+            // FormAttackPlaner
+            // 
+            resources.ApplyResources(this, "$this");
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.ucAttackPlaner);
+            this.Name = "FormAttackPlaner";
+            this.ResumeLayout(false);
 
 		}
 
