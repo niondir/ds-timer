@@ -86,14 +86,14 @@ namespace DS_Timer.AttackPlaner
 				new UnitInfo("Swordsman", "Sword", cfg.SwordSpeed);
 				new UnitInfo("Axeman", "Axe", cfg.AxeSpeed);
 				new UnitInfo("Archer", "Archer", cfg.ArcherSpeed); // Ab Welt 10
-				new UnitInfo("Scout", "Scout", cfg.ScoutSpeed);
-				new UnitInfo("Light cavalry", "LCav", cfg.LCavSpeed);
-				new UnitInfo("Mounted archer", "MArch", cfg.MArchSpeed); // Ab Welt 10
-				new UnitInfo("Heavy cavalry", "HCav", cfg.HCavSpeed);
+				new UnitInfo("Scout", "Spy", cfg.ScoutSpeed);
+				new UnitInfo("Light cavalry", "Light", cfg.LCavSpeed);
+				new UnitInfo("Mounted archer", "MArcher", cfg.MArchSpeed); // Ab Welt 10
+				new UnitInfo("Heavy cavalry", "Heavy", cfg.HCavSpeed);
 				new UnitInfo("Ram", "Ram", cfg.RamSpeed);
-				new UnitInfo("Catapult", "Cata", cfg.CataSpeed);
+				new UnitInfo("Catapult", "Catapult", cfg.CataSpeed);
 				new UnitInfo("Nobleman", "Snob", cfg.SnobSpeed);
-				new UnitInfo("Paladin", "Pala", cfg.PalaSpeed);
+				new UnitInfo("Paladin", "Knight", cfg.PalaSpeed);
 			}
 			else
 			{

@@ -19,7 +19,7 @@ namespace DS_Timer.Gui
 		{
 			InitializeComponent();
 			m_Attacks = attacks;
-			m_Attacks.AddRange(attacks);
+			//m_Attacks.AddRange(attacks);
 			ExportToBB();
 		}
 
@@ -33,9 +33,10 @@ namespace DS_Timer.Gui
 		private void ExportToBB()
 		{
 			rtbOutput.Clear();
+			m_Attacks.Sort((a, b) => a.SendTime.CompareTo(b.SendTime));
 			foreach (AttackOrder o in m_Attacks)
 			{
-				string line = String.Format("[b]{2:dd.MM.yyyy - HH:mm:ss.fff}[/b] [coord]{0}[/coord] -> [coord]{1}[/coord] | {5} | {4} [url={3}]Zum VP[/url]", o.StartLocation, o.TargetLocation, o.SendTime, o.GetAttackUrl(Settings.Default.DSServer), o.Comment, o.Unit.ShortName);
+				string line = String.Format("[b]{2:dd.MM.yyyy - HH:mm:ss.fff}[/b] [coord]{0}[/coord] -> [coord]{1}[/coord] | [unit]{5}[/unit] | {4} [url={3}]Go To Rally Point[/url]", o.StartLocation, o.TargetLocation, o.SendTime, o.GetAttackUrl(Settings.Default.DSServer), o.Comment, o.Unit.ShortName.ToLower());
 				rtbOutput.AppendText(line + Environment.NewLine);
 			}
 		}
