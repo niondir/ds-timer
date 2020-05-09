@@ -282,6 +282,9 @@
       <DependentUpon>UcAlarm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Gui\UcAttackPlaner.de.resx">
+      <DependentUpon>UcAttackPlaner.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Gui\UcAttackPlaner.en.resx">
       <DependentUpon>UcAttackPlaner.cs</DependentUpon>
     </EmbeddedResource>

@@ -239,6 +239,33 @@ namespace DS_Timer.Gui
             }
 		}
 
+		private void btnSnipe_Click(object sender, EventArgs e)
+        {
+			VillageList list = (VillageList)villageListsBindingSource.Current;
+
+			if (list == null) return;
+
+			foreach (VillageInfo startVill in list.Villages)
+			{
+
+				AttackOrder order = new AttackOrder();
+
+				DateTime time = dtpArrivle.Value;
+				int ms = (int)numMs.Value;
+				time = time.AddMilliseconds(-time.Millisecond + ms);
+
+				order.StartLocation = startVill.Location;
+				order.TargetLocation = ucTargetVillageSelector.SelectedVillage.Location;
+				order.UnitId = (int)cbSlowestUnit.SelectedValue;
+				order.Comment = txtNote.Text;
+				m_AttackHandler.CurrentAttackPlan.AttackOrders.Add(order);
+				//attackOrderBindingSource.Add(order);
+
+				order.ArrivleTime = time;
+
+			}
+		}
+
 
 
 		private void btnSaveAttackPlan_Click(object sender, EventArgs e)
