@@ -2,11 +2,11 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "DS-Timer"
-#define MyAppVersion "1.8.1.1"
+#define MyAppVersion "1.8.1.2"
 #define MyAppPublisher "DaWolf85"
 #define MyAppURL "https://github.com/Niondir/ds-timer"
 #define MyAppExeName "DS-Timer.exe"
-#define MySourceDir "1_8_1_1"
+#define MySourceDir "1_8_1_2"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
@@ -20,7 +20,7 @@ AppPublisher={#MyAppPublisher}
 AppPublisherURL={#MyAppURL}
 AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
-DefaultDirName={pf}\{#MyAppName}
+DefaultDirName={commonpf}\{#MyAppName}
 DefaultGroupName={#MyAppName}
 OutputDir="D:\Google Drive\TribalWars\DS-Timer Releases"
 OutputBaseFilename=ds-timer_setup
