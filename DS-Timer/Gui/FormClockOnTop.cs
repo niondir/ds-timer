@@ -60,11 +60,11 @@ namespace DS_Timer.Gui
 			{
 				if (m_Clock.IsHighlighted(now))
 				{
-					if (nextAttack - now < TimeSpan.FromSeconds(0.2))
+					if (timeLeft < TimeSpan.FromSeconds(0.2))
 					{
 						this.BackColor = DSClock.HighlightAttackColor;
 					}
-					else if (nextAttack - now < TimeSpan.FromSeconds(1.2))
+					else if (timeLeft < TimeSpan.FromSeconds(1.2))
 					{
 						this.BackColor = Color.DarkOrange;
 					}
