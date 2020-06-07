@@ -91,7 +91,7 @@ namespace DS_Timer.Gui
 
 		private void timeToNowToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			dtpNextAttack.Value = TimeSyncHandler.Now;
+			dtpNextAttack.Value = TimeSyncHandler.Now.AddHours(1);
 		}
 
 		private void dtpNextAttack_KeyDown(object sender, KeyEventArgs e)
