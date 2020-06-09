@@ -54,11 +54,6 @@ namespace DS_Timer.TimeSync
 			
 		}
 
-		public DateTime GetTime()
-		{
-			return TimeSyncHandler.Now + TimeSpan.FromMilliseconds(ClockOffset);
-		}
-
 		private int PositiveModulo(int i, int m)
 		{
 			return ((i % m) + m) % m;

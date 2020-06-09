@@ -35,7 +35,7 @@ namespace DS_Timer.Gui
 
 		void m_timer_Tick(object sender, EventArgs e)
 		{
-			DateTime now = m_Clock.GetTime();
+			DateTime now = TimeSyncHandler.Now;
 			DateTime nextAttack = dtpNextAttack.Value;
 
 			textBox1.Text = now.ToString("HH:mm:ss:fff");
@@ -91,7 +91,7 @@ namespace DS_Timer.Gui
 
 		private void timeToNowToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			dtpNextAttack.Value = TimeSyncHandler.Now.AddHours(1);
+			dtpNextAttack.Value = TimeSyncHandler.Now;
 		}
 
 		private void dtpNextAttack_KeyDown(object sender, KeyEventArgs e)

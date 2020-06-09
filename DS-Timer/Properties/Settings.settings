@@ -18,7 +18,7 @@
       <Value Profile="(Default)">http://kaupat-hh.de/updates/</Value>
     </Setting>
     <Setting Name="ClockAdjustment" Type="System.Decimal" Scope="User">
-      <Value Profile="(Default)">3600000</Value>
+      <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="Note" Type="System.String" Scope="User">
       <Value Profile="(Default)">Note</Value>

@@ -149,6 +149,9 @@
   <data name="&gt;&gt;lblLastWorldUpdate.Name" xml:space="preserve">
     <value>lblLastWorldUpdate</value>
   </data>
+  <data name="btnLoadWorldData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 23</value>
+  </data>
   <data name="&gt;&gt;btnLoadWorldData.Name" xml:space="preserve">
     <value>btnLoadWorldData</value>
   </data>
@@ -157,9 +160,6 @@
   </data>
   <data name="comboBox1.ToolTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="&gt;&gt;cbLanguage.ZOrder" xml:space="preserve">
-    <value>5</value>
   </data>
   <data name="numTimeShift.ToolTip" xml:space="preserve">
     <value>Alle Uhren im DS-Timer werden um die angegebene Anzahl Stunden verschoben.</value>
@@ -180,17 +180,14 @@
   <data name="&gt;&gt;label15.Name" xml:space="preserve">
     <value>label15</value>
   </data>
-  <data name="&gt;&gt;lblLastWorldUpdate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;cbLanguage.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="lblDownloadstatus.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
-  </data>
-  <data name="&gt;&gt;cbLanguage.Name" xml:space="preserve">
-    <value>cbLanguage</value>
   </data>
   <data name="&gt;&gt;txtServer.ZOrder" xml:space="preserve">
     <value>13</value>
@@ -204,14 +201,11 @@
   <data name="label10.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
   </data>
-  <data name="groupBox1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="lblUnitSpeed.Size" type="System.Drawing.Size, System.Drawing">
     <value>22, 13</value>
   </data>
-  <data name="&gt;&gt;txtServer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="label14.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -234,8 +228,8 @@
   <data name="&gt;&gt;lblUnitSpeed.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="comboBox1.Items2" xml:space="preserve">
-    <value>time.cloudflare.com</value>
+  <data name="cbDownloadBetaUpdates.Text" xml:space="preserve">
+    <value>Auch Beta Version Laden</value>
   </data>
   <data name="&gt;&gt;cbAutoBlink.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -264,27 +258,11 @@
   <data name="label11.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
   </data>
-  <data name="btnCheckUpdate.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAC5UlEQVQ4T4WS7UtTcRTHR76QXvQXhKCY
-        lYaJRRFFZIS+qIi0srSm5qx8iJalkApRGhkxzYFTlslattac25x7dsONuRdmzemYy+UD0xcql5Sh84mp
-        3+79UaYmdOFw7z3ndz7n9z3nsACwLBZLuNlsvtbZ2ak0Go1eg8EQ0uv1K1qt1qnRaGRqtTpFpVKFMWe3
-        G5McRycP9Pf3Y3p6GvPz81hbW8Pq6ipmZmbg9/tht9uhUCi629ra9v4DoKtax8fHsb6+Tv/v/IRCIbhc
-        LlSYHvsLTFlbbsIymUzU8vLyfwEUReGRriCUp8m00a6/AFovtbS0BEbCyMgIkbGysoLvPz1443wJro2D
-        IksO7hnYqLSX4WlXKTI+XTZtAHQ6HbW4uIiJiQk4nU44HA7oezWocpThnbseHT/kUPk+QzEkQav3A6SD
-        IpRo7+NSY8oIAdCdphYWFjA7O4vJyUkCEvUL0eiqhdrXiqructxWXcctWRqeGLgo0RThoiDZvHGDjo4O
-        KhgMEo1MM0dHR1FuL0a+kQ1aL0rVXFitVgJmN6WHLtSfs6fUnNl1tvrkbgJob2+nmNFNTU2RZJ/PR0Y3
-        PDxM5BiMBtBjJnCOgL2czDu9dQpKpZKam5sjFYaGhjA4OEiayXzbbDbQi4SH4iICbWhooDYnEwC9HFQg
-        EMDY2Bg8Hg/cbjep7vYMoMvahbymbGQKrpJ4XV0ddaLiiP1oaTwOc2MRVxjjZ8lkMooJMjJI4m+A1+tF
-        4fs8FMpycecjG6eeHcPx8kTcaExFTU8lOOKbiMmLErKkUul5iUQS7OvrI6vLNJSZSsbbVORLc9DorEH9
-        19fg91aj9ssL8HqeE/8+TuS3qOyIJKKjpaUlSiwWN4tEogD9hlwuBw1G+qs0ZDWnI1N4BQnFcThUtB8H
-        7kYjOjfSFpkVkUR6sLkhjAmFwj0CgSCRz+cn8Hi8cFqvjdbr3n7uj+3o3GzxDw6GxRbEtO4UA8D6BVDy
-        8ljfdTdwAAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="&gt;&gt;label15.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cbAutoBlink.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;lblUnitSpeed.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -304,17 +282,14 @@
   <data name="&gt;&gt;txtAlarmSound.ZOrder" xml:space="preserve">
     <value>14</value>
   </data>
-  <data name="btnResetSettings.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="numClockAdjustment.ToolTip" xml:space="preserve">
-    <value>Diese anpassung wirkt nur auf den Mini Timer. Man kann den unterschied zwischen dem Mini Timer und der Hauptuhr also sehen.</value>
-  </data>
   <data name="btnResetSettings.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
   <data name="cbLanguage.Items" xml:space="preserve">
     <value>English</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteWebsite.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;numTimeShift.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -343,17 +318,20 @@
   <data name="&gt;&gt;label5.Parent" xml:space="preserve">
     <value>groupBox2</value>
   </data>
-  <data name="label12.Text" xml:space="preserve">
-    <value>&lt; 1 Std</value>
-  </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Welt Geschw.:</value>
+  </data>
+  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Einstellungen</value>
   </data>
   <data name="btnAddWebsite.Location" type="System.Drawing.Point, System.Drawing">
     <value>47, 11</value>
+  </data>
+  <data name="btnCheckUpdate.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="btnCheckUpdate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -381,6 +359,9 @@
   </data>
   <data name="btnAccept.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
+  </data>
+  <data name="&gt;&gt;btnTestSound.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;serversBindingSource.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -412,9 +393,6 @@
   <data name="&gt;&gt;cbServer.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;cbAutoSync.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
   <data name="txtAlarmSound.ToolTip" xml:space="preserve">
     <value />
   </data>
@@ -430,20 +408,17 @@
   <data name="&gt;&gt;BtnSetLanguage.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;txtAlarmSound.Name" xml:space="preserve">
-    <value>txtAlarmSound</value>
-  </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="&gt;&gt;label10.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label6.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="cbLanguage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 21</value>
+  <data name="lblWorldSpeed.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 13</value>
@@ -454,17 +429,14 @@
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
+  <data name="&gt;&gt;txtAlarmSound.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
   <data name="&gt;&gt;lblDownloadstatus.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="&gt;&gt;cbLanguage.Parent" xml:space="preserve">
     <value>groupBox2</value>
-  </data>
-  <data name="label13.Text" xml:space="preserve">
-    <value>&lt; 1 Tag</value>
-  </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
   </data>
   <data name="&gt;&gt;btnAddWebsite.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -481,14 +453,17 @@
   <data name="&gt;&gt;label17.Name" xml:space="preserve">
     <value>label17</value>
   </data>
+  <data name="&gt;&gt;lblDownloadstatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="cbAutoSync.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 59</value>
+  </data>
   <data name="btnCheckUpdate.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 236</value>
-  </data>
-  <data name="label17.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="&gt;&gt;cbAutoSync.Name" xml:space="preserve">
     <value>cbAutoSync</value>
@@ -520,6 +495,9 @@
   <data name="&gt;&gt;cbDownloadBetaUpdates.Parent" xml:space="preserve">
     <value>groupBox2</value>
   </data>
+  <data name="cbAutoBlink.Size" type="System.Drawing.Size, System.Drawing">
+    <value>265, 17</value>
+  </data>
   <data name="&gt;&gt;label16.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -532,11 +510,14 @@
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
   <data name="&gt;&gt;label14.Parent" xml:space="preserve">
     <value>groupBox2</value>
   </data>
-  <data name="lblWorldSpeed.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
+  <data name="&gt;&gt;lblDownloadstatus.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="BtnSetLanguage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -552,9 +533,6 @@
   </data>
   <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="label2.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
     <value>175, 164</value>
@@ -574,8 +552,8 @@
   <data name="cbAutoSync.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 99</value>
   </data>
-  <data name="cbAutoSync.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
+  <data name="cbServer.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
   </data>
   <data name="cbLanguage.ToolTip" xml:space="preserve">
     <value />
@@ -595,11 +573,8 @@
   <data name="&gt;&gt;label11.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label16.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteWebsite.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="numClockAdjustment.ToolTip" xml:space="preserve">
+    <value>Diese anpassung wirkt nur auf den Mini Timer. Man kann den unterschied zwischen dem Mini Timer und der Hauptuhr also sehen.</value>
   </data>
   <data name="&gt;&gt;pbDownloadPercentage.Type" xml:space="preserve">
     <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -612,6 +587,9 @@
   </data>
   <data name="cbLanguage.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 32</value>
+  </data>
+  <data name="cbDSWorld.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 21</value>
   </data>
   <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -633,9 +611,6 @@
   </data>
   <data name="btnConfigDir.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
-  </data>
-  <data name="label16.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="&gt;&gt;label1.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -691,8 +666,11 @@
   <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="label6.ToolTip" xml:space="preserve">
-    <value />
+  <data name="cbDSWorld.ToolTip" xml:space="preserve">
+    <value>Voreinstellungen für den Server</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>16</value>
   </data>
   <data name="btnTestSound.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -709,9 +687,6 @@
         DRavYKJ5Rtep1o9jeBscw38H3B8dtKR8JzRvgAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="label1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="label10.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -720,6 +695,9 @@
   </data>
   <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Einheiten Geschw.:</value>
   </data>
   <data name="lblLastWorldUpdate.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -730,8 +708,11 @@
   <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="txtServer.ToolTip" xml:space="preserve">
-    <value />
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="comboBox1.Items1" xml:space="preserve">
+    <value>time.nist.gov</value>
   </data>
   <data name="label16.ToolTip" xml:space="preserve">
     <value />
@@ -751,11 +732,17 @@
   <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnLoadWorldData.ToolTip" xml:space="preserve">
-    <value>Weltdaten vom DS Server laden. Sollte nicht häufiger als 1 mal pro Stunde gemacht werden</value>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 231</value>
+  </data>
+  <data name="&gt;&gt;txtServer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnConfigDir.ZOrder" xml:space="preserve">
     <value>13</value>
+  </data>
+  <data name="lblLastWorldUpdate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;numClockAdjustment.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -790,6 +777,9 @@
   <data name="&gt;&gt;label6.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
+  <data name="&gt;&gt;comboBox1.Name" xml:space="preserve">
+    <value>comboBox1</value>
+  </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>327, 12</value>
   </data>
@@ -799,14 +789,8 @@
   <data name="btnLoadWorldData.Text" xml:space="preserve">
     <value>Weltdaten Laden</value>
   </data>
-  <data name="btnOpenAlarmFile.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="cbDSWorld.ToolTip" xml:space="preserve">
-    <value>Voreinstellungen für den Server</value>
   </data>
   <data name="btnCheckUpdate.ToolTip" xml:space="preserve">
     <value />
@@ -820,14 +804,11 @@
   <data name="&gt;&gt;label11.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Zeitserver:</value>
-  </data>
   <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btnAddWebsite.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="label2.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;numTimeShift.Name" xml:space="preserve">
     <value>numTimeShift</value>
@@ -837,6 +818,9 @@
   </data>
   <data name="label4.ToolTip" xml:space="preserve">
     <value />
+  </data>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 13</value>
   </data>
   <data name="btnOpenAlarmFile.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -867,26 +851,20 @@
   <data name="btnConfigDir.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
   </data>
-  <data name="&gt;&gt;label14.Name" xml:space="preserve">
-    <value>label14</value>
-  </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>549, 401</value>
+  <data name="label16.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
   </data>
-  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="label1.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="cbDownloadBetaUpdates.Size" type="System.Drawing.Size, System.Drawing">
     <value>147, 17</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>93, 13</value>
-  </data>
-  <data name="&gt;&gt;btnCheckUpdate.ZOrder" xml:space="preserve">
-    <value>17</value>
   </data>
   <data name="&gt;&gt;cbAutoBlink.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -4202,16 +4180,16 @@
   <data name="label11.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="lblWorldSpeed.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopRight</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 13</value>
   </data>
-  <data name="&gt;&gt;lblDownloadstatus.Type" xml:space="preserve">
+  <data name="btnDeleteWebsite.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="pbDownloadPercentage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
@@ -4229,6 +4207,9 @@
   <data name="&gt;&gt;cbAutoBlink.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="btnSave.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
@@ -4240,6 +4221,9 @@
   </data>
   <data name="lblDownloadstatus.Size" type="System.Drawing.Size, System.Drawing">
     <value>524, 15</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
   </data>
   <data name="&gt;&gt;btnAccept.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -4283,17 +4267,17 @@
   <data name="label8.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
   </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="label7.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>57, 13</value>
   </data>
-  <data name="&gt;&gt;worldConfigFileBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;btnDeleteWebsite.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
   <data name="lblLastWorldUpdate.ToolTip" xml:space="preserve">
     <value />
@@ -4325,9 +4309,6 @@
   <data name="&gt;&gt;cbAutoSync.Parent" xml:space="preserve">
     <value>groupBox2</value>
   </data>
-  <data name="label14.Text" xml:space="preserve">
-    <value>Sprache:</value>
-  </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 120</value>
   </data>
@@ -4343,14 +4324,17 @@
   <data name="label13.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="cbAutoSync.Text" xml:space="preserve">
-    <value>Zeit Automatisch Synchronisieren (alle 5 min.)</value>
+  <data name="label17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label3.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="btnSave.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
   </data>
   <data name="btnSave.ToolTip" xml:space="preserve">
     <value />
@@ -4360,6 +4344,12 @@
   </data>
   <data name="&gt;&gt;label12.Parent" xml:space="preserve">
     <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;btnAccept.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 13</value>
   </data>
   <data name="lblDownloadstatus.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4373,8 +4363,11 @@
   <data name="txtServer.Size" type="System.Drawing.Size, System.Drawing">
     <value>194, 20</value>
   </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="btnLoadWorldData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Zeitserver:</value>
   </data>
   <data name="pbDownloadPercentage.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 337</value>
@@ -4388,8 +4381,8 @@
   <data name="pbDownloadPercentage.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
   </data>
-  <data name="txtAlarmSound.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
+  <data name="&gt;&gt;numClockAdjustment.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;txtAlarmSound.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -4397,17 +4390,14 @@
   <data name="&gt;&gt;label13.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="btnConfigDir.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="btnTestSound.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
     <value>Welt</value>
   </data>
-  <data name="btnLoadWorldData.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>175, 188</value>
   </data>
   <data name="label17.Text" xml:space="preserve">
     <value>Server:</value>
@@ -4445,11 +4435,11 @@
   <data name="lblDownloadstatus.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
   </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
+    <value>groupBox2</value>
   </data>
-  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
+  <data name="cbAutoSync.Text" xml:space="preserve">
+    <value>Zeit Automatisch Synchronisieren (alle 5 min.)</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 13</value>
@@ -4463,26 +4453,20 @@
   <data name="groupBox2.Text" xml:space="preserve">
     <value>Allgemein</value>
   </data>
-  <data name="comboBox1.Items1" xml:space="preserve">
-    <value>time.nist.gov</value>
-  </data>
-  <data name="&gt;&gt;worldDownloaderBindingSource.Name" xml:space="preserve">
-    <value>worldDownloaderBindingSource</value>
+  <data name="label13.Text" xml:space="preserve">
+    <value>&lt; 1 Tag</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="lblLastWorldUpdate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="groupBox1.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="btnResetSettings.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
   <data name="&gt;&gt;btnCheckUpdate.Name" xml:space="preserve">
     <value>btnCheckUpdate</value>
-  </data>
-  <data name="&gt;&gt;label13.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="cbServer.ToolTip" xml:space="preserve">
     <value />
@@ -4496,8 +4480,8 @@
   <data name="cbAutoBlink.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
   </data>
-  <data name="lblUnitSpeed.ToolTip" xml:space="preserve">
-    <value />
+  <data name="lblWorldSpeed.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
   </data>
   <data name="&gt;&gt;worldDownloaderBindingSource.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -4514,8 +4498,8 @@
   <data name="label17.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
   </data>
-  <data name="cbDownloadBetaUpdates.Text" xml:space="preserve">
-    <value>Auch Beta Version Laden</value>
+  <data name="&gt;&gt;worldDownloaderBindingSource.Name" xml:space="preserve">
+    <value>worldDownloaderBindingSource</value>
   </data>
   <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4528,9 +4512,6 @@
   </data>
   <data name="&gt;&gt;BtnSetLanguage.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="label13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4568,11 +4549,11 @@
   <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
     <value>groupBox2</value>
   </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>&lt; 7 Tage</value>
+  </data>
   <data name="btnDeleteWebsite.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
-  </data>
-  <data name="cbDownloadBetaUpdates.ToolTip" xml:space="preserve">
-    <value>Beta Updates kommen früher als andere Updates, können jedoch fehleranfälliger sein.</value>
   </data>
   <data name="btnAccept.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -4586,8 +4567,8 @@
   <data name="label15.Text" xml:space="preserve">
     <value>Zeitverschiebung:</value>
   </data>
-  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="btnResetSettings.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
   </data>
   <data name="btnTestSound.Location" type="System.Drawing.Point, System.Drawing">
     <value>274, 134</value>
@@ -4601,11 +4582,8 @@
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Einheiten Geschw.:</value>
-  </data>
-  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 13</value>
+  <data name="label17.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="cbDownloadBetaUpdates.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
@@ -4613,8 +4591,8 @@
   <data name="&gt;&gt;lblUnitSpeed.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="cbDSWorld.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 21</value>
+  <data name="&gt;&gt;btnCheckUpdate.ZOrder" xml:space="preserve">
+    <value>17</value>
   </data>
   <data name="&gt;&gt;cbDSWorld.ZOrder" xml:space="preserve">
     <value>17</value>
@@ -4631,8 +4609,8 @@
   <data name="&gt;&gt;btnLoadWorldData.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>16</value>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
   </data>
   <data name="lblUnitSpeed.Text" xml:space="preserve">
     <value>0.0</value>
@@ -4646,8 +4624,8 @@
   <data name="pbDownloadPercentage.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="lblWorldSpeed.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="comboBox1.Items2" xml:space="preserve">
+    <value>time.cloudflare.com</value>
   </data>
   <data name="numClockAdjustment.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
@@ -4658,8 +4636,8 @@
   <data name="&gt;&gt;cbServer.Name" xml:space="preserve">
     <value>cbServer</value>
   </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 13</value>
+  <data name="txtServer.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;cbDSWorld.Name" xml:space="preserve">
     <value>cbDSWorld</value>
@@ -4670,17 +4648,14 @@
   <data name="&gt;&gt;label4.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="cbLanguage.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
   <data name="pbDownloadPercentage.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
   </data>
   <data name="&gt;&gt;btnResetSettings.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btnAccept.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;cbAutoSync.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
   <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4718,20 +4693,20 @@
   <data name="cbDownloadBetaUpdates.Location" type="System.Drawing.Point, System.Drawing">
     <value>155, 240</value>
   </data>
-  <data name="label14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="btnDeleteWebsite.Location" type="System.Drawing.Point, System.Drawing">
     <value>75, 11</value>
+  </data>
+  <data name="btnLoadWorldData.ToolTip" xml:space="preserve">
+    <value>Weltdaten vom DS Server laden. Sollte nicht häufiger als 1 mal pro Stunde gemacht werden</value>
   </data>
   <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 16</value>
   </data>
-  <data name="btnLoadWorldData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="cbAutoBlink.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="cbLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
   </data>
   <data name="&gt;&gt;label17.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -4739,8 +4714,8 @@
   <data name="lblDownloadstatus.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 319</value>
   </data>
-  <data name="&gt;&gt;comboBox1.Name" xml:space="preserve">
-    <value>comboBox1</value>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label9.Text" xml:space="preserve">
     <value>ms (-3600000 ... 3600000)</value>
@@ -4748,17 +4723,20 @@
   <data name="btnConfigDir.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 266</value>
   </data>
-  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>175, 188</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>549, 401</value>
   </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
+  <data name="btnLoadWorldData.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="numTimeShift.Location" type="System.Drawing.Point, System.Drawing">
     <value>105, 186</value>
   </data>
-  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="btnTestSound.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 23</value>
+  </data>
+  <data name="label16.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 188</value>
@@ -4772,8 +4750,8 @@
   <data name="label5.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="label17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="lblUnitSpeed.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="btnOpenAlarmFile.Location" type="System.Drawing.Point, System.Drawing">
     <value>245, 134</value>
@@ -4796,8 +4774,11 @@
   <data name="&gt;&gt;label8.Parent" xml:space="preserve">
     <value>groupBox2</value>
   </data>
-  <data name="btnTestSound.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 23</value>
+  <data name="txtAlarmSound.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="btnConfigDir.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="btnSave.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -4814,8 +4795,8 @@
   <data name="btnCheckUpdate.Size" type="System.Drawing.Size, System.Drawing">
     <value>141, 23</value>
   </data>
-  <data name="&gt;&gt;lblDownloadstatus.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;cbLanguage.Name" xml:space="preserve">
+    <value>cbLanguage</value>
   </data>
   <data name="&gt;&gt;label9.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -4829,8 +4810,11 @@
   <data name="numTimeShift.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 20</value>
   </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 59</value>
+  <data name="btnCheckUpdate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="BtnSetLanguage.Location" type="System.Drawing.Point, System.Drawing">
     <value>136, 30</value>
@@ -4841,8 +4825,24 @@
   <data name="btnLoadWorldData.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 205</value>
   </data>
-  <data name="&gt;&gt;btnTestSound.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btnCheckUpdate.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAC5UlEQVQ4T4WS7UtTcRTHR76QXvQXhKCY
+        lYaJRRFFZIS+qIi0srSm5qx8iJalkApRGhkxzYFTlslattac25x7dsONuRdmzemYy+UD0xcql5Sh84mp
+        3+79UaYmdOFw7z3ndz7n9z3nsACwLBZLuNlsvtbZ2ak0Go1eg8EQ0uv1K1qt1qnRaGRqtTpFpVKFMWe3
+        G5McRycP9Pf3Y3p6GvPz81hbW8Pq6ipmZmbg9/tht9uhUCi629ra9v4DoKtax8fHsb6+Tv/v/IRCIbhc
+        LlSYHvsLTFlbbsIymUzU8vLyfwEUReGRriCUp8m00a6/AFovtbS0BEbCyMgIkbGysoLvPz1443wJro2D
+        IksO7hnYqLSX4WlXKTI+XTZtAHQ6HbW4uIiJiQk4nU44HA7oezWocpThnbseHT/kUPk+QzEkQav3A6SD
+        IpRo7+NSY8oIAdCdphYWFjA7O4vJyUkCEvUL0eiqhdrXiqructxWXcctWRqeGLgo0RThoiDZvHGDjo4O
+        KhgMEo1MM0dHR1FuL0a+kQ1aL0rVXFitVgJmN6WHLtSfs6fUnNl1tvrkbgJob2+nmNFNTU2RZJ/PR0Y3
+        PDxM5BiMBtBjJnCOgL2czDu9dQpKpZKam5sjFYaGhjA4OEiayXzbbDbQi4SH4iICbWhooDYnEwC9HFQg
+        EMDY2Bg8Hg/cbjep7vYMoMvahbymbGQKrpJ4XV0ddaLiiP1oaTwOc2MRVxjjZ8lkMooJMjJI4m+A1+tF
+        4fs8FMpycecjG6eeHcPx8kTcaExFTU8lOOKbiMmLErKkUul5iUQS7OvrI6vLNJSZSsbbVORLc9DorEH9
+        19fg91aj9ssL8HqeE/8+TuS3qOyIJKKjpaUlSiwWN4tEogD9hlwuBw1G+qs0ZDWnI1N4BQnFcThUtB8H
+        7kYjOjfSFpkVkUR6sLkhjAmFwj0CgSCRz+cn8Hi8cFqvjdbr3n7uj+3o3GzxDw6GxRbEtO4UA8D6BVDy
+        8ljfdTdwAAAAAElFTkSuQmCC
+</value>
   </data>
   <data name="&gt;&gt;btnLoadWorldData.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -4856,23 +4856,23 @@
   <data name="cbDownloadBetaUpdates.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;numClockAdjustment.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="cbAutoSync.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
   </data>
-  <data name="btnDeleteWebsite.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;worldConfigFileBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 13</value>
+  <data name="label12.Text" xml:space="preserve">
+    <value>&lt; 1 Std</value>
   </data>
   <data name="btnAccept.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="btnLoadWorldData.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 23</value>
+  <data name="label14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="label11.Text" xml:space="preserve">
-    <value>&lt; 7 Tage</value>
+  <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblWorldSpeed.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -4883,26 +4883,26 @@
   <data name="&gt;&gt;lblWorldSpeed.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="cbServer.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
+  <data name="btnOpenAlarmFile.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
   </data>
   <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
     <value>btnSave</value>
   </data>
-  <data name="btnConfigDir.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="cbLanguage.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
   </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 231</value>
+  <data name="label14.Text" xml:space="preserve">
+    <value>Sprache:</value>
   </data>
   <data name="&gt;&gt;cbAutoBlink.Name" xml:space="preserve">
     <value>cbAutoBlink</value>
   </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
+  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 13</value>
   </data>
-  <data name="btnSave.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;lblLastWorldUpdate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>15</value>
@@ -4910,8 +4910,8 @@
   <data name="btnDeleteWebsite.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="cbAutoBlink.Size" type="System.Drawing.Size, System.Drawing">
-    <value>265, 17</value>
+  <data name="&gt;&gt;txtAlarmSound.Name" xml:space="preserve">
+    <value>txtAlarmSound</value>
   </data>
   <data name="&gt;&gt;label3.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -4919,14 +4919,14 @@
   <data name="lblWorldSpeed.Size" type="System.Drawing.Size, System.Drawing">
     <value>22, 13</value>
   </data>
-  <data name="&gt;&gt;txtAlarmSound.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
   </data>
-  <data name="btnCheckUpdate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
+  <data name="btnConfigDir.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
+  <data name="cbDownloadBetaUpdates.ToolTip" xml:space="preserve">
+    <value>Beta Updates kommen früher als andere Updates, können jedoch fehleranfälliger sein.</value>
   </data>
   <data name="lblUnitSpeed.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
@@ -4937,14 +4937,14 @@
   <data name="lblWorldSpeed.Location" type="System.Drawing.Point, System.Drawing">
     <value>132, 149</value>
   </data>
-  <data name="&gt;&gt;btnDeleteWebsite.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btnAddWebsite.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label12.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="btnCheckUpdate.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+  <data name="&gt;&gt;label14.Name" xml:space="preserve">
+    <value>label14</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

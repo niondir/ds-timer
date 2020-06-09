@@ -5,6 +5,7 @@ using System.Text;
 using TimeSync;
 using DS_Timer.Properties;
 using System.Threading;
+using updateSystemDotNet.Core.Types;
 
 namespace DS_Timer.TimeSync
 {
@@ -30,7 +31,7 @@ namespace DS_Timer.TimeSync
 		{
 			get 
 			{
-				return DateTime.Now - m_Offset + TimeSpan.FromHours((double)Settings.Default.TimeZoneOffset);
+				return DateTime.Now - m_Offset + TimeSpan.FromHours((double)Settings.Default.TimeZoneOffset) + TimeSpan.FromMilliseconds((double)Settings.Default.ClockAdjustment);
 				// TickCount Method
 				//return m_LastSync + TimeSpan.FromMilliseconds(SystemTickCount - m_BaseTickCount);
 			}

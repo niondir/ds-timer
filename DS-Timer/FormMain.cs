@@ -109,7 +109,7 @@ namespace DS_Timer
 
 		void timer_Tick(object sender, EventArgs e)
 		{
-			DateTime now = m_clock.GetTime();
+			DateTime now = TimeSyncHandler.Now;
 
 			if (!m_clicked && now > m_clickTime)
 			{
