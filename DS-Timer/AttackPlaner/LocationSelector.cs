@@ -91,11 +91,22 @@ namespace DS_Timer.AttackPlaner
 				));
 			m_Villages.Clear();
 
-			// Slow Code:
+			// we do some funky shit here to optimize this code
+			// we have to do this because otherwise anything depending on this (say... a combobox) will listen for updates
+			// and when it gets them, it will also update itself... every single time this loop runs
+			// as you can imagine, this slows things down exponentially as the list gets larger
+			// so, we just turn off these events, and turn them back on again:
+			//Turn off the ListChanged Events
+			m_Villages.RaiseListChangedEvents = false;
 			foreach (VillageInfo v in villages)
 			{
 				m_Villages.Add(v);
 			}
+
+			//Turn them back on
+			m_Villages.RaiseListChangedEvents = true;
+			//Notify the changes to all bound items
+			m_Villages.ResetBindings();
 
 
 			//NotifyPropertyChanged("SelectedVillage");

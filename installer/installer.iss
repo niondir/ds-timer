@@ -2,11 +2,11 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "DS-Timer"
-#define MyAppVersion "1.8.3.0"
+#define MyAppVersion "1.8.3.1"
 #define MyAppPublisher "DaWolf85"
 #define MyAppURL "https://github.com/Niondir/ds-timer"
 #define MyAppExeName "DS-Timer.exe"
-#define MySourceDir "1_8_3_0"
+#define MySourceDir "1_8_3_1"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.

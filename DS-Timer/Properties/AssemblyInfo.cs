@@ -34,4 +34,4 @@ using System.Runtime.InteropServices;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.8.3.0")] // Beim ändern geht Config verloren - soll 1.4.4.0
-[assembly: AssemblyFileVersion("1.8.3.0")] // Dateiversion
+[assembly: AssemblyFileVersion("1.8.3.1")] // Dateiversion
