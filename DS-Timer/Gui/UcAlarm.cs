@@ -82,10 +82,12 @@ namespace DS_Timer.Gui
 				txtNextAlarm.Text = String.Empty;
 			}
 
+			/*
 			for (int i = 0; i < dgvAlarms.ColumnCount; i++)
 			{
 				dgvAlarms.InvalidateColumn(i);
 			}
+			*/
 		}
 
 		void alarmTimeBindingSource_ListChanged(object sender, ListChangedEventArgs e)
