@@ -128,7 +128,7 @@ namespace DS_Timer.Alarm
 
             Active = true;
             BalloonTip = true;
-            Popup = true;
+            Popup = false;
             Sound = true;
         }
 
