@@ -112,12 +112,12 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnSaveAlarm.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -127,7 +127,7 @@
   <data name="cbAlarmEnabled.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="cbAlarmEnabled.Size" type="System.Drawing.Size, System.Drawing">
     <value>56, 17</value>
   </data>
@@ -137,14 +137,27 @@
   <data name="cbBaloon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="cbBaloon.Text" xml:space="preserve">
+    <value>Notification</value>
+  </data>
   <data name="cbAlarmSound.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btnTestSound.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="cbPopup.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="cbPopup.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="cbPopup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 17</value>
+  </data>
+  <data name="cbPopup.Text" xml:space="preserve">
+    <value>Popup Window</value>
   </data>
   <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -167,31 +180,12 @@
   <data name="gbEditAlarm.Text" xml:space="preserve">
     <value>Setup Alarm</value>
   </data>
-  <data name="timeDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
-    <value>Time</value>
-  </data>
-  <data name="messageDataGridViewTextBoxColumn3.HeaderText" xml:space="preserve">
-    <value>Message</value>
-  </data>
-  <data name="activeDataGridViewCheckBoxColumn3.HeaderText" xml:space="preserve">
-    <value>Active</value>
-  </data>
-  <data name="balloonTipDataGridViewCheckBoxColumn3.HeaderText" xml:space="preserve">
-    <value>BalloonTip</value>
-  </data>
-  <data name="soundDataGridViewCheckBoxColumn3.HeaderText" xml:space="preserve">
-    <value>Sound</value>
-  </data>
-  <data name="popupDataGridViewCheckBoxColumn3.HeaderText" xml:space="preserve">
-    <value>Popup</value>
-  </data>
   <data name="dgvAlarms.Size" type="System.Drawing.Size, System.Drawing">
     <value>221, 179</value>
   </data>
   <data name="btnRemoveOldAlarms.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnRemoveOldAlarms.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
