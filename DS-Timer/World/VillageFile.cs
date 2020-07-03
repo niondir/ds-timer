@@ -101,5 +101,17 @@ namespace DS_Timer.World
             }
             return result;
         }
+
+        public VillageInfo FindByID(int id)
+        {
+            foreach (VillageInfo vi in m_Villages)
+            {
+                if (vi.Id == id)
+                {
+                    return vi;
+                }
+            }
+            return VillageInfo.NullVillage;
+        }
     }
 }
