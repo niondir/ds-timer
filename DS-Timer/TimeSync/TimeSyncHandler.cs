@@ -6,6 +6,7 @@ using TimeSync;
 using DS_Timer.Properties;
 using System.Threading;
 using updateSystemDotNet.Core.Types;
+using System.Windows.Forms;
 
 namespace DS_Timer.TimeSync
 {
@@ -68,7 +69,15 @@ namespace DS_Timer.TimeSync
 		public static TimeSpan CheckTimeDelay()
 		{
 			NTPClient ntpClient = new NTPClient(Settings.Default.TimeServer);
-			ntpClient.Connect(false);
+			try
+			{
+				ntpClient.Connect(false);
+			} catch (Exception e)
+            {
+				//not super important, probably just the server telling us to stop spamming it
+				//but just in case, here's a handy dialog box
+				MessageBox.Show(e.Message, "NTP Response Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
 			TimeSpan delay = TimeSyncHandler.Raw - ntpClient.TransmitTimestamp;
 			return delay;
 		}
