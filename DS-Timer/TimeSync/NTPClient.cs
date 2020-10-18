@@ -529,6 +529,11 @@ namespace TimeSync
 
                 //Connect the time server
                 UdpClient TimeSocket = new UdpClient();
+
+                //Stop hang if refused service
+                TimeSocket.Client.SendTimeout = 1000;
+                TimeSocket.Client.ReceiveTimeout = 1000;
+
                 TimeSocket.Connect(EPhost);
 
                 // Initialize data structure
