@@ -36,7 +36,7 @@ namespace DS_Timer.Gui
 			m_Attacks.Sort((a, b) => a.SendTime.CompareTo(b.SendTime));
 			foreach (AttackOrder o in m_Attacks)
 			{
-				string line = String.Format("[b]{2:dd.MM.yyyy - HH:mm:ss.fff}[/b] [coord]{0}[/coord] -> [coord]{1}[/coord] | [unit]{5}[/unit] | {4} [url={3}]Go To Rally Point[/url]", o.StartLocation, o.TargetLocation, o.SendTime, o.GetAttackUrl(Settings.Default.DSServer), o.Comment, o.Unit.ShortName.ToLower());
+				string line = String.Format("[b]{2:dd.MM.yyyy - HH:mm:ss:fff}[/b] [coord]{0}[/coord] -> [coord]{1}[/coord] | [unit]{5}[/unit] | {4} [url={3}]Go To Rally Point[/url]", o.StartLocation, o.TargetLocation, o.SendTime, o.GetAttackUrl(Settings.Default.DSServer), o.Comment, o.Unit.ShortName.ToLower());
 				rtbOutput.AppendText(line + Environment.NewLine);
 			}
 		}
