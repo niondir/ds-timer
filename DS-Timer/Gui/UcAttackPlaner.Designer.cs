@@ -57,7 +57,6 @@
             this.attackOrderBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.attackPlansBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnSnipe = new System.Windows.Forms.Button();
             this.ucStartVillageSelector = new DS_Timer.Gui.UcVillageSelector();
             this.ucTargetVillageSelector = new DS_Timer.Gui.UcVillageSelector();
             this.rbArrivle = new System.Windows.Forms.RadioButton();
@@ -338,7 +337,6 @@
             // groupBox1
             // 
             resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.Controls.Add(this.btnSnipe);
             this.groupBox1.Controls.Add(this.ucStartVillageSelector);
             this.groupBox1.Controls.Add(this.ucTargetVillageSelector);
             this.groupBox1.Controls.Add(this.rbArrivle);
@@ -357,14 +355,6 @@
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             this.toolTip.SetToolTip(this.groupBox1, resources.GetString("groupBox1.ToolTip"));
-            // 
-            // btnSnipe
-            // 
-            resources.ApplyResources(this.btnSnipe, "btnSnipe");
-            this.btnSnipe.Name = "btnSnipe";
-            this.toolTip.SetToolTip(this.btnSnipe, resources.GetString("btnSnipe.ToolTip"));
-            this.btnSnipe.UseVisualStyleBackColor = true;
-            this.btnSnipe.Click += new System.EventHandler(this.btnSnipe_Click);
             // 
             // ucStartVillageSelector
             // 
@@ -981,6 +971,5 @@
 		private System.Windows.Forms.DataGridViewTextBoxColumn ArrivleTime;
 		private System.Windows.Forms.DataGridViewComboBoxColumn UnitSpeed;
 		private System.Windows.Forms.DataGridViewTextBoxColumn commentDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button btnSnipe;
     }
 }
