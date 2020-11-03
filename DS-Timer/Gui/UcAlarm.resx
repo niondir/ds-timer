@@ -137,6 +137,9 @@
   <data name="&gt;&gt;timeDataGridViewTextBoxColumn2.Name" xml:space="preserve">
     <value>timeDataGridViewTextBoxColumn2</value>
   </data>
+  <data name="timeDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>Time</value>
+  </data>
   <data name="&gt;&gt;cbBaloon.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -158,9 +161,6 @@
   <data name="&gt;&gt;toolTip.Name" xml:space="preserve">
     <value>toolTip</value>
   </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 13</value>
-  </data>
   <data name="txtNextAlarm.Size" type="System.Drawing.Size, System.Drawing">
     <value>210, 20</value>
   </data>
@@ -172,9 +172,6 @@
   </data>
   <data name="&gt;&gt;txtAlarmMessage.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtTimeLeft.Name" xml:space="preserve">
-    <value>txtTimeLeft</value>
   </data>
   <data name="&gt;&gt;panel1.Name" xml:space="preserve">
     <value>panel1</value>
@@ -197,8 +194,9 @@
   <data name="btnTestSound.Location" type="System.Drawing.Point, System.Drawing">
     <value>278, 77</value>
   </data>
-  <data name="timeDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
-    <value>Time</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnRemoveOldAlarms.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
   </data>
   <data name="&gt;&gt;label2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -206,7 +204,6 @@
   <data name="btnSaveAlarm.Size" type="System.Drawing.Size, System.Drawing">
     <value>126, 23</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="groupBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -216,20 +213,8 @@
   <data name="btnRemoveOldAlarms.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Um:</value>
-  </data>
   <data name="&gt;&gt;txtTimeLeft.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="&gt;&gt;messageDataGridViewTextBoxColumn1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtNextAlarm.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="dtpAlarmTime.ToolTip" xml:space="preserve">
     <value />
@@ -246,14 +231,17 @@
   <data name="cbAlarmEnabled.Text" xml:space="preserve">
     <value>Aktiviert</value>
   </data>
-  <data name="popupDataGridViewCheckBoxColumn2.HeaderText" xml:space="preserve">
-    <value>Popup</value>
+  <data name="cbBaloon.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
   <data name="&gt;&gt;timeDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="cbPopup.ToolTip" xml:space="preserve">
     <value>Sound wird in einer Schleife abgespielt und muss manuell beendet werden</value>
+  </data>
+  <data name="&gt;&gt;balloonTipDataGridViewCheckBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="balloonTipDataGridViewCheckBoxColumn3.HeaderText" xml:space="preserve">
     <value>BalloonTip</value>
@@ -270,6 +258,9 @@
   <data name="&gt;&gt;soundDataGridViewCheckBoxColumn.Name" xml:space="preserve">
     <value>soundDataGridViewCheckBoxColumn</value>
   </data>
+  <data name="&gt;&gt;dtpAlarmTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
   </data>
@@ -285,6 +276,9 @@
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
+  <data name="timeDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
   <data name="&gt;&gt;btnSaveAlarms.Name" xml:space="preserve">
     <value>btnSaveAlarms</value>
   </data>
@@ -293,9 +287,6 @@
   </data>
   <data name="txtAlarmMessage.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 85</value>
-  </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
     <value>groupBox1</value>
@@ -312,8 +303,8 @@
   <data name="&gt;&gt;btnSaveAlarm.Parent" xml:space="preserve">
     <value>gbEditAlarm</value>
   </data>
-  <data name="btnRemoveOldAlarms.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
+  <data name="activeDataGridViewCheckBoxColumn.HeaderText" xml:space="preserve">
+    <value>Aktiviert</value>
   </data>
   <data name="btnRemoveOldAlarms.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -323,9 +314,6 @@
   </data>
   <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
-  </data>
-  <data name="btnSaveAlarm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>214, 127</value>
   </data>
   <data name="cbPopup.Location" type="System.Drawing.Point, System.Drawing">
     <value>214, 104</value>
@@ -342,9 +330,6 @@
   <data name="txtNextAlarm.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;cbAlarmEnabled.Name" xml:space="preserve">
-    <value>cbAlarmEnabled</value>
-  </data>
   <data name="txtNextAlarm.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
@@ -354,23 +339,14 @@
   <data name="&gt;&gt;btnSaveAlarms.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="balloonTipDataGridViewCheckBoxColumn2.HeaderText" xml:space="preserve">
-    <value>BalloonTip</value>
-  </data>
-  <data name="$this.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="cbBaloon.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;btnRemoveOldAlarms.Name" xml:space="preserve">
-    <value>btnRemoveOldAlarms</value>
+  <data name="activeDataGridViewCheckBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Active</value>
   </data>
   <data name="btnSaveAlarms.ToolTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="&gt;&gt;dtpAlarmTime.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="txtNextAlarm.Location" type="System.Drawing.Point, System.Drawing">
     <value>38, 115</value>
@@ -399,6 +375,9 @@
   <data name="cbAlarmSound.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
+  <data name="&gt;&gt;timeDataGridViewTextBoxColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="btnSaveAlarms.Size" type="System.Drawing.Size, System.Drawing">
     <value>140, 23</value>
   </data>
@@ -414,19 +393,16 @@
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
   <data name="btnSaveAlarms.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
   <data name="popupDataGridViewCheckBoxColumn2.Width" type="System.Int32, mscorlib">
     <value>44</value>
   </data>
-  <data name="txtTimeLeft.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="&gt;&gt;txtTimeLeft.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtTimeLeft.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
   <data name="btnSaveAlarms.TabIndex" type="System.Int32, mscorlib">
@@ -447,8 +423,8 @@
   <data name="txtTimeLeft.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 49</value>
   </data>
-  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>356, 3</value>
+  <data name="&gt;&gt;activeDataGridViewCheckBoxColumn3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>UcAlarm</value>
@@ -456,11 +432,26 @@
   <data name="txtTimeLeft.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="&gt;&gt;dgvAlarms.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
   <data name="&gt;&gt;activeDataGridViewCheckBoxColumn.Name" xml:space="preserve">
     <value>activeDataGridViewCheckBoxColumn</value>
   </data>
   <data name="&gt;&gt;balloonTipDataGridViewCheckBoxColumn2.Name" xml:space="preserve">
     <value>balloonTipDataGridViewCheckBoxColumn2</value>
+  </data>
+  <data name="btnSaveAlarms.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>gbEditAlarm</value>
+  </data>
+  <data name="cbAlarmEnabled.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="dtpAlarmTime.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;btnRemoveOldAlarms.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -483,8 +474,8 @@
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="messageDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
-    <value>Message</value>
+  <data name="&gt;&gt;dgvAlarms.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="txtAlarmMessage.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -498,11 +489,14 @@
   <data name="dgvAlarms.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Nachricht:</value>
+  <data name="&gt;&gt;soundDataGridViewCheckBoxColumn3.Name" xml:space="preserve">
+    <value>soundDataGridViewCheckBoxColumn3</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
     <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cbBaloon.ToolTip" xml:space="preserve">
+    <value>Nachricht und Alarmzeit als Balloon Tip unten rechts anzeigen</value>
   </data>
   <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -537,20 +531,20 @@
   <data name="&gt;&gt;gbEditAlarm.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;btnSaveAlarms.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;alarmTimeBindingSource.Name" xml:space="preserve">
-    <value>alarmTimeBindingSource</value>
-  </data>
   <data name="&gt;&gt;btnSaveAlarms.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;popupDataGridViewCheckBoxColumn2.Name" xml:space="preserve">
     <value>popupDataGridViewCheckBoxColumn2</value>
   </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>gbEditAlarm</value>
+  <data name="&gt;&gt;gbEditAlarm.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;messageDataGridViewTextBoxColumn3.Name" xml:space="preserve">
+    <value>messageDataGridViewTextBoxColumn3</value>
+  </data>
+  <data name="&gt;&gt;btnSaveAlarms.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="label4.ToolTip" xml:space="preserve">
     <value />
@@ -558,17 +552,20 @@
   <data name="gbEditAlarm.Text" xml:space="preserve">
     <value>Alarm einstellen</value>
   </data>
-  <data name="&gt;&gt;btnTestSound.Name" xml:space="preserve">
-    <value>btnTestSound</value>
-  </data>
-  <data name="&gt;&gt;cbAlarmSound.Name" xml:space="preserve">
-    <value>cbAlarmSound</value>
+  <data name="&gt;&gt;txtNextAlarm.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="btnSaveAlarm.Text" xml:space="preserve">
     <value>Hinzufügen</value>
   </data>
+  <data name="btnRemoveOldAlarms.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="btnSaveAlarms.Text" xml:space="preserve">
     <value>Alarme Speichern</value>
+  </data>
+  <data name="&gt;&gt;popupDataGridViewCheckBoxColumn3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnSaveAlarm.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -585,8 +582,8 @@
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>834, 26</value>
   </data>
-  <data name="txtTimeLeft.Text" xml:space="preserve">
-    <value>00:00:00</value>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>356, 3</value>
   </data>
   <data name="txtTimeLeft.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial Black, 27.75pt, style=Bold</value>
@@ -594,20 +591,20 @@
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="gbEditAlarm" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="panel1" Row="2" RowSpan="1" Column="0" ColumnSpan="2" /&gt;&lt;Control Name="dgvAlarms" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBox1" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,Percent,100" /&gt;&lt;Rows Styles="AutoSize,0,Percent,100,Absolute,32,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <data name="&gt;&gt;popupDataGridViewCheckBoxColumn1.Name" xml:space="preserve">
-    <value>popupDataGridViewCheckBoxColumn1</value>
+  <data name="dtpAlarmTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 20</value>
+  </data>
+  <data name="&gt;&gt;balloonTipDataGridViewCheckBoxColumn.Name" xml:space="preserve">
+    <value>balloonTipDataGridViewCheckBoxColumn</value>
   </data>
   <data name="&gt;&gt;dtpAlarmTime.Name" xml:space="preserve">
     <value>dtpAlarmTime</value>
   </data>
-  <data name="soundDataGridViewCheckBoxColumn1.HeaderText" xml:space="preserve">
-    <value>Sound</value>
+  <data name="dtpAlarmTime.CustomFormat" xml:space="preserve">
+    <value>dd.MM.yyyy - HH:mm:ss</value>
   </data>
   <data name="popupDataGridViewCheckBoxColumn.HeaderText" xml:space="preserve">
     <value>Loop</value>
-  </data>
-  <data name="txtAlarmMessage.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
   </data>
   <data name="&gt;&gt;txtAlarmMessage.Name" xml:space="preserve">
     <value>txtAlarmMessage</value>
@@ -618,8 +615,8 @@
   <data name="&gt;&gt;soundDataGridViewCheckBoxColumn2.Name" xml:space="preserve">
     <value>soundDataGridViewCheckBoxColumn2</value>
   </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
+  <data name="popupDataGridViewCheckBoxColumn2.HeaderText" xml:space="preserve">
+    <value>Popup</value>
   </data>
   <data name="&gt;&gt;timeDataGridViewTextBoxColumn.Name" xml:space="preserve">
     <value>timeDataGridViewTextBoxColumn</value>
@@ -627,14 +624,14 @@
   <data name="btnRemoveOldAlarms.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
-  <data name="gbEditAlarm.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="&gt;&gt;balloonTipDataGridViewCheckBoxColumn3.Name" xml:space="preserve">
     <value>balloonTipDataGridViewCheckBoxColumn3</value>
   </data>
   <data name="activeDataGridViewCheckBoxColumn2.Width" type="System.Int32, mscorlib">
     <value>43</value>
+  </data>
+  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
   <data name="&gt;&gt;gbEditAlarm.Name" xml:space="preserve">
     <value>gbEditAlarm</value>
@@ -654,14 +651,17 @@
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 32</value>
   </data>
-  <data name="cbBaloon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 17</value>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
   <data name="soundDataGridViewCheckBoxColumn3.HeaderText" xml:space="preserve">
     <value>Sound</value>
   </data>
   <data name="label3.ToolTip" xml:space="preserve">
     <value />
+  </data>
+  <data name="cbPopup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 17</value>
   </data>
   <data name="cbAlarmEnabled.Location" type="System.Drawing.Point, System.Drawing">
     <value>215, 35</value>
@@ -699,20 +699,20 @@
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;balloonTipDataGridViewCheckBoxColumn3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="soundDataGridViewCheckBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Sound</value>
   </data>
-  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="dtpAlarmTime.CustomFormat" xml:space="preserve">
-    <value>dd.MM.yyyy - HH:mm:ss</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;activeDataGridViewCheckBoxColumn3.Name" xml:space="preserve">
     <value>activeDataGridViewCheckBoxColumn3</value>
   </data>
-  <data name="&gt;&gt;txtNextAlarm.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;cbPopup.Parent" xml:space="preserve">
+    <value>gbEditAlarm</value>
+  </data>
+  <data name="&gt;&gt;cbAlarmEnabled.Name" xml:space="preserve">
+    <value>cbAlarmEnabled</value>
   </data>
   <data name="dgvAlarms.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 174</value>
@@ -729,23 +729,20 @@
   <data name="panel1.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="gbEditAlarm.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
   </data>
-  <data name="&gt;&gt;dgvAlarms.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Nachricht:</value>
   </data>
   <data name="&gt;&gt;balloonTipDataGridViewCheckBoxColumn1.Name" xml:space="preserve">
     <value>balloonTipDataGridViewCheckBoxColumn1</value>
   </data>
-  <data name="btnSaveAlarms.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="groupBox1.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;dtpAlarmTime.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="gbEditAlarm.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
@@ -753,8 +750,8 @@
   <data name="&gt;&gt;timeDataGridViewTextBoxColumn1.Name" xml:space="preserve">
     <value>timeDataGridViewTextBoxColumn1</value>
   </data>
-  <data name="activeDataGridViewCheckBoxColumn1.HeaderText" xml:space="preserve">
-    <value>Active</value>
+  <data name="&gt;&gt;btnTestSound.Name" xml:space="preserve">
+    <value>btnTestSound</value>
   </data>
   <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>840, 447</value>
@@ -765,11 +762,11 @@
   <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="activeDataGridViewCheckBoxColumn3.HeaderText" xml:space="preserve">
-    <value>Active</value>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>481, 165</value>
   </data>
-  <data name="&gt;&gt;cbPopup.Parent" xml:space="preserve">
-    <value>gbEditAlarm</value>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 13</value>
   </data>
   <data name="btnTestSound.ToolTip" xml:space="preserve">
     <value>Sound Abspielen</value>
@@ -795,8 +792,11 @@
   <data name="&gt;&gt;cbAlarmSound.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;cbPopup.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;balloonTipDataGridViewCheckBoxColumn3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="soundDataGridViewCheckBoxColumn2.Width" type="System.Int32, mscorlib">
     <value>44</value>
@@ -804,8 +804,8 @@
   <data name="label1.Text" xml:space="preserve">
     <value>Alarmzeit:</value>
   </data>
-  <data name="&gt;&gt;popupDataGridViewCheckBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -813,11 +813,11 @@
   <data name="cbAlarmEnabled.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 17</value>
   </data>
-  <data name="&gt;&gt;timeDataGridViewTextBoxColumn2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
   </data>
-  <data name="btnRemoveOldAlarms.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;txtTimeLeft.Name" xml:space="preserve">
+    <value>txtTimeLeft</value>
   </data>
   <data name="&gt;&gt;messageDataGridViewTextBoxColumn.Name" xml:space="preserve">
     <value>messageDataGridViewTextBoxColumn</value>
@@ -825,11 +825,11 @@
   <data name="&gt;&gt;txtNextAlarm.Name" xml:space="preserve">
     <value>txtNextAlarm</value>
   </data>
-  <data name="timeDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
-    <value>55</value>
+  <data name="&gt;&gt;alarmTimeBindingSource.Name" xml:space="preserve">
+    <value>alarmTimeBindingSource</value>
   </data>
-  <data name="activeDataGridViewCheckBoxColumn.HeaderText" xml:space="preserve">
-    <value>Aktiviert</value>
+  <data name="cbBaloon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 17</value>
   </data>
   <data name="&gt;&gt;btnRemoveOldAlarms.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -849,8 +849,11 @@
   <data name="gbEditAlarm.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="timeDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
-    <value>Time</value>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 69</value>
+  </data>
+  <data name="&gt;&gt;cbPopup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
@@ -858,23 +861,23 @@
   <data name="&gt;&gt;soundDataGridViewCheckBoxColumn1.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>gbEditAlarm</value>
+  </data>
   <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="&gt;&gt;txtTimeLeft.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 69</value>
+  <data name="messageDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>Message</value>
   </data>
   <data name="cbBaloon.Text" xml:space="preserve">
     <value>Balloon Tip</value>
   </data>
-  <data name="&gt;&gt;popupDataGridViewCheckBoxColumn3.Type" xml:space="preserve">
+  <data name="&gt;&gt;popupDataGridViewCheckBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;soundDataGridViewCheckBoxColumn1.Name" xml:space="preserve">
-    <value>soundDataGridViewCheckBoxColumn1</value>
   </data>
   <data name="&gt;&gt;activeDataGridViewCheckBoxColumn1.Name" xml:space="preserve">
     <value>activeDataGridViewCheckBoxColumn1</value>
@@ -885,44 +888,41 @@
   <data name="cbAlarmSound.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;btnSaveAlarm.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;dtpAlarmTime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;btnRemoveOldAlarms.Name" xml:space="preserve">
+    <value>btnRemoveOldAlarms</value>
   </data>
   <data name="cbAlarmEnabled.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>481, 165</value>
+  <data name="groupBox1.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="soundDataGridViewCheckBoxColumn2.HeaderText" xml:space="preserve">
     <value>Sound</value>
   </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>gbEditAlarm</value>
+  <data name="txtAlarmMessage.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;messageDataGridViewTextBoxColumn3.Name" xml:space="preserve">
-    <value>messageDataGridViewTextBoxColumn3</value>
+  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="&gt;&gt;btnSaveAlarm.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="btnSaveAlarm.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="cbBaloon.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="activeDataGridViewCheckBoxColumn3.HeaderText" xml:space="preserve">
+    <value>Active</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="txtAlarmMessage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 65</value>
+  <data name="balloonTipDataGridViewCheckBoxColumn2.HeaderText" xml:space="preserve">
+    <value>BalloonTip</value>
   </data>
-  <data name="cbBaloon.ToolTip" xml:space="preserve">
-    <value>Nachricht und Alarmzeit als Balloon Tip unten rechts anzeigen</value>
+  <data name="&gt;&gt;cbAlarmSound.Name" xml:space="preserve">
+    <value>cbAlarmSound</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
@@ -930,20 +930,20 @@
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;gbEditAlarm.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
+  <data name="&gt;&gt;txtNextAlarm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnTestSound.Parent" xml:space="preserve">
     <value>gbEditAlarm</value>
   </data>
-  <data name="&gt;&gt;balloonTipDataGridViewCheckBoxColumn.Name" xml:space="preserve">
-    <value>balloonTipDataGridViewCheckBoxColumn</value>
+  <data name="btnSaveAlarm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>214, 127</value>
   </data>
   <data name="&gt;&gt;btnTestSound.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="cbAlarmEnabled.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="txtTimeLeft.Text" xml:space="preserve">
+    <value>00:00:00</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 418</value>
@@ -954,14 +954,14 @@
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>26, 13</value>
   </data>
-  <data name="cbPopup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 17</value>
+  <data name="timeDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Time</value>
   </data>
-  <data name="dtpAlarmTime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 20</value>
+  <data name="txtAlarmMessage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 65</value>
   </data>
-  <data name="label2.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
   </data>
   <data name="&gt;&gt;label4.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -969,35 +969,35 @@
   <data name="groupBox1.Text" xml:space="preserve">
     <value>Count Down</value>
   </data>
-  <data name="&gt;&gt;activeDataGridViewCheckBoxColumn3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;messageDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;dgvAlarms.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
+  <data name="&gt;&gt;popupDataGridViewCheckBoxColumn1.Name" xml:space="preserve">
+    <value>popupDataGridViewCheckBoxColumn1</value>
   </data>
-  <data name="&gt;&gt;soundDataGridViewCheckBoxColumn3.Name" xml:space="preserve">
-    <value>soundDataGridViewCheckBoxColumn3</value>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="dtpAlarmTime.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Um:</value>
   </data>
-  <data name="&gt;&gt;txtTimeLeft.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;soundDataGridViewCheckBoxColumn1.Name" xml:space="preserve">
+    <value>soundDataGridViewCheckBoxColumn1</value>
   </data>
-  <data name="&gt;&gt;balloonTipDataGridViewCheckBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;dgvAlarms.Name" xml:space="preserve">
     <value>dgvAlarms</value>
   </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>204, 17</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>en</value>
   </metadata>
   <metadata name="alarmTimeBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>

@@ -117,109 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="btnSystemTimeSync.Text" xml:space="preserve">
-    <value>Sync Clock</value>
-  </data>
-  <data name="lblSystemtimeDelay.Text" xml:space="preserve">
-    <value>Server Time Deviation:</value>
-  </data>
-  <data name="btnCheckSystemTime.Text" xml:space="preserve">
-    <value>Check</value>
-  </data>
-  <data name="btnPingDS.Text" xml:space="preserve">
-    <value>Ping TW Server</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="donateButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-</value>
-  </data>
-  <data name="donateButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 106</value>
-  </data>
-  <data name="btnDetectReactionTime.Text" xml:space="preserve">
-    <value>Track Reaction Time</value>
-  </data>
-  <data name="tsbAttackPlaner.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 22</value>
-  </data>
-  <data name="tsbAttackPlaner.Text" xml:space="preserve">
-    <value>Attack Planner</value>
-  </data>
-  <data name="tsbHelp.Text" xml:space="preserve">
-    <value>Help</value>
-  </data>
-  <data name="tsbUnitCalc.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAP6SURBVDhPlZJbTFt1HMePQrjUdhShrDLgtKWl7Wlpe1Zo
-        S+koK7cFSpFLLaUMKWMtVGLWUZQi5TIuWxmwjUEZ24DAnHEkM2SJj0oWlQcTX3Um+uLl0fDiNGrc1z+l
-        0Rijid/k5HdOfr/vJ7/Lof6vdpzOpPvRgOf6qNcecZd+sr//ID2R+m+Nj48/vzodNFwdC5ytMRSudlVJ
-        PwjYNV8NOtSfL4TaryfK/l2by+PCgLs62miWfVYi4kKeTaFUzIXbfAK1xVmoZTKwMhM8lyj/p/o7GjKd
-        Nt2USZbxjTY3GaqcJJzMT4s/LlMuJloVcZAsOwneevbTnZ2dpIT1Lw31ttrZgmNPGGLW56WgTMKBUcSB
-        RfoC2IJ09NdIMNGmhKnwGKyMACN9Td/u7e2lJexH6nEYL6qEyc/YvFSUiTkwF3JwigDKSayU82BVvgib
-        Ogcuiwiz7Wqsvl6NzSn/j7v3rskTCIoK9TZfYAQUSmgOyon5EGAuJFHGRZWSB7+NRovhBDR0JiKtDAYa
-        GCz0V+NR1IvYRN9gHLKxGDmlEiT/YpRwYSKdHEIsMh55T49De6z5GHlZDi2dgZ5KGpfdarSYxagvobE9
-        0op3Y5NHl3PaNLuqnOdglvJQQTo4TcaokGeQvfDgNAox41Khnn0JrJiPkF0a/77i0WDeU4w753XYiHQ+
-        joNYOv0HfX4KzJJ0YuaiRsWHv4qGz1aAIWIcbVZAfJwHszwL4aYiXCWAuQ4VVnu02PLrsOwzHuztbAop
-        bW7qzyZRWvwyFUU82HUCLHdrsO0/iTVSfAhS5fPJfvh40yHDZReDebcS8+0KrJ/XYoPUPdqKWgko5ZmR
-        gA4Xa2MyMdYkxTt9Omz5tFghwEtOBk5THsQ5HHRbaUw5lZhxynGzS4UNMlqkRYHYXHiYKhYmkbE4aDMc
-        x6hDSgA63A/osenXY6FTjUny33itot9LZfyfNPlcXGyQxs1X2pXw1xYh2F6BB7GxKGUu4n9noFNx6RUG
-        a+d0WPFqsNbLkqjFYmcxwgR+wa7+fnk6pHOeMe0phaloNuTCosjGW64SfLT+Bh7eHH5ChQOuqgZN1q/z
-        HjXu+vRY97FkbhZLXRpMEXj/6VxcGmh57/AwX3y8y3NUG/clglQyZgHuvlaOW0E7bo90IH65W7NDrmAN
-        /fRGVzE2+/TxjqJuFUL1YngrRU8/fP/t8ngh0cPtWE6ZKu9LByvAwBkZDGIeIj1VB4k0Ra3NhaqHGsVf
-        L51lsNStxWSzDP66ooPpwc7GRMmf6mqru80IU9BhFMBjoX+7F5t1JFJHWr8RFsz66vqCDYrwkMcSWF8c
-        liRSf9Od1WkDI87ef7VO+3g+4q+hKIr6A3eowa5VZFmJAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="tsbUnitCalc.Text" xml:space="preserve">
-    <value>Unit Calculator</value>
-  </data>
-  <data name="tsbSettings.Text" xml:space="preserve">
-    <value>Settings</value>
-  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAQAEBAAAAEAIABoBAAARgAAACAgAAABACAAqBAAAK4EAAAwMAAAAQAgAKglAABWFQAAQEAAAAEA
@@ -757,9 +655,5 @@
         AAAAAA////gAAAAAH////AAAAAA////+AAAAAH////8AAAAA/////8AAAAP/////4AAAB//////4AAA/
         //////8AAP////////gf/////////////////////////////////////////////////////////w==
 </value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>Inherit</value>
   </data>
 </root>

@@ -43,6 +43,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvAlarms = new System.Windows.Forms.DataGridView();
+            this.timeDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.messageDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.activeDataGridViewCheckBoxColumn3 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.soundDataGridViewCheckBoxColumn3 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.popupDataGridViewCheckBoxColumn3 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.alarmTimeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.timeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.messageDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.activeDataGridViewCheckBoxColumn2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
@@ -71,19 +77,12 @@
             this.balloonTipDataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.soundDataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.popupDataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.alarmTimeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.timeDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.messageDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.activeDataGridViewCheckBoxColumn3 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.balloonTipDataGridViewCheckBoxColumn3 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.soundDataGridViewCheckBoxColumn3 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.popupDataGridViewCheckBoxColumn3 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.gbEditAlarm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlarms)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.alarmTimeBindingSource)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.alarmTimeBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // gbEditAlarm
@@ -120,7 +119,7 @@
             // btnSaveAlarm
             // 
             resources.ApplyResources(this.btnSaveAlarm, "btnSaveAlarm");
-            this.btnSaveAlarm.Image = global::DS_Timer.Properties.Resources.clock_add;
+            this.btnSaveAlarm.Image = global::DS_Timer.Properties.Resources.icons8_alarm_16;
             this.btnSaveAlarm.Name = "btnSaveAlarm";
             this.toolTip.SetToolTip(this.btnSaveAlarm, resources.GetString("btnSaveAlarm.ToolTip"));
             this.btnSaveAlarm.UseVisualStyleBackColor = true;
@@ -156,7 +155,7 @@
             // btnTestSound
             // 
             resources.ApplyResources(this.btnTestSound, "btnTestSound");
-            this.btnTestSound.Image = global::DS_Timer.Properties.Resources.sound;
+            this.btnTestSound.Image = global::DS_Timer.Properties.Resources.icons8_sound_16;
             this.btnTestSound.Name = "btnTestSound";
             this.toolTip.SetToolTip(this.btnTestSound, resources.GetString("btnTestSound.ToolTip"));
             this.btnTestSound.UseVisualStyleBackColor = true;
@@ -189,12 +188,45 @@
             this.timeDataGridViewTextBoxColumn2,
             this.messageDataGridViewTextBoxColumn3,
             this.activeDataGridViewCheckBoxColumn3,
-            this.balloonTipDataGridViewCheckBoxColumn3,
             this.soundDataGridViewCheckBoxColumn3,
             this.popupDataGridViewCheckBoxColumn3});
             this.dgvAlarms.DataSource = this.alarmTimeBindingSource;
             this.dgvAlarms.Name = "dgvAlarms";
             this.toolTip.SetToolTip(this.dgvAlarms, resources.GetString("dgvAlarms.ToolTip"));
+            // 
+            // timeDataGridViewTextBoxColumn2
+            // 
+            this.timeDataGridViewTextBoxColumn2.DataPropertyName = "Time";
+            resources.ApplyResources(this.timeDataGridViewTextBoxColumn2, "timeDataGridViewTextBoxColumn2");
+            this.timeDataGridViewTextBoxColumn2.Name = "timeDataGridViewTextBoxColumn2";
+            // 
+            // messageDataGridViewTextBoxColumn3
+            // 
+            this.messageDataGridViewTextBoxColumn3.DataPropertyName = "Message";
+            resources.ApplyResources(this.messageDataGridViewTextBoxColumn3, "messageDataGridViewTextBoxColumn3");
+            this.messageDataGridViewTextBoxColumn3.Name = "messageDataGridViewTextBoxColumn3";
+            // 
+            // activeDataGridViewCheckBoxColumn3
+            // 
+            this.activeDataGridViewCheckBoxColumn3.DataPropertyName = "Active";
+            resources.ApplyResources(this.activeDataGridViewCheckBoxColumn3, "activeDataGridViewCheckBoxColumn3");
+            this.activeDataGridViewCheckBoxColumn3.Name = "activeDataGridViewCheckBoxColumn3";
+            // 
+            // soundDataGridViewCheckBoxColumn3
+            // 
+            this.soundDataGridViewCheckBoxColumn3.DataPropertyName = "Sound";
+            resources.ApplyResources(this.soundDataGridViewCheckBoxColumn3, "soundDataGridViewCheckBoxColumn3");
+            this.soundDataGridViewCheckBoxColumn3.Name = "soundDataGridViewCheckBoxColumn3";
+            // 
+            // popupDataGridViewCheckBoxColumn3
+            // 
+            this.popupDataGridViewCheckBoxColumn3.DataPropertyName = "Popup";
+            resources.ApplyResources(this.popupDataGridViewCheckBoxColumn3, "popupDataGridViewCheckBoxColumn3");
+            this.popupDataGridViewCheckBoxColumn3.Name = "popupDataGridViewCheckBoxColumn3";
+            // 
+            // alarmTimeBindingSource
+            // 
+            this.alarmTimeBindingSource.DataSource = typeof(DS_Timer.Alarm.AlarmTime);
             // 
             // timeDataGridViewTextBoxColumn1
             // 
@@ -303,7 +335,7 @@
             // btnRemoveOldAlarms
             // 
             resources.ApplyResources(this.btnRemoveOldAlarms, "btnRemoveOldAlarms");
-            this.btnRemoveOldAlarms.Image = global::DS_Timer.Properties.Resources.clock_delete;
+            this.btnRemoveOldAlarms.Image = global::DS_Timer.Properties.Resources.icons8_minus_16;
             this.btnRemoveOldAlarms.Name = "btnRemoveOldAlarms";
             this.toolTip.SetToolTip(this.btnRemoveOldAlarms, resources.GetString("btnRemoveOldAlarms.ToolTip"));
             this.btnRemoveOldAlarms.UseVisualStyleBackColor = true;
@@ -312,7 +344,7 @@
             // btnSaveAlarms
             // 
             resources.ApplyResources(this.btnSaveAlarms, "btnSaveAlarms");
-            this.btnSaveAlarms.Image = global::DS_Timer.Properties.Resources.disk;
+            this.btnSaveAlarms.Image = global::DS_Timer.Properties.Resources.icons8_save_16;
             this.btnSaveAlarms.Name = "btnSaveAlarms";
             this.toolTip.SetToolTip(this.btnSaveAlarms, resources.GetString("btnSaveAlarms.ToolTip"));
             this.btnSaveAlarms.UseVisualStyleBackColor = true;
@@ -399,46 +431,6 @@
             resources.ApplyResources(this.popupDataGridViewCheckBoxColumn1, "popupDataGridViewCheckBoxColumn1");
             this.popupDataGridViewCheckBoxColumn1.Name = "popupDataGridViewCheckBoxColumn1";
             // 
-            // alarmTimeBindingSource
-            // 
-            this.alarmTimeBindingSource.DataSource = typeof(DS_Timer.Alarm.AlarmTime);
-            // 
-            // timeDataGridViewTextBoxColumn2
-            // 
-            this.timeDataGridViewTextBoxColumn2.DataPropertyName = "Time";
-            resources.ApplyResources(this.timeDataGridViewTextBoxColumn2, "timeDataGridViewTextBoxColumn2");
-            this.timeDataGridViewTextBoxColumn2.Name = "timeDataGridViewTextBoxColumn2";
-            // 
-            // messageDataGridViewTextBoxColumn3
-            // 
-            this.messageDataGridViewTextBoxColumn3.DataPropertyName = "Message";
-            resources.ApplyResources(this.messageDataGridViewTextBoxColumn3, "messageDataGridViewTextBoxColumn3");
-            this.messageDataGridViewTextBoxColumn3.Name = "messageDataGridViewTextBoxColumn3";
-            // 
-            // activeDataGridViewCheckBoxColumn3
-            // 
-            this.activeDataGridViewCheckBoxColumn3.DataPropertyName = "Active";
-            resources.ApplyResources(this.activeDataGridViewCheckBoxColumn3, "activeDataGridViewCheckBoxColumn3");
-            this.activeDataGridViewCheckBoxColumn3.Name = "activeDataGridViewCheckBoxColumn3";
-            // 
-            // balloonTipDataGridViewCheckBoxColumn3
-            // 
-            this.balloonTipDataGridViewCheckBoxColumn3.DataPropertyName = "Notification";
-            resources.ApplyResources(this.balloonTipDataGridViewCheckBoxColumn3, "balloonTipDataGridViewCheckBoxColumn3");
-            this.balloonTipDataGridViewCheckBoxColumn3.Name = "balloonTipDataGridViewCheckBoxColumn3";
-            // 
-            // soundDataGridViewCheckBoxColumn3
-            // 
-            this.soundDataGridViewCheckBoxColumn3.DataPropertyName = "Sound";
-            resources.ApplyResources(this.soundDataGridViewCheckBoxColumn3, "soundDataGridViewCheckBoxColumn3");
-            this.soundDataGridViewCheckBoxColumn3.Name = "soundDataGridViewCheckBoxColumn3";
-            // 
-            // popupDataGridViewCheckBoxColumn3
-            // 
-            this.popupDataGridViewCheckBoxColumn3.DataPropertyName = "Popup";
-            resources.ApplyResources(this.popupDataGridViewCheckBoxColumn3, "popupDataGridViewCheckBoxColumn3");
-            this.popupDataGridViewCheckBoxColumn3.Name = "popupDataGridViewCheckBoxColumn3";
-            // 
             // UcAlarm
             // 
             resources.ApplyResources(this, "$this");
@@ -449,11 +441,11 @@
             this.gbEditAlarm.ResumeLayout(false);
             this.gbEditAlarm.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlarms)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.alarmTimeBindingSource)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.alarmTimeBindingSource)).EndInit();
             this.ResumeLayout(false);
 
 		}

@@ -219,6 +219,9 @@
     <EmbeddedResource Include="Gui\DialogFirstStart.resx">
       <DependentUpon>DialogFirstStart.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FormAlarm.en.resx">
+      <DependentUpon>FormAlarm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Gui\FormAlarm.resx">
       <DependentUpon>FormAlarm.cs</DependentUpon>
       <SubType>Designer</SubType>

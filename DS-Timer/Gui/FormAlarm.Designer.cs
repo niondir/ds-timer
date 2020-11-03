@@ -28,23 +28,23 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAlarm));
-			this.ucAlarm = new DS_Timer.Gui.UcAlarm();
-			this.SuspendLayout();
-			// 
-			// ucAlarm
-			// 
-			this.ucAlarm.AlarmHandler = null;
-			resources.ApplyResources(this.ucAlarm, "ucAlarm");
-			this.ucAlarm.Name = "ucAlarm";
-			// 
-			// FormAlarm
-			// 
-			resources.ApplyResources(this, "$this");
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Controls.Add(this.ucAlarm);
-			this.Name = "FormAlarm";
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAlarm));
+            this.ucAlarm = new DS_Timer.Gui.UcAlarm();
+            this.SuspendLayout();
+            // 
+            // ucAlarm
+            // 
+            resources.ApplyResources(this.ucAlarm, "ucAlarm");
+            this.ucAlarm.AlarmHandler = null;
+            this.ucAlarm.Name = "ucAlarm";
+            // 
+            // FormAlarm
+            // 
+            resources.ApplyResources(this, "$this");
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.ucAlarm);
+            this.Name = "FormAlarm";
+            this.ResumeLayout(false);
 
 		}
 

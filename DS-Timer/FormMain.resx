@@ -128,26 +128,20 @@
     <value>Einheitenrechner</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="tsbSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 22</value>
+  <data name="txtTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>323, 60</value>
   </data>
   <data name="txtSystemTimeDelay.Location" type="System.Drawing.Point, System.Drawing">
     <value>134, 14</value>
   </data>
-  <data name="txtTime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>323, 60</value>
+  <data name="&gt;&gt;tsbMiniClock.Name" xml:space="preserve">
+    <value>tsbMiniClock</value>
   </data>
   <data name="&gt;&gt;btnTest.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>61, 13</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 76</value>
-  </data>
-  <data name="tsbAttackPlaner.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 22</value>
   </data>
   <data name="&gt;&gt;txtTime.Parent" xml:space="preserve">
     <value>$this</value>
@@ -184,9 +178,6 @@
   </data>
   <data name="txtTime.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial Black, 27.75pt, style=Bold</value>
-  </data>
-  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 105</value>
   </data>
   <data name="btnPingDS.Text" xml:space="preserve">
     <value>Ping DS Server</value>
@@ -225,8 +216,8 @@
   <data name="txtAdjust.Location" type="System.Drawing.Point, System.Drawing">
     <value>312, 57</value>
   </data>
-  <data name="tsbMiniClock.Text" xml:space="preserve">
-    <value>Mini Timer</value>
+  <data name="&gt;&gt;txtTime.Name" xml:space="preserve">
+    <value>txtTime</value>
   </data>
   <data name="&gt;&gt;btnCheckSystemTime.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -270,17 +261,20 @@
   <data name="&gt;&gt;btnTest.Name" xml:space="preserve">
     <value>btnTest</value>
   </data>
+  <data name="&gt;&gt;tsbHelp.Name" xml:space="preserve">
+    <value>tsbHelp</value>
+  </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="tsbSettings.Text" xml:space="preserve">
-    <value>Einstellungen</value>
   </data>
   <data name="btnCheckSystemTime.Text" xml:space="preserve">
     <value>Prüfen</value>
   </data>
   <data name="&gt;&gt;txtSystemTimeDelay.Name" xml:space="preserve">
     <value>txtSystemTimeDelay</value>
+  </data>
+  <data name="&gt;&gt;tsbMiniClock.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="txtRTT.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -293,6 +287,9 @@
   </data>
   <data name="btnCheckSystemTime.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
+  </data>
+  <data name="donateButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 115</value>
   </data>
   <data name="&gt;&gt;btnDetectReactionTime.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -326,165 +323,6 @@
   </data>
   <data name="tsbAlarm.Size" type="System.Drawing.Size, System.Drawing">
     <value>59, 22</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="btnDetectReactionTime.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;btnDetectReactionTime.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btnSystemTimeSync.Name" xml:space="preserve">
-    <value>btnSystemTimeSync</value>
-  </data>
-  <data name="tsbUnitCalc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 22</value>
-  </data>
-  <data name="lblSystemtimeDelay.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnPingDS.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="txtTime.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="tsbHelp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 22</value>
-  </data>
-  <data name="lblSystemtimeDelay.Text" xml:space="preserve">
-    <value>Serverzeitabweichung:</value>
-  </data>
-  <data name="btnTest.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="tsbHelp.ToolTipText" xml:space="preserve">
-    <value>Anleitung &amp; Informationen</value>
-  </data>
-  <data name="btnPingDS.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 23</value>
-  </data>
-  <data name="donateButton1.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="lblSystemtimeDelay.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;tsbSettings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtTime.Name" xml:space="preserve">
-    <value>txtTime</value>
-  </data>
-  <data name="&gt;&gt;tsbAttackPlaner.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tsbAttackPlaner.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="&gt;&gt;donateButton1.Name" xml:space="preserve">
-    <value>donateButton1</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;txtAdjust.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnPingDS.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;txtRTT.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="lblSystemtimeDelay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 13</value>
-  </data>
-  <data name="toolStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>348, 25</value>
-  </data>
-  <data name="tsbMiniClock.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 22</value>
-  </data>
-  <data name="&gt;&gt;tsbAttackPlaner.Name" xml:space="preserve">
-    <value>tsbAttackPlaner</value>
-  </data>
-  <data name="lblSystemtimeDelay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 16</value>
-  </data>
-  <data name="&gt;&gt;tsbHelp.Name" xml:space="preserve">
-    <value>tsbHelp</value>
-  </data>
-  <data name="btnDetectReactionTime.Text" xml:space="preserve">
-    <value>Reaktionszeit Bestimmen</value>
-  </data>
-  <data name="&gt;&gt;btnDetectReactionTime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnPingDS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>199, 75</value>
-  </data>
-  <data name="&gt;&gt;donateButton1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tsbMiniClock.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtAdjust.Name" xml:space="preserve">
-    <value>txtAdjust</value>
-  </data>
-  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="txtAdjust.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnSystemTimeSync.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblSystemtimeDelay.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;lblSystemtimeDelay.Name" xml:space="preserve">
-    <value>lblSystemtimeDelay</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="btnSystemTimeSync.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 23</value>
-  </data>
-  <data name="&gt;&gt;tsbMiniClock.Name" xml:space="preserve">
-    <value>tsbMiniClock</value>
-  </data>
-  <data name="txtRTT.Location" type="System.Drawing.Point, System.Drawing">
-    <value>134, 77</value>
-  </data>
-  <data name="txtSystemTimeDelay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 20</value>
-  </data>
-  <data name="btnSystemTimeSync.Location" type="System.Drawing.Point, System.Drawing">
-    <value>134, 40</value>
-  </data>
-  <data name="&gt;&gt;lblSystemtimeDelay.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;donateButton1.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;tsbAlarm.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnTest.Text" xml:space="preserve">
-    <value>button1</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1024,6 +862,168 @@
         /////wAAAAD/////gAAAAf///////////////////////////////////////////////////////w==
 </value>
   </data>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="btnDetectReactionTime.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;btnDetectReactionTime.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnCheckSystemTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblSystemtimeDelay.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnPingDS.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="txtTime.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tsbHelp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="lblSystemtimeDelay.Text" xml:space="preserve">
+    <value>Serverzeitabweichung:</value>
+  </data>
+  <data name="btnTest.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tsbUnitCalc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="&gt;&gt;tsbAttackPlaner.Name" xml:space="preserve">
+    <value>tsbAttackPlaner</value>
+  </data>
+  <data name="tsbMiniClock.Text" xml:space="preserve">
+    <value>Mini Timer</value>
+  </data>
+  <data name="btnPingDS.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 23</value>
+  </data>
+  <data name="donateButton1.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="lblSystemtimeDelay.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;tsbSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tsbHelp.ToolTipText" xml:space="preserve">
+    <value>Anleitung &amp; Informationen</value>
+  </data>
+  <data name="tsbAttackPlaner.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="&gt;&gt;donateButton1.Name" xml:space="preserve">
+    <value>donateButton1</value>
+  </data>
+  <data name="&gt;&gt;txtAdjust.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnPingDS.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;txtRTT.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="lblSystemtimeDelay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 13</value>
+  </data>
+  <data name="&gt;&gt;tsbAttackPlaner.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="toolStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>348, 25</value>
+  </data>
+  <data name="tsbMiniClock.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 22</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 76</value>
+  </data>
+  <data name="lblSystemtimeDelay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 16</value>
+  </data>
+  <data name="&gt;&gt;donateButton1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnDetectReactionTime.Text" xml:space="preserve">
+    <value>Reaktionszeit Bestimmen</value>
+  </data>
+  <data name="&gt;&gt;btnDetectReactionTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnPingDS.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 75</value>
+  </data>
+  <data name="tsbAttackPlaner.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 22</value>
+  </data>
+  <data name="&gt;&gt;txtAdjust.Name" xml:space="preserve">
+    <value>txtAdjust</value>
+  </data>
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="txtAdjust.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnSystemTimeSync.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblSystemtimeDelay.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lblSystemtimeDelay.Name" xml:space="preserve">
+    <value>lblSystemtimeDelay</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="btnSystemTimeSync.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 23</value>
+  </data>
+  <data name="tsbSettings.Text" xml:space="preserve">
+    <value>Einstellungen</value>
+  </data>
+  <data name="tsbSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="txtRTT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>134, 77</value>
+  </data>
+  <data name="txtSystemTimeDelay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 20</value>
+  </data>
+  <data name="btnSystemTimeSync.Location" type="System.Drawing.Point, System.Drawing">
+    <value>134, 40</value>
+  </data>
+  <data name="&gt;&gt;lblSystemtimeDelay.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;donateButton1.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;tsbAlarm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnTest.Text" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 105</value>
+  </data>
   <data name="&gt;&gt;btnTest.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
@@ -1045,14 +1045,14 @@
   <data name="txtTime.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 39</value>
   </data>
-  <data name="&gt;&gt;txtSystemTimeDelay.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
   <data name="txtAdjust.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="donateButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 115</value>
+  <data name="&gt;&gt;btnSystemTimeSync.Name" xml:space="preserve">
+    <value>btnSystemTimeSync</value>
+  </data>
+  <data name="&gt;&gt;txtSystemTimeDelay.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="txtTime.Text" xml:space="preserve">
     <value>00:00:00:0000</value>
@@ -1145,9 +1145,6 @@
   <data name="&gt;&gt;toolStrip.Name" xml:space="preserve">
     <value>toolStrip</value>
   </data>
-  <data name="&gt;&gt;btnCheckSystemTime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
@@ -1188,7 +1185,7 @@
     <value>tsbAlarm</value>
   </data>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>en</value>
+    <value>de</value>
   </metadata>
   <metadata name="toolStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
