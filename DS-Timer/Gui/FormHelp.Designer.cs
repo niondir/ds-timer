@@ -36,11 +36,13 @@
             this.linkWebsite = new System.Windows.Forms.LinkLabel();
             this.lblEditorName = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblProgrammerName = new System.Windows.Forms.Label();
+            this.linkIcons = new System.Windows.Forms.LinkLabel();
             this.gbAbout = new System.Windows.Forms.GroupBox();
             this.donateButton1 = new DS_Timer.Gui.DonateButton();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lblProgrammerName = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.gbAbout.SuspendLayout();
             this.SuspendLayout();
@@ -82,6 +84,7 @@
             // tableLayoutPanel1
             // 
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
+            this.tableLayoutPanel1.Controls.Add(this.label5, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 2);
@@ -90,28 +93,14 @@
             this.tableLayoutPanel1.Controls.Add(this.linkBugtracker, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.lblEditorName, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.lblProgrammerName, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.linkIcons, 1, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
-            // gbAbout
+            // label5
             // 
-            this.gbAbout.Controls.Add(this.tableLayoutPanel1);
-            resources.ApplyResources(this.gbAbout, "gbAbout");
-            this.gbAbout.Name = "gbAbout";
-            this.gbAbout.TabStop = false;
-            // 
-            // donateButton1
-            // 
-            resources.ApplyResources(this.donateButton1, "donateButton1");
-            this.donateButton1.Name = "donateButton1";
-            this.donateButton1.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
             // 
             // label4
             // 
@@ -122,6 +111,35 @@
             // 
             resources.ApplyResources(this.lblProgrammerName, "lblProgrammerName");
             this.lblProgrammerName.Name = "lblProgrammerName";
+            // 
+            // linkIcons
+            // 
+            resources.ApplyResources(this.linkIcons, "linkIcons");
+            this.linkIcons.Name = "linkIcons";
+            this.linkIcons.TabStop = true;
+            this.linkIcons.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkIcons_LinkClicked);
+            // 
+            // gbAbout
+            // 
+            resources.ApplyResources(this.gbAbout, "gbAbout");
+            this.gbAbout.Controls.Add(this.tableLayoutPanel1);
+            this.gbAbout.Name = "gbAbout";
+            this.gbAbout.TabStop = false;
+            // 
+            // donateButton1
+            // 
+            resources.ApplyResources(this.donateButton1, "donateButton1");
+            this.donateButton1.FlatAppearance.BorderSize = 0;
+            this.donateButton1.Name = "donateButton1";
+            this.donateButton1.UseCompatibleTextRendering = true;
+            this.donateButton1.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             // 
             // FormHelp
             // 
@@ -155,5 +173,7 @@
 		private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblProgrammerName;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.LinkLabel linkIcons;
     }
 }

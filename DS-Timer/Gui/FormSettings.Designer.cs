@@ -128,6 +128,7 @@
             // btnOpenAlarmFile
             // 
             resources.ApplyResources(this.btnOpenAlarmFile, "btnOpenAlarmFile");
+            this.btnOpenAlarmFile.Image = global::DS_Timer.Properties.Resources.icons8_search_folder_16;
             this.btnOpenAlarmFile.Name = "btnOpenAlarmFile";
             this.toolTip.SetToolTip(this.btnOpenAlarmFile, resources.GetString("btnOpenAlarmFile.ToolTip"));
             this.btnOpenAlarmFile.UseVisualStyleBackColor = true;
@@ -136,6 +137,7 @@
             // btnTestSound
             // 
             resources.ApplyResources(this.btnTestSound, "btnTestSound");
+            this.btnTestSound.Image = global::DS_Timer.Properties.Resources.icons8_sound_16;
             this.btnTestSound.Name = "btnTestSound";
             this.toolTip.SetToolTip(this.btnTestSound, resources.GetString("btnTestSound.ToolTip"));
             this.btnTestSound.UseVisualStyleBackColor = true;
@@ -152,6 +154,7 @@
             // btnCheckUpdate
             // 
             resources.ApplyResources(this.btnCheckUpdate, "btnCheckUpdate");
+            this.btnCheckUpdate.Image = global::DS_Timer.Properties.Resources.icons8_sync_16;
             this.btnCheckUpdate.Name = "btnCheckUpdate";
             this.toolTip.SetToolTip(this.btnCheckUpdate, resources.GetString("btnCheckUpdate.ToolTip"));
             this.btnCheckUpdate.UseVisualStyleBackColor = true;
@@ -160,7 +163,7 @@
             // btnConfigDir
             // 
             resources.ApplyResources(this.btnConfigDir, "btnConfigDir");
-            this.btnConfigDir.Image = global::DS_Timer.Properties.Resources.folder_go;
+            this.btnConfigDir.Image = global::DS_Timer.Properties.Resources.icons8_opened_folder_16;
             this.btnConfigDir.Name = "btnConfigDir";
             this.toolTip.SetToolTip(this.btnConfigDir, resources.GetString("btnConfigDir.ToolTip"));
             this.btnConfigDir.UseVisualStyleBackColor = true;
@@ -195,7 +198,7 @@
             // btnDeleteWebsite
             // 
             resources.ApplyResources(this.btnDeleteWebsite, "btnDeleteWebsite");
-            this.btnDeleteWebsite.Image = global::DS_Timer.Properties.Resources.delete;
+            this.btnDeleteWebsite.Image = global::DS_Timer.Properties.Resources.icons8_minus_16;
             this.btnDeleteWebsite.Name = "btnDeleteWebsite";
             this.toolTip.SetToolTip(this.btnDeleteWebsite, resources.GetString("btnDeleteWebsite.ToolTip"));
             this.btnDeleteWebsite.UseVisualStyleBackColor = true;
@@ -204,7 +207,7 @@
             // btnAddWebsite
             // 
             resources.ApplyResources(this.btnAddWebsite, "btnAddWebsite");
-            this.btnAddWebsite.Image = global::DS_Timer.Properties.Resources.add;
+            this.btnAddWebsite.Image = global::DS_Timer.Properties.Resources.icons8_add_16;
             this.btnAddWebsite.Name = "btnAddWebsite";
             this.toolTip.SetToolTip(this.btnAddWebsite, resources.GetString("btnAddWebsite.ToolTip"));
             this.btnAddWebsite.UseVisualStyleBackColor = true;
@@ -293,7 +296,7 @@
             // btnLoadWorldData
             // 
             resources.ApplyResources(this.btnLoadWorldData, "btnLoadWorldData");
-            this.btnLoadWorldData.Image = global::DS_Timer.Properties.Resources.world_go;
+            this.btnLoadWorldData.Image = global::DS_Timer.Properties.Resources.icons8_earth_planet_16;
             this.btnLoadWorldData.Name = "btnLoadWorldData";
             this.toolTip.SetToolTip(this.btnLoadWorldData, resources.GetString("btnLoadWorldData.ToolTip"));
             this.btnLoadWorldData.UseVisualStyleBackColor = true;

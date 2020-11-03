@@ -12,7 +12,7 @@
     <AssemblyName>DS-Timer</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <ApplicationIcon>clock.ico</ApplicationIcon>
+    <ApplicationIcon>icons8_Clock.ico</ApplicationIcon>
     <ApplicationManifest>Properties\DataSources\app.manifest</ApplicationManifest>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -361,6 +361,31 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="clock.ico" />
+    <Content Include="Hourglass.ico" />
+    <Content Include="icons8_Clock.ico" />
+    <None Include="Resources\icons8-arrow-pointing-left-16.png" />
+    <None Include="Resources\icons8-arrow-16.png" />
+    <None Include="Resources\icons8-copy-16.png" />
+    <None Include="Resources\icons8-sync-16.png" />
+    <None Include="Resources\icons8-sound-16.png" />
+    <None Include="Resources\icons8-settings-16.png" />
+    <None Include="Resources\icons8-search-folder-16.png" />
+    <None Include="Resources\icons8-schedule-16.png" />
+    <None Include="Resources\icons8-save-16.png" />
+    <None Include="Resources\icons8-opened-folder-16.png" />
+    <None Include="Resources\icons8-ok-16.png" />
+    <None Include="Resources\icons8-minus-16.png" />
+    <None Include="Resources\icons8-list-16.png" />
+    <None Include="Resources\icons8-linking-16.png" />
+    <None Include="Resources\icons8-info-16.png" />
+    <None Include="Resources\icons8-import-16.png" />
+    <None Include="Resources\icons8-export-16.png" />
+    <None Include="Resources\icons8-earth-planet-16.png" />
+    <None Include="Resources\icons8-double-right-16.png" />
+    <None Include="Resources\icons8-coming-soon-16.png" />
+    <None Include="Resources\icons8-alarm-16.png" />
+    <None Include="Resources\icons8-add-new-16.png" />
+    <None Include="Resources\icons8-add-16.png" />
     <None Include="Resources\clock_delete.png" />
     <None Include="Resources\new.png" />
     <None Include="Resources\accept.png" />

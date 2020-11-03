@@ -27,6 +27,11 @@ namespace DS_Timer.Gui
 			Process.Start("https://github.com/Niondir/ds-timer");
 		}
 
+		private void linkIcons_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+		{
+			Process.Start("https://icons8.com/");
+		}
+
 		private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
 		{
 

@@ -29,9 +29,9 @@
 		private void InitializeComponent()
 		{
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UcAttackPlaner));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UcAttackPlaner));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvAttacks = new System.Windows.Forms.DataGridView();
@@ -89,6 +89,7 @@
             this.villagesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label15 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnDelAttackPlan = new System.Windows.Forms.Button();
             this.btnNewAttackPlan = new System.Windows.Forms.Button();
             this.cbAttackPlans = new System.Windows.Forms.ComboBox();
@@ -139,7 +140,6 @@
             // 
             // dgvAttacks
             // 
-            resources.ApplyResources(this.dgvAttacks, "dgvAttacks");
             this.dgvAttacks.AllowUserToAddRows = false;
             this.dgvAttacks.AllowUserToResizeRows = false;
             this.dgvAttacks.AutoGenerateColumns = false;
@@ -167,10 +167,10 @@
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvAttacks.DefaultCellStyle = dataGridViewCellStyle4;
+            resources.ApplyResources(this.dgvAttacks, "dgvAttacks");
             this.dgvAttacks.Name = "dgvAttacks";
             this.dgvAttacks.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvAttacks.TabStop = false;
-            this.toolTip.SetToolTip(this.dgvAttacks, resources.GetString("dgvAttacks.ToolTip"));
             this.dgvAttacks.CellBeginEdit += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.dgvAttacks_CellBeginEdit);
             this.dgvAttacks.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAttacks_CellEndEdit);
             this.dgvAttacks.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvAttacks_CellFormatting);
@@ -265,7 +265,6 @@
             // 
             // cmsAttacks
             // 
-            resources.ApplyResources(this.cmsAttacks, "cmsAttacks");
             this.cmsAttacks.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiOrderAsNew,
             this.tsmiTimeToTimer,
@@ -275,53 +274,53 @@
             this.tsmiCreateAlarm,
             this.tsmiExportSelected});
             this.cmsAttacks.Name = "cmsAttacks";
-            this.toolTip.SetToolTip(this.cmsAttacks, resources.GetString("cmsAttacks.ToolTip"));
+            resources.ApplyResources(this.cmsAttacks, "cmsAttacks");
             // 
             // tsmiOrderAsNew
             // 
-            resources.ApplyResources(this.tsmiOrderAsNew, "tsmiOrderAsNew");
-            this.tsmiOrderAsNew.Image = global::DS_Timer.Properties.Resources._new;
+            this.tsmiOrderAsNew.Image = global::DS_Timer.Properties.Resources.icons8_add_new_16;
             this.tsmiOrderAsNew.Name = "tsmiOrderAsNew";
+            resources.ApplyResources(this.tsmiOrderAsNew, "tsmiOrderAsNew");
             this.tsmiOrderAsNew.Click += new System.EventHandler(this.tsmiOrderAsNew_Click);
             // 
             // tsmiTimeToTimer
             // 
-            resources.ApplyResources(this.tsmiTimeToTimer, "tsmiTimeToTimer");
-            this.tsmiTimeToTimer.Image = global::DS_Timer.Properties.Resources.clock_link;
+            this.tsmiTimeToTimer.Image = global::DS_Timer.Properties.Resources.icons8_coming_soon_16;
             this.tsmiTimeToTimer.Name = "tsmiTimeToTimer";
+            resources.ApplyResources(this.tsmiTimeToTimer, "tsmiTimeToTimer");
             this.tsmiTimeToTimer.Click += new System.EventHandler(this.tsmiTimeToTimer_Click);
             // 
             // tsmiUrlToClipboard
             // 
+            this.tsmiUrlToClipboard.Image = global::DS_Timer.Properties.Resources.icons8_copy_16;
             resources.ApplyResources(this.tsmiUrlToClipboard, "tsmiUrlToClipboard");
-            this.tsmiUrlToClipboard.Image = global::DS_Timer.Properties.Resources.report_disk;
             this.tsmiUrlToClipboard.Name = "tsmiUrlToClipboard";
             this.tsmiUrlToClipboard.Click += new System.EventHandler(this.tsmiUrlToClipboard_Click);
             // 
             // toolStripSeparator1
             // 
-            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
             this.toolStripSeparator1.Name = "toolStripSeparator1";
+            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
             // 
             // tsmiOpenInBrowser
             // 
-            resources.ApplyResources(this.tsmiOpenInBrowser, "tsmiOpenInBrowser");
-            this.tsmiOpenInBrowser.Image = global::DS_Timer.Properties.Resources.tab_go;
+            this.tsmiOpenInBrowser.Image = global::DS_Timer.Properties.Resources.icons8_linking_16;
             this.tsmiOpenInBrowser.Name = "tsmiOpenInBrowser";
+            resources.ApplyResources(this.tsmiOpenInBrowser, "tsmiOpenInBrowser");
             this.tsmiOpenInBrowser.Click += new System.EventHandler(this.tsmiOpenInBrowser_Click);
             // 
             // tsmiCreateAlarm
             // 
-            resources.ApplyResources(this.tsmiCreateAlarm, "tsmiCreateAlarm");
-            this.tsmiCreateAlarm.Image = global::DS_Timer.Properties.Resources.clock_add;
+            this.tsmiCreateAlarm.Image = global::DS_Timer.Properties.Resources.icons8_alarm_16;
             this.tsmiCreateAlarm.Name = "tsmiCreateAlarm";
+            resources.ApplyResources(this.tsmiCreateAlarm, "tsmiCreateAlarm");
             this.tsmiCreateAlarm.Click += new System.EventHandler(this.tsmiCreateAlarm_Click);
             // 
             // tsmiExportSelected
             // 
-            resources.ApplyResources(this.tsmiExportSelected, "tsmiExportSelected");
-            this.tsmiExportSelected.Image = global::DS_Timer.Properties.Resources.basket_remove;
+            this.tsmiExportSelected.Image = global::DS_Timer.Properties.Resources.icons8_export_16;
             this.tsmiExportSelected.Name = "tsmiExportSelected";
+            resources.ApplyResources(this.tsmiExportSelected, "tsmiExportSelected");
             this.tsmiExportSelected.Click += new System.EventHandler(this.tsmiExportSelected_Click);
             // 
             // attackOrderBindingSource
@@ -336,7 +335,6 @@
             // 
             // groupBox1
             // 
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.ucStartVillageSelector);
             this.groupBox1.Controls.Add(this.ucTargetVillageSelector);
             this.groupBox1.Controls.Add(this.rbArrivle);
@@ -352,21 +350,19 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
-            this.toolTip.SetToolTip(this.groupBox1, resources.GetString("groupBox1.ToolTip"));
             // 
             // ucStartVillageSelector
             // 
             resources.ApplyResources(this.ucStartVillageSelector, "ucStartVillageSelector");
             this.ucStartVillageSelector.Name = "ucStartVillageSelector";
-            this.toolTip.SetToolTip(this.ucStartVillageSelector, resources.GetString("ucStartVillageSelector.ToolTip"));
             // 
             // ucTargetVillageSelector
             // 
             resources.ApplyResources(this.ucTargetVillageSelector, "ucTargetVillageSelector");
             this.ucTargetVillageSelector.Name = "ucTargetVillageSelector";
-            this.toolTip.SetToolTip(this.ucTargetVillageSelector, resources.GetString("ucTargetVillageSelector.ToolTip"));
             // 
             // rbArrivle
             // 
@@ -390,7 +386,6 @@
             resources.ApplyResources(this.dtpArrivle, "dtpArrivle");
             this.dtpArrivle.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpArrivle.Name = "dtpArrivle";
-            this.toolTip.SetToolTip(this.dtpArrivle, resources.GetString("dtpArrivle.ToolTip"));
             this.dtpArrivle.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dtpArrivle_KeyDown);
             // 
             // numMs
@@ -402,28 +397,25 @@
             0,
             0});
             this.numMs.Name = "numMs";
-            this.toolTip.SetToolTip(this.numMs, resources.GetString("numMs.ToolTip"));
             // 
             // cbSlowestUnit
             // 
-            resources.ApplyResources(this.cbSlowestUnit, "cbSlowestUnit");
             this.cbSlowestUnit.DataSource = this.unitBindingSource;
             this.cbSlowestUnit.DisplayMember = "AdvancedName";
             this.cbSlowestUnit.FormattingEnabled = true;
+            resources.ApplyResources(this.cbSlowestUnit, "cbSlowestUnit");
             this.cbSlowestUnit.Name = "cbSlowestUnit";
-            this.toolTip.SetToolTip(this.cbSlowestUnit, resources.GetString("cbSlowestUnit.ToolTip"));
             this.cbSlowestUnit.ValueMember = "Id";
             // 
             // txtNote
             // 
             resources.ApplyResources(this.txtNote, "txtNote");
             this.txtNote.Name = "txtNote";
-            this.toolTip.SetToolTip(this.txtNote, resources.GetString("txtNote.ToolTip"));
             // 
             // btnAddOrder
             // 
+            this.btnAddOrder.Image = global::DS_Timer.Properties.Resources.icons8_add_16;
             resources.ApplyResources(this.btnAddOrder, "btnAddOrder");
-            this.btnAddOrder.Image = global::DS_Timer.Properties.Resources.add;
             this.btnAddOrder.Name = "btnAddOrder";
             this.toolTip.SetToolTip(this.btnAddOrder, resources.GetString("btnAddOrder.ToolTip"));
             this.btnAddOrder.UseVisualStyleBackColor = true;
@@ -433,37 +425,31 @@
             // 
             resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            this.toolTip.SetToolTip(this.label6, resources.GetString("label6.ToolTip"));
             // 
             // label5
             // 
             resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.toolTip.SetToolTip(this.label5, resources.GetString("label5.ToolTip"));
             // 
             // label4
             // 
             resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.toolTip.SetToolTip(this.label4, resources.GetString("label4.ToolTip"));
             // 
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.toolTip.SetToolTip(this.label3, resources.GetString("label3.ToolTip"));
             // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.toolTip.SetToolTip(this.label2, resources.GetString("label2.ToolTip"));
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.toolTip.SetToolTip(this.label1, resources.GetString("label1.ToolTip"));
             // 
             // villageListsBindingSource
             // 
@@ -481,11 +467,9 @@
             this.tableLayoutPanel1.Controls.Add(this.btnSaveAttackPlan, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.groupBox3, 2, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.toolTip.SetToolTip(this.tableLayoutPanel1, resources.GetString("tableLayoutPanel1.ToolTip"));
             // 
             // groupBox2
             // 
-            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Controls.Add(this.btnDeleteList);
             this.groupBox2.Controls.Add(this.btnAddVillage);
             this.groupBox2.Controls.Add(this.ucVillageSelector);
@@ -494,23 +478,22 @@
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.cbVillageList);
             this.groupBox2.Controls.Add(this.lbVillages);
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
-            this.toolTip.SetToolTip(this.groupBox2, resources.GetString("groupBox2.ToolTip"));
             // 
             // btnDeleteList
             // 
             resources.ApplyResources(this.btnDeleteList, "btnDeleteList");
-            this.btnDeleteList.Image = global::DS_Timer.Properties.Resources.delete;
+            this.btnDeleteList.Image = global::DS_Timer.Properties.Resources.icons8_minus_16;
             this.btnDeleteList.Name = "btnDeleteList";
-            this.toolTip.SetToolTip(this.btnDeleteList, resources.GetString("btnDeleteList.ToolTip"));
             this.btnDeleteList.UseVisualStyleBackColor = true;
             this.btnDeleteList.Click += new System.EventHandler(this.btnDeleteList_Click);
             // 
             // btnAddVillage
             // 
             resources.ApplyResources(this.btnAddVillage, "btnAddVillage");
-            this.btnAddVillage.Image = global::DS_Timer.Properties.Resources.add;
+            this.btnAddVillage.Image = global::DS_Timer.Properties.Resources.icons8_add_16;
             this.btnAddVillage.Name = "btnAddVillage";
             this.toolTip.SetToolTip(this.btnAddVillage, resources.GetString("btnAddVillage.ToolTip"));
             this.btnAddVillage.UseVisualStyleBackColor = true;
@@ -520,12 +503,11 @@
             // 
             resources.ApplyResources(this.ucVillageSelector, "ucVillageSelector");
             this.ucVillageSelector.Name = "ucVillageSelector";
-            this.toolTip.SetToolTip(this.ucVillageSelector, resources.GetString("ucVillageSelector.ToolTip"));
             // 
             // btnImportVillages
             // 
             resources.ApplyResources(this.btnImportVillages, "btnImportVillages");
-            this.btnImportVillages.Image = global::DS_Timer.Properties.Resources.basket_put;
+            this.btnImportVillages.Image = global::DS_Timer.Properties.Resources.icons8_import_16;
             this.btnImportVillages.Name = "btnImportVillages";
             this.toolTip.SetToolTip(this.btnImportVillages, resources.GetString("btnImportVillages.ToolTip"));
             this.btnImportVillages.UseVisualStyleBackColor = true;
@@ -534,7 +516,7 @@
             // btnNewVillageList
             // 
             resources.ApplyResources(this.btnNewVillageList, "btnNewVillageList");
-            this.btnNewVillageList.Image = global::DS_Timer.Properties.Resources.add;
+            this.btnNewVillageList.Image = global::DS_Timer.Properties.Resources.icons8_add_16;
             this.btnNewVillageList.Name = "btnNewVillageList";
             this.toolTip.SetToolTip(this.btnNewVillageList, resources.GetString("btnNewVillageList.ToolTip"));
             this.btnNewVillageList.UseVisualStyleBackColor = true;
@@ -544,7 +526,6 @@
             // 
             resources.ApplyResources(this.label9, "label9");
             this.label9.Name = "label9";
-            this.toolTip.SetToolTip(this.label9, resources.GetString("label9.ToolTip"));
             // 
             // cbVillageList
             // 
@@ -569,25 +550,24 @@
             // 
             // cmsVillages
             // 
-            resources.ApplyResources(this.cmsVillages, "cmsVillages");
             this.cmsVillages.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiVillageAsStart,
             this.tsmiVillageAsTarget});
             this.cmsVillages.Name = "cmsVillages";
-            this.toolTip.SetToolTip(this.cmsVillages, resources.GetString("cmsVillages.ToolTip"));
+            resources.ApplyResources(this.cmsVillages, "cmsVillages");
             // 
             // tsmiVillageAsStart
             // 
-            resources.ApplyResources(this.tsmiVillageAsStart, "tsmiVillageAsStart");
-            this.tsmiVillageAsStart.Image = global::DS_Timer.Properties.Resources.arrow_left;
+            this.tsmiVillageAsStart.Image = global::DS_Timer.Properties.Resources.icons8_arrow_pointing_left_16;
             this.tsmiVillageAsStart.Name = "tsmiVillageAsStart";
+            resources.ApplyResources(this.tsmiVillageAsStart, "tsmiVillageAsStart");
             this.tsmiVillageAsStart.Click += new System.EventHandler(this.tsmiVillageAsStart_Click);
             // 
             // tsmiVillageAsTarget
             // 
-            resources.ApplyResources(this.tsmiVillageAsTarget, "tsmiVillageAsTarget");
-            this.tsmiVillageAsTarget.Image = global::DS_Timer.Properties.Resources.arrow_right;
+            this.tsmiVillageAsTarget.Image = global::DS_Timer.Properties.Resources.icons8_arrow_16;
             this.tsmiVillageAsTarget.Name = "tsmiVillageAsTarget";
+            resources.ApplyResources(this.tsmiVillageAsTarget, "tsmiVillageAsTarget");
             this.tsmiVillageAsTarget.Click += new System.EventHandler(this.tsmiVillageAsTarget_Click);
             // 
             // villagesBindingSource
@@ -599,12 +579,12 @@
             // 
             resources.ApplyResources(this.label15, "label15");
             this.label15.Name = "label15";
-            this.toolTip.SetToolTip(this.label15, resources.GetString("label15.ToolTip"));
             // 
             // panel1
             // 
             resources.ApplyResources(this.panel1, "panel1");
             this.tableLayoutPanel1.SetColumnSpan(this.panel1, 3);
+            this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.btnDelAttackPlan);
             this.panel1.Controls.Add(this.btnNewAttackPlan);
             this.panel1.Controls.Add(this.cbAttackPlans);
@@ -621,12 +601,16 @@
             this.panel1.Controls.Add(this.numSec);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Name = "panel1";
-            this.toolTip.SetToolTip(this.panel1, resources.GetString("panel1.ToolTip"));
+            // 
+            // textBox1
+            // 
+            resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.Name = "textBox1";
             // 
             // btnDelAttackPlan
             // 
+            this.btnDelAttackPlan.Image = global::DS_Timer.Properties.Resources.icons8_minus_16;
             resources.ApplyResources(this.btnDelAttackPlan, "btnDelAttackPlan");
-            this.btnDelAttackPlan.Image = global::DS_Timer.Properties.Resources.delete;
             this.btnDelAttackPlan.Name = "btnDelAttackPlan";
             this.toolTip.SetToolTip(this.btnDelAttackPlan, resources.GetString("btnDelAttackPlan.ToolTip"));
             this.btnDelAttackPlan.UseVisualStyleBackColor = true;
@@ -634,8 +618,8 @@
             // 
             // btnNewAttackPlan
             // 
+            this.btnNewAttackPlan.Image = global::DS_Timer.Properties.Resources.icons8_add_16;
             resources.ApplyResources(this.btnNewAttackPlan, "btnNewAttackPlan");
-            this.btnNewAttackPlan.Image = global::DS_Timer.Properties.Resources.add;
             this.btnNewAttackPlan.Name = "btnNewAttackPlan";
             this.toolTip.SetToolTip(this.btnNewAttackPlan, resources.GetString("btnNewAttackPlan.ToolTip"));
             this.btnNewAttackPlan.UseVisualStyleBackColor = true;
@@ -643,21 +627,20 @@
             // 
             // cbAttackPlans
             // 
-            resources.ApplyResources(this.cbAttackPlans, "cbAttackPlans");
             this.cbAttackPlans.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.attackPlanHandlerBindingSource, "CurrentAttackPlan", true));
             this.cbAttackPlans.DataSource = this.attackPlansBindingSource;
             this.cbAttackPlans.DisplayMember = "Name";
             this.cbAttackPlans.FormattingEnabled = true;
+            resources.ApplyResources(this.cbAttackPlans, "cbAttackPlans");
             this.cbAttackPlans.Name = "cbAttackPlans";
-            this.toolTip.SetToolTip(this.cbAttackPlans, resources.GetString("cbAttackPlans.ToolTip"));
             this.cbAttackPlans.TextUpdate += new System.EventHandler(this.cbAttackPlans_TextUpdate);
             // 
             // btnSelectAll
             // 
+            this.btnSelectAll.Image = global::DS_Timer.Properties.Resources.icons8_list_16;
             resources.ApplyResources(this.btnSelectAll, "btnSelectAll");
-            this.btnSelectAll.Image = global::DS_Timer.Properties.Resources.table;
             this.btnSelectAll.Name = "btnSelectAll";
-            this.toolTip.SetToolTip(this.btnSelectAll, resources.GetString("btnSelectAll.ToolTip"));
+            this.btnSelectAll.UseCompatibleTextRendering = true;
             this.btnSelectAll.UseVisualStyleBackColor = true;
             this.btnSelectAll.Click += new System.EventHandler(this.btnSelectAll_Click);
             // 
@@ -675,14 +658,13 @@
             0,
             -2147483648});
             this.numDays.Name = "numDays";
-            this.toolTip.SetToolTip(this.numDays, resources.GetString("numDays.ToolTip"));
             // 
             // btnMoveSelected
             // 
+            this.btnMoveSelected.Image = global::DS_Timer.Properties.Resources.icons8_double_right_16;
             resources.ApplyResources(this.btnMoveSelected, "btnMoveSelected");
-            this.btnMoveSelected.Image = global::DS_Timer.Properties.Resources.clock_go;
             this.btnMoveSelected.Name = "btnMoveSelected";
-            this.toolTip.SetToolTip(this.btnMoveSelected, resources.GetString("btnMoveSelected.ToolTip"));
+            this.btnMoveSelected.UseCompatibleTextRendering = true;
             this.btnMoveSelected.UseVisualStyleBackColor = true;
             this.btnMoveSelected.Click += new System.EventHandler(this.btnMoveSelected_Click);
             // 
@@ -700,19 +682,16 @@
             0,
             -2147483648});
             this.numHours.Name = "numHours";
-            this.toolTip.SetToolTip(this.numHours, resources.GetString("numHours.ToolTip"));
             // 
             // label14
             // 
             resources.ApplyResources(this.label14, "label14");
             this.label14.Name = "label14";
-            this.toolTip.SetToolTip(this.label14, resources.GetString("label14.ToolTip"));
             // 
             // label12
             // 
             resources.ApplyResources(this.label12, "label12");
             this.label12.Name = "label12";
-            this.toolTip.SetToolTip(this.label12, resources.GetString("label12.ToolTip"));
             // 
             // numMin
             // 
@@ -728,13 +707,11 @@
             0,
             -2147483648});
             this.numMin.Name = "numMin";
-            this.toolTip.SetToolTip(this.numMin, resources.GetString("numMin.ToolTip"));
             // 
             // label11
             // 
             resources.ApplyResources(this.label11, "label11");
             this.label11.Name = "label11";
-            this.toolTip.SetToolTip(this.label11, resources.GetString("label11.ToolTip"));
             // 
             // numMoveMs
             // 
@@ -750,13 +727,11 @@
             0,
             -2147483648});
             this.numMoveMs.Name = "numMoveMs";
-            this.toolTip.SetToolTip(this.numMoveMs, resources.GetString("numMoveMs.ToolTip"));
             // 
             // label13
             // 
             resources.ApplyResources(this.label13, "label13");
             this.label13.Name = "label13";
-            this.toolTip.SetToolTip(this.label13, resources.GetString("label13.ToolTip"));
             // 
             // numSec
             // 
@@ -772,21 +747,18 @@
             0,
             -2147483648});
             this.numSec.Name = "numSec";
-            this.toolTip.SetToolTip(this.numSec, resources.GetString("numSec.ToolTip"));
             // 
             // label10
             // 
             resources.ApplyResources(this.label10, "label10");
             this.label10.Name = "label10";
-            this.toolTip.SetToolTip(this.label10, resources.GetString("label10.ToolTip"));
             // 
             // btnSaveAttackPlan
             // 
             resources.ApplyResources(this.btnSaveAttackPlan, "btnSaveAttackPlan");
             this.tableLayoutPanel1.SetColumnSpan(this.btnSaveAttackPlan, 2);
-            this.btnSaveAttackPlan.Image = global::DS_Timer.Properties.Resources.disk;
+            this.btnSaveAttackPlan.Image = global::DS_Timer.Properties.Resources.icons8_save_16;
             this.btnSaveAttackPlan.Name = "btnSaveAttackPlan";
-            this.toolTip.SetToolTip(this.btnSaveAttackPlan, resources.GetString("btnSaveAttackPlan.ToolTip"));
             this.btnSaveAttackPlan.UseVisualStyleBackColor = true;
             this.btnSaveAttackPlan.Click += new System.EventHandler(this.btnSaveAttackPlan_Click);
             // 
@@ -798,53 +770,48 @@
             this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
-            this.toolTip.SetToolTip(this.groupBox3, resources.GetString("groupBox3.ToolTip"));
             // 
             // numAlarmTimeOffset
             // 
-            resources.ApplyResources(this.numAlarmTimeOffset, "numAlarmTimeOffset");
             this.numAlarmTimeOffset.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::DS_Timer.Properties.Settings.Default, "CreateAlarmOffset", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            resources.ApplyResources(this.numAlarmTimeOffset, "numAlarmTimeOffset");
             this.numAlarmTimeOffset.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
             this.numAlarmTimeOffset.Name = "numAlarmTimeOffset";
-            this.toolTip.SetToolTip(this.numAlarmTimeOffset, resources.GetString("numAlarmTimeOffset.ToolTip"));
             this.numAlarmTimeOffset.Value = global::DS_Timer.Properties.Settings.Default.CreateAlarmOffset;
             // 
             // label7
             // 
             resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
-            this.toolTip.SetToolTip(this.label7, resources.GetString("label7.ToolTip"));
             // 
             // label8
             // 
             resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
-            this.toolTip.SetToolTip(this.label8, resources.GetString("label8.ToolTip"));
             // 
             // toolStrip
             // 
-            resources.ApplyResources(this.toolStrip, "toolStrip");
             this.toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsbDisplayInMiniTimer,
             this.tsbImport});
+            resources.ApplyResources(this.toolStrip, "toolStrip");
             this.toolStrip.Name = "toolStrip";
-            this.toolTip.SetToolTip(this.toolStrip, resources.GetString("toolStrip.ToolTip"));
             // 
             // tsbDisplayInMiniTimer
             // 
+            this.tsbDisplayInMiniTimer.Image = global::DS_Timer.Properties.Resources.icons8_coming_soon_16;
             resources.ApplyResources(this.tsbDisplayInMiniTimer, "tsbDisplayInMiniTimer");
-            this.tsbDisplayInMiniTimer.Image = global::DS_Timer.Properties.Resources.clock_link;
             this.tsbDisplayInMiniTimer.Name = "tsbDisplayInMiniTimer";
             this.tsbDisplayInMiniTimer.Click += new System.EventHandler(this.tsbDisplayInMiniTimer_Click);
             // 
             // tsbImport
             // 
+            this.tsbImport.Image = global::DS_Timer.Properties.Resources.icons8_import_16;
             resources.ApplyResources(this.tsbImport, "tsbImport");
-            this.tsbImport.Image = global::DS_Timer.Properties.Resources.basket_put;
             this.tsbImport.Name = "tsbImport";
             this.tsbImport.Click += new System.EventHandler(this.tsbImport_Click);
             // 
@@ -855,7 +822,6 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.toolStrip);
             this.Name = "UcAttackPlaner";
-            this.toolTip.SetToolTip(this, resources.GetString("$this.ToolTip"));
             ((System.ComponentModel.ISupportInitialize)(this.dgvAttacks)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.unitBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.attackPlanHandlerBindingSource)).EndInit();
@@ -971,5 +937,6 @@
 		private System.Windows.Forms.DataGridViewTextBoxColumn ArrivleTime;
 		private System.Windows.Forms.DataGridViewComboBoxColumn UnitSpeed;
 		private System.Windows.Forms.DataGridViewTextBoxColumn commentDataGridViewTextBoxColumn;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

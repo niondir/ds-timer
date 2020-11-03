@@ -112,32 +112,40 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="&gt;&gt;rbWorkbench.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="rbWorkbench.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="rbDsReal.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnImport.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <data name="rbDSTimer.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
+  <data name="rbDsMap.ToolTip" xml:space="preserve">
+    <value>Export von DS Map mit minimalen Einstellungen (Alle Haken aus)</value>
+  </data>
   <data name="&gt;&gt;rbWorkbench.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="btnImport.Text" xml:space="preserve">
-    <value>Importieren</value>
+  <data name="rbDsMap.Text" xml:space="preserve">
+    <value>DS Map</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>DialogAttackImport</value>
@@ -145,11 +153,8 @@
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
   </data>
-  <data name="&gt;&gt;rtbInput.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;rbDSTimer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="rtbInput.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -163,25 +168,26 @@
   <data name="rbDSTimer.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="groupBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="rbDsReal.Text" xml:space="preserve">
-    <value>DSReal</value>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
   <data name="rtbInput.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;rtbInput.Name" xml:space="preserve">
-    <value>rtbInput</value>
+  <data name="rbDsMap.Location" type="System.Drawing.Point, System.Drawing">
+    <value>152, 19</value>
   </data>
-  <data name="btnImport.ToolTip" xml:space="preserve">
-    <value />
+  <data name="rbDSTimer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 17</value>
+  </data>
+  <data name="rbWorkbench.ToolTip" xml:space="preserve">
+    <value>Export von Workbench ohne Formatierung</value>
   </data>
   <data name="rtbInput.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -201,8 +207,8 @@
   <data name="groupBox1.Text" xml:space="preserve">
     <value>Quelle</value>
   </data>
-  <data name="rbDSTimer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 17</value>
+  <data name="rbDsReal.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
     <value>4</value>
@@ -216,20 +222,11 @@
   <data name="rbDsReal.Location" type="System.Drawing.Point, System.Drawing">
     <value>84, 19</value>
   </data>
-  <data name="&gt;&gt;btnImport.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 13</value>
   </data>
   <data name="&gt;&gt;rbDsReal.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="rbDSTimer.Text" xml:space="preserve">
-    <value>DS-Timer</value>
-  </data>
-  <data name="rbDsMap.Text" xml:space="preserve">
-    <value>DS Map</value>
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
     <value>1</value>
@@ -243,26 +240,32 @@
   <data name="rbDsReal.ToolTip" xml:space="preserve">
     <value>Die Tabelle von der Website kopieren</value>
   </data>
-  <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="btnImport.Text" xml:space="preserve">
+    <value>Importieren</value>
   </data>
   <data name="label1.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;rtbInput.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
   </data>
-  <data name="rbDsMap.Location" type="System.Drawing.Point, System.Drawing">
-    <value>152, 19</value>
+  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="rtbInput.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="rbDSTimer.ToolTip" xml:space="preserve">
     <value>Export von Workbench ohne Formatierung</value>
   </data>
   <data name="&gt;&gt;toolTip.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rtbInput.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 71</value>
   </data>
   <data name="rbWorkbench.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 17</value>
@@ -270,8 +273,8 @@
   <data name="$this.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;rbDSTimer.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="rbDSTimer.Text" xml:space="preserve">
+    <value>DS-Timer</value>
   </data>
   <data name="rtbInput.Size" type="System.Drawing.Size, System.Drawing">
     <value>469, 179</value>
@@ -279,17 +282,20 @@
   <data name="&gt;&gt;btnImport.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="rbDsMap.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 17</value>
-  </data>
   <data name="rbWorkbench.Location" type="System.Drawing.Point, System.Drawing">
     <value>222, 19</value>
+  </data>
+  <data name="&gt;&gt;rtbInput.Name" xml:space="preserve">
+    <value>rtbInput</value>
   </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
   </data>
   <data name="tableLayoutPanel1.ToolTip" xml:space="preserve">
     <value />
+  </data>
+  <data name="&gt;&gt;btnImport.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;rbDsReal.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -300,17 +306,23 @@
   <data name="btnImport.Location" type="System.Drawing.Point, System.Drawing">
     <value>397, 256</value>
   </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
   <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="&gt;&gt;rbDsMap.Name" xml:space="preserve">
     <value>rbDsMap</value>
   </data>
+  <data name="btnImport.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
   <data name="&gt;&gt;rbWorkbench.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Imporiteren:</value>
   </data>
   <data name="&gt;&gt;rbDsReal.Name" xml:space="preserve">
     <value>rbDsReal</value>
@@ -325,13 +337,13 @@
     <value>True</value>
   </data>
   <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="rtbInput.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 71</value>
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;rbDsMap.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rbDsReal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 17</value>
   </data>
   <data name="&gt;&gt;rbDSTimer.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -345,20 +357,14 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Angriffsbefehle importieren</value>
   </data>
-  <data name="&gt;&gt;rtbInput.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
+  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>475, 282</value>
   </data>
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="groupBox1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label1" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="rtbInput" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="btnImport" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,0,Percent,100,AutoSize,0" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <data name="&gt;&gt;btnImport.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="rbDsReal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 17</value>
+  <data name="rbDsMap.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 17</value>
   </data>
   <data name="&gt;&gt;rbDsMap.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -369,64 +375,58 @@
   <data name="rbDsReal.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
+  <data name="rbWorkbench.Text" xml:space="preserve">
+    <value>DS-Workbench</value>
+  </data>
   <data name="rbDsMap.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
-  </data>
-  <data name="rbDsMap.ToolTip" xml:space="preserve">
-    <value>Export von DS Map mit minimalen Einstellungen (Alle Haken aus)</value>
   </data>
   <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="rtbInput.ToolTip" xml:space="preserve">
+  <data name="btnImport.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="&gt;&gt;rbDSTimer.Name" xml:space="preserve">
     <value>rbDSTimer</value>
   </data>
-  <data name="rbWorkbench.ToolTip" xml:space="preserve">
-    <value>Export von Workbench ohne Formatierung</value>
+  <data name="&gt;&gt;rbDSTimer.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
-  <data name="rbWorkbench.Text" xml:space="preserve">
-    <value>DS-Workbench</value>
+  <data name="&gt;&gt;btnImport.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>475, 282</value>
   </data>
-  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>475, 282</value>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;rtbInput.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
   </data>
   <data name="btnImport.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="btnImport.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="rbDsReal.Text" xml:space="preserve">
+    <value>DSReal</value>
   </data>
-  <data name="btnImport.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="rbDsMap.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Imporiteren:</value>
   </data>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>en</value>
   </metadata>
-  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
   </metadata>
 </root>
