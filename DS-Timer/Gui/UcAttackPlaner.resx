@@ -942,8 +942,38 @@
   <data name="panel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left, Right</value>
   </data>
+  <data name="button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>910, 4</value>
+  </data>
+  <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 3, 0, 3</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>903, 4</value>
+    <value>932, 4</value>
+  </data>
+  <data name="textBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 3, 3</value>
   </data>
   <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>196, 20</value>
@@ -961,7 +991,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="btnDelAttackPlan.Location" type="System.Drawing.Point, System.Drawing">
     <value>159, 2</value>
@@ -985,7 +1015,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;btnDelAttackPlan.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="btnNewAttackPlan.Location" type="System.Drawing.Point, System.Drawing">
     <value>130, 2</value>
@@ -1009,7 +1039,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;btnNewAttackPlan.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <metadata name="attackPlansBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>16, 79</value>
@@ -1033,7 +1063,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;cbAttackPlans.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="btnSelectAll.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -1060,7 +1090,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;btnSelectAll.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="numDays.Location" type="System.Drawing.Point, System.Drawing">
     <value>204, 3</value>
@@ -1081,7 +1111,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;numDays.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="btnMoveSelected.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -1108,7 +1138,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;btnMoveSelected.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="numHours.Location" type="System.Drawing.Point, System.Drawing">
     <value>293, 3</value>
@@ -1129,7 +1159,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;numHours.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="label14.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1156,7 +1186,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="label12.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1183,7 +1213,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="numMin.Location" type="System.Drawing.Point, System.Drawing">
     <value>376, 3</value>
@@ -1204,7 +1234,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;numMin.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="label11.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1231,7 +1261,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="numMoveMs.Location" type="System.Drawing.Point, System.Drawing">
     <value>546, 3</value>
@@ -1252,7 +1282,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;numMoveMs.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="label13.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1279,7 +1309,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="numSec.Location" type="System.Drawing.Point, System.Drawing">
     <value>460, 3</value>
@@ -1300,7 +1330,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;numSec.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="label10.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1327,7 +1357,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 230</value>

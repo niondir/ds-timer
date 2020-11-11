@@ -89,6 +89,7 @@
             this.villagesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label15 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnDelAttackPlan = new System.Windows.Forms.Button();
             this.btnNewAttackPlan = new System.Windows.Forms.Button();
@@ -584,6 +585,7 @@
             // 
             resources.ApplyResources(this.panel1, "panel1");
             this.tableLayoutPanel1.SetColumnSpan(this.panel1, 3);
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.btnDelAttackPlan);
             this.panel1.Controls.Add(this.btnNewAttackPlan);
@@ -601,6 +603,17 @@
             this.panel1.Controls.Add(this.numSec);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Name = "panel1";
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Image = global::DS_Timer.Properties.Resources.icons8_search_16;
+            this.button1.Name = "button1";
+            this.button1.TabStop = false;
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
@@ -938,5 +951,6 @@
 		private System.Windows.Forms.DataGridViewComboBoxColumn UnitSpeed;
 		private System.Windows.Forms.DataGridViewTextBoxColumn commentDataGridViewTextBoxColumn;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
     }
 }

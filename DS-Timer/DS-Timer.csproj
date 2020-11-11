@@ -366,6 +366,7 @@
     <Content Include="clock.ico" />
     <Content Include="Hourglass.ico" />
     <Content Include="icons8_Clock.ico" />
+    <None Include="Resources\icons8-search-16.png" />
     <None Include="Resources\icons8-arrow-pointing-left-16.png" />
     <None Include="Resources\icons8-arrow-16.png" />
     <None Include="Resources\icons8-copy-16.png" />
